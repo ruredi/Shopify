@@ -1,0 +1,3504 @@
+{
+  "presets": {
+  },
+  "current": {
+    "logo_use_image": true,
+    "logo_max_height": "120",
+    "logo_img_height": "60",
+    "logo_mob_height": "120",
+    "favicon_enable": true,
+    "preloader_enable": false,
+    "base_font": "Google+Quicksand",
+    "type_base_size": "16px",
+    "body_weight_size": "normal",
+    "text_spacing": "0",
+    "header_font": "Google+Baloo+Paaji",
+    "type_weight_size": "normal",
+    "type_uppercase": false,
+    "heading_spacing": "0",
+    "type_header_base_size": "44px",
+    "type_header_base_size_2": "40px",
+    "type_header_base_size_3": "36px",
+    "type_header_base_size_4": "22px",
+    "type_header_base_size_5": "18px",
+    "type_header_base_size_6": "16px",
+    "sub_header_font": "Google+Poppins",
+    "other_font": "Google+Dancing+Script",
+    "color_body_bg": "#ffffff",
+    "overlay_bg": "#5c5b5b",
+    "color_borders": "#e4e4e4",
+    "black_borders": "#eb94bd",
+    "color_primary": "#67c5df",
+    "color_primary_border": "#eb94bd",
+    "color_button_primary_text": "#ffffff",
+    "primary_hover_btn": "#eb94bd",
+    "primary_hover_btn_text": "#ffffff",
+    "color_sold": "#eb94bd",
+    "color_sold_text": "#ffffff",
+    "sale_bg": "#b1b84b",
+    "sale_button_text": "#ffffff",
+    "new_bg": "#f5b328",
+    "new_button_text": "#ffffff",
+    "offer_bg": "#eb94bd",
+    "offer_button_text": "#ffffff",
+    "color_body_text": "#9e9e9e",
+    "link_color": "#666666",
+    "color_primary_color": "#67c5df",
+    "title_border": "#f5b328",
+    "color_heading_type1_color": "#666666",
+    "color_heading_color": "#eb94bd",
+    "secondary_image_use": true,
+    "show_img_height": false,
+    "products_img_height": "",
+    "products_img_height_tab": "",
+    "product_row_mob": "double",
+    "overlay_use": false,
+    "product_overlay": "#ffeef0",
+    "product_hover_overlay": "#17313e",
+    "products_button_bg": "#67c5df",
+    "products_button_clr": "#ffffff",
+    "products_button_hover_bg": "#b1b84b",
+    "products_button_hover_clr": "#17313e",
+    "products_icon_bg": "rgba(0,0,0,0)",
+    "products_icon_clr": "#ffffff",
+    "products_icon_hover_bg": "rgba(0,0,0,0)",
+    "products_icon_hover_clr": "#ffffff",
+    "products_gutter": "15",
+    "products_border_radius": "0",
+    "products_border_full": false,
+    "products_full_border_width": "1",
+    "products_full_border": "#ffffff",
+    "products_full_hover_border": "#cbba9c",
+    "products_border_use": false,
+    "products_border_width": "2",
+    "products_border": "#b10a0a",
+    "products_border_2": "#73a6c0",
+    "products_det_bg": "#ffffff",
+    "product_title_bg_color": "rgba(0,0,0,0)",
+    "product_title_color": "#5c5b5b",
+    "product_title_hover_color": "#eb94bd",
+    "product_price": "#eb94bd",
+    "product_cmp_price": "#9e9e9e",
+    "product_vendor": "#9e9e9e",
+    "product_label_color": "#5c5b5b",
+    "outline_color": "#fff",
+    "show_ex_tax": true,
+    "ex_tax": "Ex of Sale Tax",
+    "sidebar_bg": "#f5b328",
+    "sidebar_text": "#fff",
+    "use_breadcrumb": true,
+    "breadcrumb_bg_image": false,
+    "breadcrumb_bg_color": "#ffeef0",
+    "breadcrumb_link_color": "#000000",
+    "breadcrumb_text_color": "#eb94bd",
+    "breadcrumb_text_hover_color": "rgba(0,0,0,0)",
+    "curve_image": true,
+    "top_to_btm": false,
+    "header_style_1": "style_2",
+    "use_sticky_header": false,
+    "footer_style_1": "style_10",
+    "enable_quick_view": false,
+    "show_prt_quickview_desc": false,
+    "display_quick_availability": false,
+    "display_quick_subtotal": false,
+    "animae_enable": false,
+    "collections_show_sale_circle": true,
+    "collections_show_sold_out_circle": true,
+    "offer_price_enable": false,
+    "collections_show_new_circle": true,
+    "display_vendor": false,
+    "display_subtotal": false,
+    "enable_product_detail_link_icon": false,
+    "enable_add_cart": true,
+    "enable_compare": false,
+    "enable_wishlist": true,
+    "display_short_desc": false,
+    "display_color_variant": true,
+    "display_item_size": false,
+    "product_review": false,
+    "enable_sidebar_multiple_choice": true,
+    "collection_sidebar_use": "full_width",
+    "collection_sidebar_mobile": false,
+    "product_page_sidebar": "full_width",
+    "product_sidebar_mobile": false,
+    "blog_page_sidebar": "full_width",
+    "use_custom_list_collection": false,
+    "list-collections": "",
+    "collection_btn_text": "Read More",
+    "single_product_layout_type": "layout_style_1",
+    "display_availability": true,
+    "enable_color_swatch": true,
+    "color_swatch_style": "variant",
+    "enable_linked_option": true,
+    "enable_zoom_option": false,
+    "cart_notes_enable": true,
+    "use_ajax_cart": true,
+    "cart_title_bg": "#5c5b5b",
+    "cart_title_clr": "#ffffff",
+    "show_shipping_calculator": true,
+    "shipping_calculator_heading": "Get shipping estimates",
+    "shipping_calculator_default_country": "United States",
+    "search_grid": "4",
+    "search_results_per_page": "12",
+    "show_search_prt": true,
+    "display_popup_newsletter": false,
+    "pop_up_newsletter_img_show": false,
+    "pop_up_newslettersection_img_show": true,
+    "popup_newsletter_bg": "rgba(0,0,0,0)",
+    "popup_newsletter_title": "Subscribe & Enjoy",
+    "popup_newsletter_offer_title": "10% <br> Discount",
+    "popup_newsletter_message": "Subscribe and get notified at first on the latest update and offers!",
+    "popup_newsletter_text": "#67c5df",
+    "popup_newsletter_offer_text": "#5c5b5b",
+    "popup_newsletter_form": "#fff",
+    "popup_newsletter_form_txt": "#5c5b5b",
+    "popup_newsletter_form_txt_hvr": "rgba(0,0,0,0)",
+    "popup_news_close": "#5c5b5b",
+    "form_note": "We do not spam",
+    "count_down_enable": false,
+    "count_down_home": true,
+    "count_down_collections": true,
+    "count_down_prodetails": true,
+    "prodetail_deal_label": true,
+    "prodetail_deal_heading": "Hurry, Only few item(s) left!",
+    "home_productdeal_time": "5665690812571@12\/24\/2020_00:00:00\n2650014089301@12\/24\/2019_00:00:00\n2650011730005@01\/24\/2020_00:00:00\n2650009305173@10\/30\/2019_00:00:00\n2650005438549@02\/24\/2020_00:00:00",
+    "dealbtn": "rgba(0,0,0,0)",
+    "dealbtn_text": "#5c5b5b",
+    "social_twitter_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/babypand.shop.offical",
+    "social_pinterest_link": "",
+    "social_google_plus_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/babypand.shop.offical",
+    "social_tumblr_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "social_rss_link": "",
+    "social_linkedin_link": "",
+    "social_sharing_blog": true,
+    "social_sharing_count": false,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "share_google": false,
+    "social_sharing_style": "normal",
+    "display_currency": true,
+    "currency_1_unit": "USD",
+    "currency_2_unit": "AUD",
+    "currency_3_unit": "GBP",
+    "currency_4_unit": "CZK",
+    "currency_5_unit": "DKK",
+    "currency_6_unit": "EUR",
+    "currency_7_unit": "HUF",
+    "currency_8_unit": "NZD",
+    "currency_9_unit": "NOK",
+    "currency_10_unit": "PLN",
+    "password_bg_img": false,
+    "password_logo": true,
+    "logo_txt_color": "#eb94bd",
+    "pwd_header": "",
+    "pwd_header_color": "#aaaaaa",
+    "pwd_show_share_buttons": false,
+    "pwd_social_message": "",
+    "pwd_newsletter_enable": false,
+    "pwd_newsletter_form_heading": "Be the first to know when we launch.",
+    "pwd_newsletter_form_heading_clr": "#67c5df",
+    "pwd_newsletter_inpt_bg": "#ffffff",
+    "pwd_newsletter_btn_bg": "#eb94bd",
+    "pwd_newsletter_btn_txt": "#ffffff",
+    "pwd_newsletter_btn_hoverbg": "#67c5df",
+    "pwd_newsletter_btn_hovertxt": "#ffffff",
+    "pwd_placeholder_txt": "#aaaaaa",
+    "pwd_newsletter_placeholder": "Email address",
+    "pwd_newsletter_button_text": "Notify me",
+    "social_title_clr": "#666666",
+    "social_icon_clr": "#aaaaaa",
+    "social__icon_hoverclr": "#67c5df",
+    "checkout_header_image": "",
+    "checkout_use_storefront_logo": true,
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#f7feff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fff7f8",
+    "checkout_heading_font": "Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman'",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#67c5df",
+    "checkout_button_color": "#d2f0f6",
+    "checkout_error_color": "#eb94bd",
+    "currency_11_unit": "RUB",
+    "currency_12_unit": "SEK",
+    "currency_13_unit": "AED",
+    "after_image": "",
+    "logo": "shopify:\/\/shop_images\/logo-white.png",
+    "preloader": "shopify:\/\/shop_images\/loading.gif",
+    "btn_border_radius": "50",
+    "collection_infinite_scrolling": false,
+    "dealbtn_label": "#000000",
+    "homepage_sidebar": false,
+    "homepage_sidebar_mobile": true,
+    "breadcrumb_overlaybg_color": "rgba(0,0,0,0)",
+    "new_products_period": "100",
+    "shipping_calculator": "Enabled",
+    "shipping_calculator_submit_button_label": "Calculate shipping",
+    "shipping_calculator_submit_button_label_disabled": "Calculating...",
+    "enable_gmap": true,
+    "contact_iframe_code": "<iframe width=\"960\" height=\"578\" style=\"border:0;overflow:hidden;\" src=\"https:\/\/maps.google.co.in\/?ie=UTF8&t=m&ll=-37.823006,144.977388&spn=0.02034,0.042915&z=14&output=embed\"><\/iframe>",
+    "enable_contact_section": true,
+    "contact_bg_img": true,
+    "contact_bg_color": "#ffffff",
+    "contact_module_contact_phonetitle": "Talk to us",
+    "contact_phone1": "<b>Toll-Free: <\/b> 0803 - 080 - 3081",
+    "contact_phone2": "<b>Fax: <\/b> 0803 - 080 - 3082",
+    "contact_module_contact_title": "Contact Us",
+    "contact_module_email": true,
+    "contact_module_email_1": "buddhathemes@somemail.com",
+    "contact_module_email2": "support@somemail.com",
+    "contact_phone": true,
+    "enable_contact_address": true,
+    "contact_module_address": true,
+    "contact_module_address_title": "Location",
+    "contact_module_address1": "No: 58 A, East Madison Street,",
+    "contact_module_address2": "Baltimore, MD, USA\r\n4508",
+    "pop_up_newsletter_bg": "#ffffff",
+    "newsletter_form_action": "",
+    "collection_suggest": "",
+    "display_index": false,
+    "display_product": true,
+    "display_collection": true,
+    "display_article": true,
+    "display_blog": true,
+    "display_cart": true,
+    "interval_time": "15000",
+    "show_close_suggest": true,
+    "only_home_preloader_enable": false,
+    "color_cart": "#204a80",
+    "color_button_cart_text": "#ffffff",
+    "cart_hover_btn": "#ff003a",
+    "cart_hover_btn_text": "#fff",
+    "cart_size": "14px 28px",
+    "cart_font_size": "34",
+    "small_cart_size": "14px 28px",
+    "small_cart_font_size": "34",
+    "enable_filters": true,
+    "filter_height": "200",
+    "display_slideshow": true,
+    "slideshow_speed": "8000",
+    "slideshow_transition": "slide",
+    "display_slideshow_1": "image",
+    "video_1": "",
+    "image_1_link": "",
+    "image_1_alt": "Lorem a Cosmo",
+    "slide-heading_1": "Lorem a Cosmo",
+    "slide_heading_color_1": "#ffffff",
+    "slide_heading_size_1": "40",
+    "slide-text_1": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+    "slide_text_color_1": "#ffffff",
+    "slide_text_size_1": "12",
+    "button-text_1": "Shop The Collection",
+    "button-color_text_1": "#e4e4e4",
+    "button-bg_text_1": "#e4e4e4",
+    "button-hover-bg_text_1": "#e4e4e4",
+    "button-hover-text_1": "#e4e4e4",
+    "text_align_slide_1": "left",
+    "display_slideshow_2": "image",
+    "video_2": "",
+    "image_2_link": "",
+    "image_2_alt": "Up to 30%* Off",
+    "slide-heading_2": "Up to 30%* Off",
+    "slide_heading_color_2": "#fff",
+    "slide_heading_size_2": "40",
+    "slide-text_2": "Praesent dapibus eleifend eu a justomos de milancelos",
+    "slide_text_color_2": "#fff",
+    "slide_text_size_2": "12",
+    "button-text_2": "Shop Now",
+    "button-color_text_2": "#e4e4e4",
+    "button-bg_text_2": "#e4e4e4",
+    "button-hover-bg_text_2": "#e4e4e4",
+    "button-hover-text_2": "#e4e4e4",
+    "text_align_slide_2": "left",
+    "display_slideshow_3": "image",
+    "video_3": "",
+    "image_3_link": "",
+    "image_3_alt": "Loremous",
+    "slide-heading_3": "Loremous",
+    "slide_heading_color_3": "#ffffff",
+    "slide_heading_size_3": "40",
+    "slide-text_3": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos comodous.",
+    "slide_text_color_3": "#ffffff",
+    "slide_text_size_3": "12",
+    "button-text_3": "Shop The Collection",
+    "button-color_text_3": "#e4e4e4",
+    "button-bg_text_3": "#e4e4e4",
+    "button-hover-bg_text_3": "#e4e4e4",
+    "button-hover-text_3": "#e4e4e4",
+    "text_align_slide_3": "left",
+    "display_slideshow_4": "none",
+    "video_4": "",
+    "image_4_link": "",
+    "image_4_alt": "",
+    "slide-heading_4": "",
+    "slide_heading_color_4": "#fff",
+    "slide_heading_size_4": "40",
+    "slide-text_4": "",
+    "slide_text_color_4": "#fff",
+    "slide_text_size_4": "12",
+    "button-text_4": "",
+    "button-color_text_4": "#e4e4e4",
+    "button-bg_text_4": "#e4e4e4",
+    "button-hover-bg_text_4": "#e4e4e4",
+    "button-hover-text_4": "#e4e4e4",
+    "text_align_slide_4": "center",
+    "pwd_logo_max_width": "700",
+    "show_blog_4_content": true,
+    "show_blog_4_img": true,
+    "show_blog_4_author": true,
+    "show_blog_4_btn": true,
+    "show_blog_4_date": true,
+    "show_blog_4_tag": true,
+    "blog_design_4_title": "#000000",
+    "blog_design_4_titlehover": "#cbba9c",
+    "blog_design_4_datecolor": "#000000",
+    "blog_design_4_authorcolor": "#000000",
+    "blog_design_commentcolor": "#000",
+    "blog_design_4_tag": "#000000",
+    "blog_design_4_taghover": "#cbba9c",
+    "blog_btn_sec_bg": "rgba(0,0,0,0)",
+    "show_blog_sidebar": true,
+    "show_recent_articles": true,
+    "show_recent_articles_img": true,
+    "blog_article_limit": "3",
+    "show_blog_tags": true,
+    "show_blog_instagram": true,
+    "show_featured_products": true,
+    "show_footer_tweets": true,
+    "tweet_heading": "Latest Tweets",
+    "tweet_embcode": "<a class=\"twitter-timeline\" href=\"https:\/\/twitter.com\/iamdesigning\" data-widget-id=\"425498722839957505\" data-border-color=\"#fff\" data-tweet-limit=\"3\" data-chrome=\"nofooter noheader\">Tweets by @iamdesigning<\/a>\r\n<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=\/^http:\/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+\":\/\/platform.twitter.com\/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");<\/script>",
+    "display_quickview_subtotal": true,
+    "social_sharing_products": true,
+    "links_style_1": "style_8",
+    "display_product_type": true,
+    "display_vendor_type": "name",
+    "color_tooltip": true,
+    "product_quantity_enable": true,
+    "payment_button": true,
+    "short_desc": true,
+    "product_tab1": true,
+    "product_tab1_heading": "Description",
+    "product_tab2": true,
+    "product_tab2_heading": "Reviews",
+    "product_tab3": true,
+    "product_tab3_heading": "Shipping details",
+    "product_tab3_page": "",
+    "product_related_enable": true,
+    "related_prds_heading": "Related Products",
+    "heading_image_need": false,
+    "related_prds_title": "From this Collection",
+    "display_recently_viewed_products": true,
+    "recently_viewed_products_title": "Recently Viewed Products",
+    "number_of_recently_viewed_products": "8",
+    "button_style_1": "style_2",
+    "product_style_1": "style_1",
+    "images_style_1": "style_1",
+    "show_collection_image": true,
+    "collections_sort_enable": true,
+    "collections_items_enable": true,
+    "collections_view_enable": true,
+    "display_flavour": false,
+    "flavour_txt": "Flavour",
+    "flavour_bg": "#000",
+    "flavour_color": "#fff",
+    "collection_grid": "4",
+    "collection_results_per_page": "12",
+    "logo_max_width": "450",
+    "blog_design_4_describg": "#ffffff",
+    "blog_design_4_desboxshawdow": "#f4f4f4",
+    "blog_design_4_bgcolor": "#000",
+    "blog_btn_bg": "rgba(0,0,0,0)",
+    "blog_btn_text": "#685f52",
+    "blog_btn_hover_bg": "#000",
+    "blog_hover_btn_text": "#000",
+    "show_currency_1": false,
+    "show_currency_2": false,
+    "show_currency_3": false,
+    "show_currency_4": false,
+    "show_currency_5": false,
+    "show_currency_6": false,
+    "show_currency_7": false,
+    "show_currency_8": false,
+    "show_currency_9": false,
+    "show_currency_10": false,
+    "enable_multiple_currencies": true,
+    "sections": {
+      "sidebar-category": {
+        "type": "sidebar-category",
+        "settings": {
+          "enable_sidecategory": true,
+          "linkedlist": "categories-menu",
+          "linkedlist_title": "Categories"
+        }
+      },
+      "sidebar-bestsellers": {
+        "type": "sidebar-bestsellers",
+        "settings": {
+          "show_best_products": true,
+          "title": "Best Sellers",
+          "bestseller": "trending-now",
+          "limi": "4"
+        }
+      },
+      "sidebar-promoimage": {
+        "type": "sidebar-promoimage",
+        "blocks": {
+          "1477474976957": {
+            "type": "content",
+            "settings": {
+              "promo_title": "Promo Text"
+            }
+          },
+          "1477475002420": {
+            "type": "content",
+            "settings": {
+              "promo_title": "Promo Text"
+            }
+          }
+        },
+        "block_order": [
+          "1477474976957",
+          "1477475002420"
+        ],
+        "settings": {
+        }
+      },
+      "sidebar-colors": {
+        "type": "sidebar-colors",
+        "blocks": {
+          "1477476837114": {
+            "type": "image",
+            "settings": {
+              "title": "Pink",
+              "color": "shopify:\/\/shop_images\/color-pink_25c5c1f8-9890-4813-b31d-78f4cc443299.png"
+            }
+          },
+          "1477476823589": {
+            "type": "image",
+            "settings": {
+              "title": "Blue",
+              "color": "shopify:\/\/shop_images\/color-blue.png"
+            }
+          },
+          "b34a2c6a-f136-4971-85c9-21464167f054": {
+            "type": "image",
+            "settings": {
+              "title": "Grey",
+              "color": "shopify:\/\/shop_images\/color-gray.png"
+            }
+          },
+          "1477476891997": {
+            "type": "image",
+            "settings": {
+              "title": "Black",
+              "color": "shopify:\/\/shop_images\/color-black.png"
+            }
+          },
+          "1558348408378": {
+            "type": "image",
+            "settings": {
+              "title": "White",
+              "color": "shopify:\/\/shop_images\/color-white.png"
+            }
+          },
+          "1477476872443": {
+            "type": "image",
+            "settings": {
+              "title": "Gold",
+              "color": "shopify:\/\/shop_images\/color-gold.png"
+            }
+          },
+          "a3064e11-092c-4410-a09d-16d7acb69142": {
+            "type": "image",
+            "settings": {
+              "title": "Silver",
+              "color": "shopify:\/\/shop_images\/color-silver.png"
+            }
+          },
+          "1477476905451": {
+            "type": "image",
+            "settings": {
+              "title": "Red",
+              "color": "shopify:\/\/shop_images\/color-red.png"
+            }
+          },
+          "6ac003c0-c04a-4daf-8856-646680340034": {
+            "type": "image",
+            "settings": {
+              "title": "Green",
+              "color": "shopify:\/\/shop_images\/color-green.png"
+            }
+          },
+          "952b9a88-fad5-4be0-8dd5-021b5ff9cc3b": {
+            "type": "image",
+            "settings": {
+              "title": "Purple",
+              "color": "shopify:\/\/shop_images\/color-purple.png"
+            }
+          },
+          "2da7f2be-4ba2-4c00-94a3-0c4c35c0c716": {
+            "type": "image",
+            "settings": {
+              "title": "Rose",
+              "color": "shopify:\/\/shop_images\/color-rosa.png"
+            }
+          },
+          "e74a22da-0489-45ab-84c1-fc27a495dd16": {
+            "type": "image",
+            "settings": {
+              "title": "Brown",
+              "color": "shopify:\/\/shop_images\/color-brown.png"
+            }
+          },
+          "753fac98-24bb-4b04-abd7-d47d744d8da1": {
+            "type": "image",
+            "settings": {
+              "title": "Yellow",
+              "color": "shopify:\/\/shop_images\/color-yellow.png"
+            }
+          },
+          "0f63d886-d4f0-4e1b-a987-081260be68af": {
+            "type": "image",
+            "settings": {
+              "title": "Orange",
+              "color": "shopify:\/\/shop_images\/color-orange.png"
+            }
+          },
+          "85cab85d-8ae8-4e98-8c55-6bac2726eab5": {
+            "type": "image",
+            "settings": {
+              "title": "Beige",
+              "color": "shopify:\/\/shop_images\/color-ivory.png"
+            }
+          }
+        },
+        "block_order": [
+          "1477476837114",
+          "1477476823589",
+          "b34a2c6a-f136-4971-85c9-21464167f054",
+          "1477476891997",
+          "1558348408378",
+          "1477476872443",
+          "a3064e11-092c-4410-a09d-16d7acb69142",
+          "1477476905451",
+          "6ac003c0-c04a-4daf-8856-646680340034",
+          "952b9a88-fad5-4be0-8dd5-021b5ff9cc3b",
+          "2da7f2be-4ba2-4c00-94a3-0c4c35c0c716",
+          "e74a22da-0489-45ab-84c1-fc27a495dd16",
+          "753fac98-24bb-4b04-abd7-d47d744d8da1",
+          "0f63d886-d4f0-4e1b-a987-081260be68af",
+          "85cab85d-8ae8-4e98-8c55-6bac2726eab5"
+        ],
+        "settings": {
+          "enable_shop_by_tags_1": true,
+          "shop_by_tags_1_title": "Shop By Color"
+        }
+      },
+      "sidebar-tag-filters": {
+        "type": "sidebar-tag-filters",
+        "blocks": {
+          "1477476983857": {
+            "type": "text",
+            "settings": {
+              "enable_shop_by_tags": true,
+              "shop_by_tags_title": "Shop By Size",
+              "shop_by_tags_list": "Newborn, 3 months, 6 months, 9 months, 12 months, 18 months, 24 months, 3 years, 4 years"
+            }
+          },
+          "b7bc7300-678f-47b0-878c-fb915a784815": {
+            "type": "text",
+            "settings": {
+              "enable_shop_by_tags": true,
+              "shop_by_tags_title": "Shop By Pattern",
+              "shop_by_tags_list": "Heart, Panda, Bunny, Bear, Monkey, Kitten, Mouse, Giraffe, Star, Striped, Leopard, Camo, Plaid, Text"
+            }
+          }
+        },
+        "block_order": [
+          "1477476983857",
+          "b7bc7300-678f-47b0-878c-fb915a784815"
+        ],
+        "settings": {
+        }
+      },
+      "faqs": {
+        "type": "faqs",
+        "blocks": {
+          "1483333359453": {
+            "type": "text",
+            "settings": {
+              "title": "How do I place an order?",
+              "description": "Add items to your basket as you shop in your preferred size and colorway. You can view and amend the contents of your basket at any time by clicking the Cart button in the top right of each page. Once you are happy with your items proceed to Checkout and follow the on screen instructions which will take you to our secure payment page.<br><br>\n<h5>Discount Codes<\/h5>\nTo apply a discount code during offers and promotions when checking out on a mobile device, proceed to Checkout and click 'Have a discount code?' near the top of your screen. A drop down will appear for you to type in your code and click 'Apply'. Please note that only one discount code can be applied to an order at any time."
+            }
+          },
+          "1483333363494": {
+            "type": "text",
+            "settings": {
+              "title": "What are the shipping costs?",
+              "description": "We offer FREE shipping over <span class=\"money\">$49.00<\/span> total order in 47 countries.<br><br>\nThe shipping fee (without reaching free shipping) is <span class=\"money\">$7.50<\/span>. Once your order has been processed, it will be shipped via our partnering courier companies, USPS and local postal services. You will receive a shipping confirmation email with your shipping details and a tracking number which you can use to track your order online. Items may require collection from your local post office according to your local postage system. Please be sure to take your ID and delivery notification upon collection. When ordering more than one item these may be sent out in separate packages at no additional shipping cost. Each shipment is given a unique tracking numbers and you will be notified via our automated tracking system."
+            }
+          },
+          "1483333365467": {
+            "type": "text",
+            "settings": {
+              "title": "What are the shipping times?",
+              "description": "<h5>Shipping time:<\/h5>\nProcessing time + Delivery time<br><br>\n<h5>Processing time:<\/h5>\nItems will ship within 2-7 days.<br><br>\n<h5>Delivery time:<\/h5>\n3-5 weeks\n<br><br>\nWe do our best to ship as soon as possible and often you will receive your order much sooner. However please note that we cannot guarantee delivery times and in the rare case of unforeseen issues with courier or logistics delivery may take longer.\nIf your order has not arrived within 90 days from dispatch you will be eligible for a full refund."
+            }
+          },
+          "785c0a13-60af-456c-9186-5e7a7c5d6797": {
+            "type": "text",
+            "settings": {
+              "title": "Shipping countries",
+              "description": "Australia, Austria, Belgium, Brazil, Bulgaria, Colombia, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Germany, Greece, Hungary, Iceland, Ireland, Israel, Italy, Japan, Latvia, Lithuania, Luxembourg, Malaysia, Mexico, Netherlands, New Zealand, Norway, Poland, Portugal, Russian Federation, Saudi Arabia, Singapore, Sint Maarten, Slovakia, Slovenia, Spain, Sweden, Switzerland, Taiwan, Thailand, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States"
+            }
+          },
+          "1483333367109": {
+            "type": "text",
+            "settings": {
+              "title": "What payment types are accepted here?",
+              "description": "We accept debit or credit card payments, including Visa, Mastercard and American Express through our trusted and encrypted payment processor - Stripe® Payments. You can also pay via PayPal, Apple Pay or Google Pay. Your payment information is secured and confidental."
+            }
+          },
+          "1483333368739": {
+            "type": "text",
+            "settings": {
+              "title": "I have only received one item from my order, where is the rest?",
+              "description": "When ordering more than one item these may be fulfilled from different warehouses and sent out in separate packages to accelerate shipping times. Each shipment is given a unique tracking numbers and you will be notified via our automated tracking system. If you receive part of your order first don't worry as the rest will be on it's way."
+            }
+          },
+          "1483333369796": {
+            "type": "text",
+            "settings": {
+              "title": "How do I track my order?",
+              "description": "Once your order has been shipped, you will receive a confirmation email with your shipping details and a tracking number which you can use to track your order from the email through the tracking link, or you can use our <a href=\"https:\/\/babypanda.shop\/apps\/parcelpanel\" style=\"color:#67c5df\">Track order<\/a> page.\n\nIt can take a day or so for the tracking status to sync and show upon our tracking system. So if it shows as pending don’t worry, your items are on their way and we advise you to check back in a day or so."
+            }
+          },
+          "1483333371707": {
+            "type": "text",
+            "settings": {
+              "title": "Custom and duties",
+              "description": "Deliveries may be subject to import duties and taxes, which are set by your country's local customs office. All applicable duties, fees and any additional charges are outside of our control and you will be responsible for these payments. Refunds will not be given on packages that are refused or delayed due to unpaid taxes or duties."
+            }
+          },
+          "b4521db5-c4e7-42a0-8731-8addeb9ff28a": {
+            "type": "text",
+            "settings": {
+              "title": "Order cancellation",
+              "description": "If you wish to cancel your order please contact us within 24 hours of order placement. After this you may be able to cancel up until the point of packing and dispatch (once accepted by us). All sales are final after dispatch. If you do cancel the contract before then you will incur a 10% cancellation fee to cover restocking fees and the charges assessed to us for refunds by credit card providers. Payments made by you will be refunded within 30 days."
+            }
+          },
+          "0423461b-dddd-4f53-9853-2791c6a11ec4": {
+            "type": "text",
+            "settings": {
+              "title": "Refund Policy & Returns",
+              "description": "<h5>Returns<\/h5>\nOur policy lasts 14 days. Your item must be unused and returned in its original packaging in the same condition that you received it. You are required to notify us if your wish to return your item by contacting us at info@babypanda.shop and we will provide you with instructions. Once this period has expired, we are unable to offer a refund or exchange.\n<br><br>\nAlong with your returned item please also include the original order number, your name, delivery address and the reason for returning. Returns must be sent to our Headquarters in the US, or our Offices in the UK. The cost of returning the item is the responsibility of the customer and is non-refundable. We recommend the use of a trackable service for returns as we are unable to refund items that fail to reach us.\n<br><br>\nOnce your return is received and inspected, we will send an email to notify you that we have received your returned item. We will also notify you of the approval or rejection of your refund. If you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within 30 days.\n<br><br>\n<h5>Refunds<\/h5>\nRefunds will be given for the following:\n<br>\n<ul>\n<li>The item is significantly different from that described<\/li>\n<li>The item is damaged or has defects<\/li>\n<li>The item has not arrived within the promised delivery period of 90 days<\/li>\n<\/ul><br>\nWe reserve the right to refuse the return or refund of items when they do not meet the conditions outlined above. In the case of a faulty, incorrect or defective item please contact us within 14 days at info@babypanda.shop with full details of the fault and include pictures where possible. This does not include general wear and tear.\n<br><br>\nIf the items are not damaged or defective but you wish to receive a refund you may return it as outlined above in the 'Returns' section. In some cases, you may be able to keep the item and agree on a partial refund.\n<br><br>\nWe strive for 100% customer satisfaction, therefore if your item doesn't arrive within our promised delivery period of 90 days you will be eligible for a full refund.\n<br><br>\nRefunds will not be given on packages that are refused or delayed due to unpaid customs taxes or duties, packages for which the customer has provided an incorrect address, packages which have not been collected in time from the post office or that have been lost in the post. Please double check your address details carefully before submitting your order.\n<br><br>\n<h5>Exchanges (if applicable)<\/h5>\nYou are eligible for an exchange if the item is defective, damaged or incorrect. If you would like to exchange your purchase for the same item, please send us an email at info@babypanda.shop within 14 days of receiving your purchase. Depending on where you live, the time it will take for your exchanged product to reach you may vary.\n<br><br>\n<h5>Return Shipping<\/h5>\nWe will provide you with return shipping information, please do not send your purchase straight back to the manufacturer. You will be responsible for paying for the shipping costs for the return of your item, unless it is faulty or defective. Shipping costs are unfortunately non-refundable.\n<br><br>\nPlease contact info@babypanda.shop with any queries you may have regarding a refund or return."
+            }
+          }
+        },
+        "block_order": [
+          "1483333359453",
+          "1483333363494",
+          "1483333365467",
+          "785c0a13-60af-456c-9186-5e7a7c5d6797",
+          "1483333367109",
+          "1483333368739",
+          "1483333369796",
+          "1483333371707",
+          "b4521db5-c4e7-42a0-8731-8addeb9ff28a",
+          "0423461b-dddd-4f53-9853-2791c6a11ec4"
+        ],
+        "settings": {
+        }
+      },
+      "brands": {
+        "type": "brands",
+        "settings": {
+          "title": "",
+          "border_clr": "#000",
+          "image": "",
+          "image_1": ""
+        }
+      },
+      "header-model-1": {
+        "type": "header-model-1",
+        "settings": {
+          "display_search": true,
+          "display_minicart": true,
+          "currency_icon": "#413d3c",
+          "currency_icon_hover": "#a7b3ab",
+          "currency_bg": "#ffffff",
+          "currency_link": "#413d3c",
+          "logo_bar_bg": "#ffffff",
+          "logo_text": "#000000",
+          "logo_hover_text": "#a7b3ab",
+          "border_between_bars": "#e4e4e4",
+          "search_icon": "#413d3c",
+          "search_icon_hover": "#a7b3ab",
+          "search_bg": "#ffffff",
+          "search_text": "#413d3c",
+          "Btn_text": "#ffffff",
+          "search_btn_hover": "#413d3c",
+          "search_btn_bg": "#413d3c",
+          "search_btn_bghover": "#a7b3ab",
+          "minicart_icon": "#413d3c",
+          "minicart_icon_hover": "#a7b3ab",
+          "minicart_bg": "#ffffff",
+          "minicart_text": "#413d3c",
+          "minicart_link": "#413d3c",
+          "minicart_link_hover": "#a7b3ab",
+          "minicart_btn_bg": "#413d3c",
+          "minicart_btn_hover_bg": "#a7b3ab",
+          "minicart_btn_text": "#ffffff",
+          "minicart_btn_hover_text": "#413d3c",
+          "minicart_total": "#a7b3ab",
+          "menubar_bg": "#ffffff",
+          "menubar_links": "#413d3c",
+          "menubar_links_hover": "#a7b3ab",
+          "menu_active": "#a7b3ab",
+          "menubar_dropdown_bg": "#ffffff",
+          "menubar_dropdown_caption": "#000000",
+          "menubar_dropdown_caption_hover": "#a7b3ab",
+          "menubar_dropdown_links": "#000000",
+          "menubar_dropdown_links_hover": "#a7b3ab"
+        }
+      },
+      "header-model-2": {
+        "type": "header-model-2",
+        "settings": {
+          "display_search": true,
+          "display_minicart": true,
+          "display_wishlist": true,
+          "logo_text": "#5c5b5b",
+          "logo_hover_text": "#5c5b5b",
+          "border_between_bars": "#e4e4e4",
+          "search_icon": "#5c5b5b",
+          "search_icon_hover": "#36bddb",
+          "icon_bg": "#fff2be",
+          "icon_bg_hvr": "#ffffff",
+          "icon_border_clr": "#e1d14d",
+          "minicart_icon": "#434343",
+          "minicart_icon_hover": "#67c5df",
+          "cart_bg": "#d2f0f6",
+          "cart_bg_hvr": "#ffffff",
+          "cart_border_clr": "#36bddb",
+          "minicart_count": "#ffffff",
+          "minicart_count_bg": "#eb94bd",
+          "minicart_count_hover_bg": "#eb94bd",
+          "minicart_count_hover_text": "#ffffff",
+          "minicart_bg": "#ffffff",
+          "minicart_text": "#b9b9b9",
+          "minicart_link": "#aaaaaa",
+          "minicart_link_hover": "rgba(0,0,0,0)",
+          "minicart_btn_bg": "#67c5df",
+          "minicart_btn_hover_bg": "#eb94bd",
+          "minicart_btn_text": "#ffffff",
+          "minicart_btn_hover_text": "#ffffff",
+          "minicart_total": "#67c5df",
+          "currency_icon": "#ffffff",
+          "currency_icon_hover": "#fc6171",
+          "currency_bg": "#ffffff",
+          "currency_link": "#000000",
+          "menubar_bg": "#ffffff",
+          "menubar_links": "#434343",
+          "menubar_links_hover": "#67c5df",
+          "menu_active": "#36bddb",
+          "menubar_dropdown_bg": "#ffffff",
+          "menubar_dropdown_caption": "#000000",
+          "menubar_dropdown_caption_hover": "rgba(0,0,0,0)",
+          "menubar_dropdown_links": "#000000",
+          "menubar_dropdown_links_hover": "#67c5df",
+          "text_clr": "#000000"
+        }
+      },
+      "header-model-4": {
+        "type": "header-model-4",
+        "settings": {
+          "display_search": true,
+          "display_minicart": true,
+          "logo_bar_bg": "#ffffff",
+          "logo_text": "#413d3c",
+          "logo_hover_text": "#a7b3ab",
+          "currency_icon": "#413d3c",
+          "currency_icon_hover": "#a7b3ab",
+          "currency_bg": "#ffffff",
+          "currency_link": "#413d3c",
+          "search_icon": "#413d3c",
+          "search_icon_hover": "#a7b3ab",
+          "search_bg": "#fff",
+          "border_between_bars": "#e4e4e4",
+          "search_text": "#413d3c",
+          "Btn_text": "#413d3c",
+          "search_btn_hover": "#ffffff",
+          "search_btn_bg": "rgba(0,0,0,0)",
+          "search_btn_bghover": "#a7b3ab",
+          "minicart_count": "#ffffff",
+          "minicart_count_bg": "#413d3c",
+          "minicart_count_hover_bg": "#a7b3ab",
+          "minicart_count_hover_text": "#ffffff",
+          "minicart_bg": "#fff",
+          "minicart_text": "#413d3c",
+          "minicart_link": "#413d3c",
+          "minicart_link_hover": "#a7b3ab",
+          "minicart_btn_bg": "#ffffff",
+          "minicart_btn_hover_bg": "#413d3c",
+          "minicart_btn_text": "#ffffff",
+          "minicart_btn_hover_text": "#ffffff",
+          "minicart_total": "#a7b3ab",
+          "menubar_bg": "#413d3c",
+          "clr_border_image": false,
+          "menu_border_bg": "",
+          "menubar_links": "#ffffff",
+          "menubar_links_hover": "#a7b3ab",
+          "menu_active": "#a7b3ab",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#413d3c",
+          "menubar_dropdown_caption_hover": "#a7b3ab",
+          "menubar_dropdown_links": "#413d3c",
+          "menubar_dropdown_links_hover": "#a7b3ab"
+        }
+      },
+      "header-model-5": {
+        "type": "header-model-5",
+        "settings": {
+          "display_search": true,
+          "display_minicart": true,
+          "display_wishlist": true,
+          "login_txt_clr": "#fff",
+          "login_hovertxt_clr": "#fff",
+          "logo_bg_img": "",
+          "logo_bar_bg": "#ffffff",
+          "logo_text": "#413d3c",
+          "logo_hover_text": "#a7b3ab",
+          "currency_icon": "#413d3c",
+          "currency_icon_hover": "#a7b3ab",
+          "currency_bg": "#ffffff",
+          "currency_link": "#413d3c",
+          "dropdown_icon": "#413d3c",
+          "dropdown_icon_hover": "#a7b3ab",
+          "dropdown_bg": "#fff",
+          "dropdown_link": "#413d3c",
+          "dropdown_hover_link": "#a7b3ab",
+          "search_icon": "#413d3c",
+          "search_icon_hover": "#a7b3ab",
+          "search_bg": "#ffffff",
+          "border_between_bars": "#e4e4e4",
+          "search_text": "#a7b3ab",
+          "Btn_text": "#ffffff",
+          "search_btn_hover": "#ffffff",
+          "search_btn_bg": "#413d3c",
+          "search_btn_bghover": "#a7b3ab",
+          "minicart_count": "#413d3c",
+          "minicart_icon_hover": "#a7b3ab",
+          "minicart_bg": "#ffffff",
+          "minicart_text": "#413d3c",
+          "minicart_link": "#413d3c",
+          "minicart_link_hover": "#a7b3ab",
+          "minicart_btn_bg": "#ffffff",
+          "minicart_btn_hover_bg": "#a7b3ab",
+          "minicart_btn_text": "#413d3c",
+          "minicart_btn_hover_text": "#ffffff",
+          "minicart_total": "#413d3c",
+          "menubar_bg": "#413d3c",
+          "menubar_links": "#ffffff",
+          "menubar_links_hover": "#a7b3ab",
+          "menu_active": "#a7b3ab",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#413d3c",
+          "menubar_dropdown_caption_hover": "#a7b3ab",
+          "menubar_dropdown_links": "#413d3c",
+          "menubar_dropdown_links_hover": "#a7b3ab"
+        }
+      },
+      "header-model-7": {
+        "type": "header-model-7",
+        "settings": {
+          "display_search": true,
+          "display_minicart": true,
+          "display_wishlist": true,
+          "logo_bar_bg": "#000000",
+          "logo_text": "#b1a684",
+          "logo_hover_text": "#5f5842",
+          "currency_icon": "#b1a684",
+          "currency_icon_hover": "#5f5842",
+          "currency_bg": "#ffffff",
+          "currency_link": "#5f5842",
+          "search_bg": "#fff",
+          "search_icon": "#b1a684",
+          "search_icon_hover": "#5f5842",
+          "search_text": "#ffffff",
+          "search_btn_text": "#000",
+          "search_btn_hover": "#484338",
+          "minicart_count": "#ffffff",
+          "minicart_count_bg": "#b1a684",
+          "minicart_count_hover_bg": "#5f5842",
+          "minicart_count_hover_text": "#ffffff",
+          "minicart_bg": "#ffffff",
+          "minicart_text": "#484338",
+          "minicart_link": "#484338",
+          "minicart_link_hover": "#b1a684",
+          "minicart_btn_bg": "#ffffff",
+          "minicart_btn_hover_bg": "#b1a684",
+          "minicart_btn_text": "#484338",
+          "minicart_btn_hover_text": "#484338",
+          "minicart_total": "#484338",
+          "menubar_bg": "#ffffff",
+          "clr_border_image": false,
+          "menu_border_bg": "",
+          "menubar_links": "#5f5842",
+          "menubar_links_hover": "#b1a684",
+          "menu_active": "#9fdef4",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#ffffff",
+          "menubar_dropdown_caption_hover": "#ffffff",
+          "menubar_dropdown_links": "#484338",
+          "menubar_dropdown_links_hover": "#b1a684"
+        }
+      },
+      "footer-model-1": {
+        "type": "footer-model-1",
+        "settings": {
+          "footer_bg_clr": "#ebebeb",
+          "footer_border_image": true,
+          "footer_border_bg": "",
+          "footer_border": "#423f3f",
+          "footer_bg_img": true,
+          "image_1": "",
+          "footer_heading_clr": "#d76e6e",
+          "footer_txt_clr": "#9f4343",
+          "footer_link_clr": "#4cc26f",
+          "footer_link_hover_clr": "#39389d",
+          "copyright_clr": "#ffffff",
+          "copyright_link": "#4cc26f",
+          "copyright_link_hover": "#717171",
+          "footer_menu_clr": "#717171",
+          "footer_menu_hover_clr": "#000",
+          "show_footer_text": true,
+          "footer_text": "About us",
+          "footer_short_text": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit.Donec id tellus lacinia an, tincidunt risus ac, consequat velit",
+          "abt_link_clr": "#e7304c",
+          "abt_link_hover_clr": "#000",
+          "abt_link_text": "Read More",
+          "abt_link": "\/collections\/all",
+          "footer_menu_1": "main-menu",
+          "footer_menu_1_title": "Footer menu 1",
+          "footer_menu_2": "footer",
+          "footer_menu_2_title": "Footer menu 2",
+          "footer_menu_3": "main-menu",
+          "footer_menu_3_title": "Footer menu 3",
+          "show_contact": true,
+          "footer_menu_4_title": "Contact us",
+          "footer_address": "11244 Niki Lauda 455 Newzealand",
+          "footer_contact_no": "Hotline : 8 (495) 989—20—11",
+          "office_hours": "Open - Close : 09:00 - 21:00",
+          "footer_contact_id": "Mail: hello@somedomain.com",
+          "footer_contact_link": "hello@somedomain.com",
+          "footer_social_enable": true,
+          "social_title": "Connect with us",
+          "social_link": "#5f5d5d",
+          "social_link_hover": "#ffffff",
+          "footer_menu": true,
+          "footer": "footer",
+          "footer_show_methods_of_payment": true,
+          "payment_color": "#000000",
+          "payment_hover_color": "#d5d5cd",
+          "accept_visa": true,
+          "payment_icon_1": "fab fa-cc-paypal",
+          "payment_icon_2": "fab fa-cc-visa",
+          "payment_icon_3": "fab fa-cc-amex",
+          "payment_icon_4": "fab fa-cc-mastercard",
+          "payment_icon_5": "fab fa-cc-diners-club",
+          "payment_icon_6": "fab fa-cc-discover",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "show_powered_by": true,
+          "copyright": "Copyright"
+        }
+      },
+      "footer-model-2": {
+        "type": "footer-model-2",
+        "settings": {
+          "footer_bg": false,
+          "footer_bg_img": "",
+          "disable_animation": true,
+          "footer_bubble": "",
+          "footer_bg_color": "#f4f4f4",
+          "show_footer_logo": true,
+          "footer_logo": "",
+          "footer_logo_alt": "Huge",
+          "footer_border_clr": "#b6e32e",
+          "footer_title_clr": "#80a814",
+          "footer_text_clr": "#29d9cb",
+          "link_clr": "#d8ef1b",
+          "footer_link_hover_clr": "#81cf1e",
+          "show_contact": true,
+          "footer_contact_title": "Contact us",
+          "font_class_1": "fas fa-home",
+          "footer_address": "520,West valey, Anim ad minim,",
+          "font_class_2": "fas fa-phone",
+          "footer_contact_no": "+91 1234567890",
+          "footer_contact_id": "mail@somedomain.com",
+          "font_class_3": "far fa-envelope",
+          "footer_contact_link": "mail@somedomain.com",
+          "footer_social_enable": true,
+          "social_title": "Share with us",
+          "social_txt": "Special offers on social networks",
+          "social_link_border_clr": "#e84646",
+          "footer_link_clr": "#e84646",
+          "social_link_hover_clr": "#ffffff",
+          "social_link_bghover_clr": "#c0c276",
+          "footer_newsletter_enable": true,
+          "title": "Newsletter",
+          "text": "Subscribe our newsletter",
+          "newsletter_form_action": "",
+          "instagram_use": true,
+          "accessToken": "3317628269.1677ed0.36abb12d7c1b49aea51cfd8d83e8df36",
+          "heading_image": "",
+          "ins_title": "Instagram Feed",
+          "ins_title_1_clr": "#e12727",
+          "sort": "most-recent",
+          "use_overlay": true,
+          "overlay": "#000",
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "footer_dec": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit.",
+          "show_powered_by": true,
+          "copyright": "Copyright",
+          "copyright_bg": "#000",
+          "copyright_text": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover": "#e9ef16"
+        }
+      },
+      "footer-model-4": {
+        "type": "footer-model-4",
+        "settings": {
+          "footer_bg": "#faecef",
+          "footer_title": "#170a0a",
+          "footer_text": "#1b1921",
+          "footer_link": "#271c1c",
+          "footer_link_hover": "#e5758d",
+          "footer_logo_enable": true,
+          "footer_logo": "",
+          "welcome_text": "Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt risus ac, consequat velit. Quisquemos sodales suscipit tortor ditaemcos condimentum lacus meleifend menean viverra auctor blanditos.",
+          "footer_social_enable": true,
+          "footer_social_link": "#000000",
+          "footer_social_link_hover": "#ffffff",
+          "footer_social_link_hover_border": "#e5758d",
+          "footer_social_link_hover_bg": "#e5758d",
+          "footer_about_section": true,
+          "show_footer_best_products": true,
+          "footer_best_heading": "Best sellers",
+          "footer_bestseller_collection": "",
+          "footer_bestseller_collection_limit": "4",
+          "enable_footer_by_tags": true,
+          "footer_tags_heading": "Tags",
+          "footer_by_tags_list_tags": "Fashion, Beauty, Handbag, Shoes, Cosmetics, Tote, Kids, Jewel",
+          "footer_tag_link": "#000000",
+          "footer_tag_link_hover": "#ffffff",
+          "footer_tag_link_border": "#000000",
+          "footer_tag_link_hover_border": "#e5758d",
+          "footer_tag_link_hover_bg": "#e5758d",
+          "use_footer_links": true,
+          "footer_menu_4_title": "Support",
+          "footer_menu_4": "footer",
+          "footer_contact_enable": true,
+          "footer_contact_heading": "We are @",
+          "address_heading": "Address",
+          "footer_address": "No: 58 A, East Madison Street,<br>\r\nBaltimore, MD, USA 4508",
+          "email_heading": "Email",
+          "footer_email": "buddhathemes@somemail.com",
+          "footer_email_2": "support@somemail.com",
+          "phone_heading": "Phone",
+          "footer_phone": "+91 1234567890",
+          "footer_phone_2": "0803 - 080 - 3082",
+          "fax_heading": "Fax",
+          "footer_fax_no": "2542 2445 2566",
+          "use_footer_bottom": true,
+          "footer_bottom_bg": "#151515",
+          "copyright_text": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover": "#e5758d",
+          "copyright": "Copyright",
+          "use_powered_by": true,
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": ""
+        }
+      },
+      "footer-model-5": {
+        "type": "footer-model-5",
+        "settings": {
+          "footer_left_bg": false,
+          "footer_left_bg_img": "",
+          "footer_left_bg_color": "#c54c4c",
+          "footer_title": "#d4d4d4",
+          "footer_text": "#fff",
+          "footer_link": "#ffffff",
+          "footer_link_hover": "#000000",
+          "footer_logo_enable": true,
+          "footer_logo": "",
+          "welcome_text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+          "footer_show_methods_of_payment": true,
+          "payment_title": "Payment Method",
+          "payment_text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam",
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "footer_social_enable": true,
+          "social_title": "Connect with us",
+          "social_subheading": "Follow us on",
+          "footer_about_section": true,
+          "footer_right_bg": "#aa2b2b",
+          "footer_menu_1": "footer",
+          "footer_menu_1_title": "Footer menu 1",
+          "footer_menu_2": "footer",
+          "footer_menu_2_title": "Footer menu 2",
+          "footer_menu_3": "footer",
+          "footer_menu_3_title": "Footer menu 3",
+          "show_contact": true,
+          "footer_icon_bg": "#000",
+          "footer_icon_text": "#ffffff",
+          "footer_menu_4_title": "Contact us",
+          "footer_address": "Address : No 40 Baria Sreet 133\/2 NewYork City, NY, United States.",
+          "footer_contact_no": "Phone 1 : 0123456789 <br> Phone 2 : 0123456789",
+          "footer_contact_id": "Email : support@lovefashion.com",
+          "footer_contact_link": "support@lovefashion.com",
+          "use_footer_bottom": true,
+          "copyright": "Copyright",
+          "copyright_border": "#000",
+          "copyright_text_clr": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover_clr": "#000",
+          "use_powered_by": true
+        }
+      },
+      "footer-model-6": {
+        "type": "footer-model-6",
+        "settings": {
+          "footer_bg": "#e5758d",
+          "footer_text": "#e4e4e4",
+          "footer_logo_enable": true,
+          "footer_logo": "",
+          "footer_newsletter_enable": true,
+          "newsletter_form_action": "",
+          "input_bg": "#666666",
+          "input_text": "#ffffff",
+          "newsletter_btn_bg": "#000",
+          "newsletter_btn_text": "#fff",
+          "color_footer_news_btn_bg": "#ffffff",
+          "color_footer_news_btn_text": "#000000",
+          "footer_social_enable": true,
+          "social_icon_clr": "#ffffff",
+          "social_icon_hover_clr": "#181ca1",
+          "border_btm_clr": "#ffffff",
+          "show_contact": true,
+          "footer_contact_title": "Contact us",
+          "footer_address": "1203 Town Center Drive FL 33458 USA",
+          "footer_contact_no": "+841 123 456 78",
+          "footer_contact_id": "info@lindashop.com",
+          "footer_contact_link": "info@lindashop.com",
+          "footer_link": "#ffffff",
+          "color_footer_link_hover": "#636363",
+          "footer_menu_1_title": "Footer menu 1",
+          "footer_menu_1": "footer",
+          "footer_menu_2_title": "Footer menu 2",
+          "footer_menu_2": "footer",
+          "footer_menu_3_title": "Footer menu 3",
+          "footer_menu_3": "footer",
+          "use_footer_bottom": true,
+          "footer_bottom_bg": "#666666",
+          "footer_bottom_text": "#ffffff",
+          "footer_bottom_text_hover": "#de5b5b",
+          "footer_menu_border": "#ffffff",
+          "footer_menu_4": "footer",
+          "copyright_bg": "#393a46",
+          "copyright_text": "#ffffff",
+          "copyright_color": "#4f6f80",
+          "copyright_link_color": "#fff",
+          "copyright": "Copyright",
+          "use_powered_by": true,
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": ""
+        }
+      },
+      "footer-model-17": {
+        "type": "footer-model-17",
+        "settings": {
+          "after_img": "",
+          "image_1": "",
+          "bg_color": "#ff91af",
+          "news_frmtp_txt": "ORDER NOW",
+          "news_frm_1_txt": "#fff",
+          "news_frm_txt": "Choose your Ice Cream",
+          "news_frm_2_txt": "#fff",
+          "news_frmbt_txt": "Flat 20% Offer",
+          "news_frm_3_txt": "#fff",
+          "news_frmbt_1_txt": "",
+          "news_frm_4_txt": "#fff",
+          "enable_form": true,
+          "footer_logo_enable": true,
+          "footer_logo": "",
+          "input_text": "#000",
+          "input_frm_bg": "#ffffff",
+          "copyright_bg": "#ffdea6",
+          "copyright_text": "#000",
+          "copyright_color": "#000000",
+          "copyright_link_color": "#ff91af",
+          "copyright": "Copyright",
+          "use_powered_by": true,
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "use_footer_bottom": true,
+          "footer_bottom_text": "#e5758d",
+          "footer_bottom_text_hover": "#ffdea6",
+          "footer_menu_4": "main-menu"
+        }
+      },
+      "footer-model-18": {
+        "type": "footer-model-18",
+        "settings": {
+          "bg_color": "#e5758d",
+          "border_top_color": "#9c6969",
+          "footer_logo_enable": true,
+          "footer_logo": "",
+          "ftr_title": "Colorful Flower Shop",
+          "footer_text_clr": "#ffffff",
+          "ftr_adrs": "329 Queensberry Street, North Melbourne VIC 3051, Australia",
+          "footer_adrs_clr": "#ffffff",
+          "ftr_mbl_no": "123 456 7890",
+          "ftr_mbl_no_clr": "#ffffff",
+          "ftr_mail_txt": "support@laboom.com",
+          "ftr_mail_clr": "#ffffff",
+          "ftr_mail_link": "support@laboom.com",
+          "footer_social_enable": true,
+          "footer_social_link": "#000000",
+          "footer_social_link_hover": "#e5758d",
+          "footer_social_link_hover_bg": "#80a814",
+          "footer_menu": true,
+          "footer": "main-menu",
+          "footer_menu_clr": "#80a814",
+          "footer_menu_hover_clr": "#9a2a2a",
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "show_powered_by": true,
+          "copyright": "Copyright © 2018, flower-shop",
+          "copyright_bg": "#eff4f3",
+          "copyright_text": "#000000",
+          "copyright_link": "#000000",
+          "copyright_link_hover": "#ff144e"
+        }
+      },
+      "footer-model-21": {
+        "type": "footer-model-21",
+        "blocks": {
+          "1529471653339": {
+            "type": "text",
+            "settings": {
+              "class": "fa fa-truck",
+              "title": "Free Shipping & Returns",
+              "desc": "For all orders over $500"
+            }
+          },
+          "1529471713522": {
+            "type": "text",
+            "settings": {
+              "class": "fa fa-truck",
+              "title": "Money back guarantee",
+              "desc": "100% money back guarante"
+            }
+          },
+          "1529472248809": {
+            "type": "text",
+            "settings": {
+              "class": "fa fa-life-ring",
+              "title": "Support 24\/7",
+              "desc": "We answer for question all time"
+            }
+          }
+        },
+        "block_order": [
+          "1529471653339",
+          "1529471713522",
+          "1529472248809"
+        ],
+        "settings": {
+          "show_image_1": false,
+          "image_1": "",
+          "footer_bg": "#e4e4e4",
+          "footer_border_clr": "#1b1ba7",
+          "footer_text": "#e5758d",
+          "footer_title_border": "#de0000",
+          "footer_input_bg": "#f7f7f7",
+          "show_contact": true,
+          "footer_contact_title": "red",
+          "footer_address": "No: 58 A, East Madison Street,\nBaltimore, MD, USA 4508",
+          "footer_mail_id_top_text": "Do you have any question?",
+          "footer_mail_id": "support@somedomain.com",
+          "footer_phone_no": "800-140-100",
+          "footer_phone_no_top_text": "Mon - Fri: 8:00 - 17:00",
+          "footer_logo_enable": true,
+          "footer_logo": "",
+          "footer_contact_link": "support@somemail.com",
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "show_powered_by": true,
+          "copyright": "Copyright",
+          "copyright_bg": "#db0022",
+          "copyright_text": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover": "#de0000",
+          "footer_link": "#0fbba7",
+          "color_footer_link_hover": "#de0000",
+          "footer_menu_1_title": "Help",
+          "footer_menu_1": "footer",
+          "footer_menu_2_title": "Support",
+          "footer_menu_2": "footer",
+          "footer_menu_3_title": "Information",
+          "footer_menu_3": "footer",
+          "footer_social_enable": true,
+          "social_icon_bg_clr": "#c21515",
+          "social_icon_txt_clr": "#fff",
+          "social_icon_hovertxt_clr": "#fff",
+          "social_icon_hover_bgclr": "#0fbba7",
+          "class_color": "#1ad935",
+          "title_color": "#1069cf",
+          "desc_color": "#c85050"
+        }
+      },
+      "footer-model-22": {
+        "type": "footer-model-22",
+        "settings": {
+          "footer_bg_1": "shopify:\/\/shop_images\/carosuel-2.png",
+          "footer_bg_2": "shopify:\/\/shop_images\/panda-icon-lightpink.png",
+          "before_image": "shopify:\/\/shop_images\/footer-pattern1_652d00d8-0add-4b0c-b586-524789fec168.png",
+          "bg_color": "#eb94bd",
+          "footer_logo_enable": true,
+          "footer_logo": "shopify:\/\/shop_images\/babypanda-logo-white_47461832-1848-4641-88ba-523a3665e7ff.png",
+          "use_footer_bottom": true,
+          "footer_bottom_text": "#ffffff",
+          "footer_bottom_text_hover": "#67c5df",
+          "footer_bottom_border_clr": "#ffffff",
+          "footer_menu_4": "footer-1",
+          "footer_social_enable": true,
+          "footer_social_link": "#ffeef0",
+          "footer_social_link_hover": "#ffffff",
+          "footer_show_methods_of_payment": false,
+          "show_powered_by": false,
+          "copyright": "© 2021 IWISE LTD., 63\/66 Hatton Garden, Fifth Floor Suite 23, London  EC1N 8LE,  United Kingdom. All rights reserved!",
+          "copyright_text": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover": "#e5758d",
+          "copyright_sml_txt": "",
+          "copyright_sml_txt_clr": "#ffffff"
+        }
+      },
+      "product-sidebar-deals": {
+        "type": "product-sidebar-deals",
+        "settings": {
+          "show_best_products": true,
+          "title": "Hot Deals",
+          "dealitems": "hot-deals",
+          "dealbtn": "#5c5b5b",
+          "dealbtn_text": "#ffffff",
+          "limit": "4"
+        }
+      },
+      "footer-model-9": {
+        "type": "footer-model-9",
+        "settings": {
+          "footer_bg_clr": "#fff",
+          "show_footer_overlay": false,
+          "overlay_bg_color": "#000",
+          "footer_bg_img": false,
+          "image_1": "",
+          "footer_text": "#000000",
+          "footer_input_bg": "#000",
+          "footer_menu_1_title": "Footer menu 1",
+          "footer_menu_1": "main-menu",
+          "footer_menu_2_title": "Footer menu 2",
+          "footer_menu_2": "footer",
+          "footer_menu_3_title": "Footer menu 3",
+          "footer_menu_3": "footer",
+          "show_contact": true,
+          "footer_contact_title": "Contact us",
+          "footer_address": "No: 58 A, East Madison Street,\nBaltimore, MD, USA 4508",
+          "footer_contact_no": "+91 12345678",
+          "footer_contact_id": "support@somemail.com",
+          "footer_contact_link": "support@somemail.com",
+          "footer_link": "#000000",
+          "color_footer_link_hover": "#b10a0a",
+          "footer_icons_bg": "#fff",
+          "footer_social_enable": true,
+          "social_title": "Connect with us",
+          "footer_show_app_store": false,
+          "app_title": "",
+          "app_store_1": "",
+          "app_store_1_link": "",
+          "app_store_2": "",
+          "app_store_2_link": "",
+          "app_store_3": "",
+          "app_store_3_link": "",
+          "show_powered_by": true,
+          "copyright": "Copyright",
+          "copyright_bg": "#0e1d55",
+          "copyright_text": "#ffffff",
+          "copyright_link": "#ffffff",
+          "copyright_link_hover": "#cca471",
+          "footer_show_methods_of_payment": true,
+          "payment_icon_1": "",
+          "payment_icon_2": "",
+          "payment_icon_3": "",
+          "payment_icon_4": "",
+          "payment_icon_5": "",
+          "payment_icon_6": "",
+          "payment_icon_7": "",
+          "payment_icon_8": "",
+          "payment_icon_9": "",
+          "payment_icon_10": "",
+          "border_clr": "#000"
+        }
+      },
+      "product-sidebar-bestsellers": {
+        "type": "product-sidebar-bestsellers",
+        "settings": {
+          "show_best_products": true,
+          "title": "Trending Now",
+          "bestseller": "trending-now",
+          "limit": "8"
+        }
+      },
+      "header-model-9": {
+        "type": "header-model-9",
+        "settings": {
+          "display_top_bar": true,
+          "display_search": true,
+          "display_minicart": true,
+          "display_wishlist": true,
+          "header_welcome_text": "Welcome to Mika Shop take away",
+          "header_help_text": "Call us: 0123-456-789:",
+          "top_bar_bg": "#413d3c",
+          "top_bar_text": "#ffffff",
+          "top_bar_links": "#ffffff",
+          "top_bar_link_hover": "#a7b3ab",
+          "link_login": "#413d3c",
+          "link_hover_clr": "#a7b3ab",
+          "login_icon_clr": "#ffffff",
+          "login_iconhover_clr": "#e4e4e4",
+          "login_iconhover_bg": "#ffffff",
+          "minicart_icon_bg": "#413d3c",
+          "login_sub_txt": "Get all option",
+          "logo_bar_bg": "#ffffff",
+          "logo_text": "#413d3c",
+          "logo_hover_text": "#a7b3ab",
+          "currency_icon": "#ffffff",
+          "currency_icon_hover": "#a7b3ab",
+          "currency_bg": "#ffffff",
+          "currency_link": "#413d3c",
+          "search_icon_bg": "#413d3c",
+          "search_icon": "#f28c8c",
+          "search_icon_hover": "#a7b3ab",
+          "search_hover_bg": "#ffffff",
+          "search_text": "#000000",
+          "Btn_text": "#ffffff",
+          "search_btn_hover": "#a7b3ab",
+          "search_btn_bg": "#e84e4e",
+          "search_btn_bghover": "#ffffff",
+          "border_between_bars": "#e4e4e4",
+          "miniiconcart_cart_bg": "#413d3c",
+          "miniiconcart_cart_icon": "#ffffff",
+          "miniiconcart_cart_hoverbg": "#ffffff",
+          "miniiconcart_carthover_icon": "#a7b3ab",
+          "minicart_count": "#413d3c",
+          "minicart_count_hover_text": "#a7b3ab",
+          "minicart_bg": "#fff",
+          "minicart_text": "#413d3c",
+          "minicart_link": "#413d3c",
+          "minicart_link_hover": "#a7b3ab",
+          "minicart_btn_bg": "#000",
+          "minicart_btn_hover_bg": "#000",
+          "minicart_btn_text": "#000",
+          "minicart_btn_hover_text": "#000",
+          "minicart_total": "#000",
+          "menubar_bg": "#413d3c",
+          "clr_border_image": false,
+          "menu_border_bg": "",
+          "menubar_links": "#ffffff",
+          "menubar_links_hover": "#000",
+          "menu_active": "#a7b3ab",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#413d3c",
+          "menubar_dropdown_caption_hover": "#a7b3ab",
+          "menubar_dropdown_links": "#413d3c",
+          "menubar_dropdown_links_hover": "#a7b3ab"
+        }
+      },
+      "sidebar-banner": {
+        "type": "sidebar-banner",
+        "settings": {
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": false,
+          "collections_sort_enable": false,
+          "collections_view_enable": false,
+          "collection_grid": "4",
+          "collection_results_per_page": "24",
+          "collection_infinite_scrolling": false
+        }
+      },
+      "navigation": {
+        "type": "navigation",
+        "blocks": {
+          "1558346418656": {
+            "type": "style_1",
+            "settings": {
+              "title": "Menu - Style 1",
+              "megamenu_items_1": "Clothes",
+              "main_linklist_1": "baby-clothes",
+              "banner_first_style_1": "shopify:\/\/shop_images\/ef3de787272d1bd9af2152a94dbc0c5c-540px.jpg"
+            }
+          },
+          "c6cf5884-0eec-43e2-8e66-51a1d95967bb": {
+            "type": "style_1",
+            "settings": {
+              "title": "Menu - Style 1",
+              "megamenu_items_1": "Baby Accessories",
+              "main_linklist_1": "accessories"
+            }
+          },
+          "1558346423322": {
+            "type": "style_2",
+            "settings": {
+              "title": "Menu - Style 2",
+              "megamenu_items_2": "Baby Accessories",
+              "main_linklist_2": "accessories"
+            }
+          },
+          "1558346429966": {
+            "type": "style_5",
+            "settings": {
+              "title": "Menu - Style 5",
+              "megamenu_items_5": "Baby Accessories",
+              "main_linklist_5": "",
+              "banner_first_style_5": "shopify:\/\/shop_images\/accessories-menu-banner1.jpg",
+              "banner_second_style_5": "shopify:\/\/shop_images\/accessories-menu-banner.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1558346418656",
+          "c6cf5884-0eec-43e2-8e66-51a1d95967bb",
+          "1558346423322",
+          "1558346429966"
+        ],
+        "settings": {
+          "display_megamenu": true,
+          "enable_sale": true,
+          "lb_sale": "Sale",
+          "sale_item": "On Sale",
+          "bg_lb_sale": "#b1b84b",
+          "color_lb_sale": "#ffffff",
+          "enable_new": true,
+          "lb_new": "New",
+          "new_item": "New Arrivals",
+          "bg_lb_new": "#f5b328",
+          "color_lb_new": "#ffffff",
+          "enable_hot": true,
+          "lb_hot": "Hot",
+          "hot_item": "",
+          "bg_lb_hot": "#f87373",
+          "color_lb_hot": "#ffffff"
+        }
+      },
+      "top-bar-type-1": {
+        "type": "top-bar-type-1",
+        "settings": {
+          "display_top_bar": true,
+          "header_phone_label": "TOLL FREE",
+          "header_phone_value": "(00) 000 111 222",
+          "display_phone_mob": false,
+          "header_mail_label": "MAIL INFO",
+          "display_mail_mob": false,
+          "header_mail_value": "info@somedomain.com",
+          "top_bar_menu": "",
+          "top_bar_bg": "#413d3c",
+          "top_bar_text": "#ffffff",
+          "top_bar_links": "#ffffff",
+          "top_bar_link_hover": "#a7b3ab",
+          "top_bar_border": "#ffffff",
+          "display_wishlist": true
+        }
+      },
+      "top-bar-type-4": {
+        "type": "top-bar-type-4",
+        "settings": {
+          "display_top_bar": true,
+          "display_top_adv_bar_mobile": false,
+          "header_text_1": "FREE SHIPPING & RETURN",
+          "header_text_2": "MONEY BACK GUARANTEE",
+          "header_text_3": "ONLINE SUPPORT 24\/7",
+          "header_phone_label": "Call Us",
+          "header_phone_value": "(00) 000 111 222",
+          "header_mail_label": "Mail",
+          "header_mail_value": "info@somedomain.com",
+          "stripe_icon": "#ffffff",
+          "stripe_icon_hover": "#a7b3ab",
+          "stripe_bg": "#9a3d20",
+          "stripe_text": "#ffffff",
+          "stripe_link": "#ffffff",
+          "stripe_link_hover": "#a7b3ab",
+          "stripe_border_between_bars": "#e4e4e4",
+          "display_top_bar_icon": true,
+          "top_bar_menu": "main-menu",
+          "display_wishlist": true,
+          "top_bar_bg": "#ffffff",
+          "top_bar_links": "#666666",
+          "top_bar_link_hover": "#a7b3ab",
+          "top_border_between_bars": "#e4e4e4"
+        }
+      },
+      "blog-sidebar-article": {
+        "type": "blog-sidebar-article",
+        "settings": {
+          "show_recent_articles": false,
+          "show_recent_articles_img": false,
+          "blog_article_limit": "3"
+        }
+      },
+      "blog-sidebar-tags": {
+        "type": "blog-sidebar-tags",
+        "settings": {
+          "show_blog_tags": true
+        }
+      },
+      "blog-sidebar-instagram": {
+        "type": "blog-sidebar-instagram",
+        "settings": {
+          "instagram_use": false,
+          "sidebar_bg_color": "#000",
+          "accessToken": "5505566489.1677ed0.189582a99f7d4ddd9135203f09776949",
+          "heading_image_need": false,
+          "heading_image": "",
+          "title": "Instagram Feed",
+          "title_1_clr": "#ffffff",
+          "sort": "none"
+        }
+      },
+      "blog-sidebar-deals": {
+        "type": "blog-sidebar-deals",
+        "settings": {
+          "show_best_products": true,
+          "sidebar_bg_color": "rgba(0,0,0,0)",
+          "title": "Hot Deals",
+          "dealitems": "",
+          "dealbtn_border": "#000",
+          "dealbtn": "#000000",
+          "dealbtn_text": "#000",
+          "limit": "4"
+        }
+      },
+      "blog": {
+        "type": "blog",
+        "settings": {
+          "blog_results_per_page": "9",
+          "blog_grid": "3",
+          "show_blog_4_content": true,
+          "show_blog_4_img": true,
+          "show_blog_4_author": false,
+          "show_blog_4_btn": true,
+          "show_blog_4_date": true,
+          "show_blog_4_tag": false,
+          "show_blog_4_comments": false,
+          "blog_bg": "rgba(0,0,0,0)",
+          "blog_design_4_title": "#000000",
+          "blog_design_4_titlehover": "#11d6e1",
+          "blog_design_4_datecolor": "#ffffff",
+          "blog_design_4_authorcolor": "#000",
+          "blog_design_commentcolor": "#000",
+          "blog_design_4_tag": "#000000",
+          "blog_design_4_taghover": "#fc6171",
+          "button_bg_color": "#000",
+          "button_txt_color": "#fff",
+          "hover_button_bg_color": "#000",
+          "hover_button_txt_color": "#ffffff"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "blocks": {
+          "1540372711989": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-money-check",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Special offer 1 + 1 = 3",
+              "title_color": "#000000",
+              "sub_title": "Get a gift",
+              "sub_title_color": "#000000",
+              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "desc_color": "#000000",
+              "link": "collections\/all"
+            }
+          },
+          "1540372716313": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-gift",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Free reward card",
+              "title_color": "#000000",
+              "sub_title": "Worth $10, $50, $100",
+              "sub_title_color": "#000000",
+              "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              "desc_color": "#000000",
+              "link": ""
+            }
+          },
+          "1540372724609": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-truck",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Free shipping",
+              "title_color": "#000000",
+              "sub_title": "On orders over $100",
+              "sub_title_color": "#000000",
+              "desc": "Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+              "desc_color": "#000000",
+              "link": "\/collections\/all"
+            }
+          },
+          "1540379760524": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-undo",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#000000",
+              "title": "Order return",
+              "title_color": "#000000",
+              "sub_title": "Returns within 5 days",
+              "sub_title_color": "#000000",
+              "desc": "Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+              "desc_color": "#000000",
+              "link": "\/collections"
+            }
+          }
+        },
+        "block_order": [
+          "1540372711989",
+          "1540372716313",
+          "1540372724609",
+          "1540379760524"
+        ],
+        "settings": {
+          "display_product_thumb_img": true,
+          "display_product_sku": false,
+          "display_product_type": false,
+          "display_vendor_type": false,
+          "color_tooltip": true,
+          "product_quantity_enable": true,
+          "enable_size_chart": true,
+          "enable_wishlist": true,
+          "enable_cart": true,
+          "color_cart": "#67c5df",
+          "color_button_cart_text": "#ffffff",
+          "cart_hover_btn": "#eb94bd",
+          "cart_hover_btn_text": "#ffffff",
+          "use_cart_width": false,
+          "cart_size": "",
+          "cart_font_size": "16",
+          "small_cart_size": "",
+          "small_cart_font_size": "14",
+          "payment_button": false,
+          "short_desc": false,
+          "social_sharing_products": false,
+          "secure_pay_enable": false,
+          "display_back_in_stock": true,
+          "text": "Thanks! We will notify you when this product becomes available!",
+          "text1": "Click Here",
+          "text2": "to be notified by email when",
+          "text3": "becomes available",
+          "error": "Please provide a valid email address.",
+          "product_tab1": true,
+          "product_tab1_heading": "Product Description",
+          "product_tab2": false,
+          "product_tab2_heading": "Reviews",
+          "product_tab3": true,
+          "product_tab3_heading": "Shipping Details",
+          "product_tab3_page": "shipping-returns",
+          "product_tab4_heading": "",
+          "product_related_enable": true,
+          "related_prds_heading": "Related Products",
+          "heading_image_need": false,
+          "related_prds_title": "From this collection",
+          "display_recently_viewed_products": false,
+          "recently_viewed_products_title": "Recently Viewed Products",
+          "number_of_recently_viewed_products": "8",
+          "custom_text_block": true
+        }
+      },
+      "top-bar-type-5": {
+        "type": "top-bar-type-5",
+        "settings": {
+          "display_top_bar": true,
+          "display_top_adv_bar_mobile": false,
+          "top_bar_bg": "#413d3c",
+          "top_bar_text": "#ffffff",
+          "top_bar_links": "#ffffff",
+          "top_bar_link_hover": "#a7b3ab",
+          "top_border_between_bars": "#e4e4e4",
+          "header_phone_value": "(00) 000 111 222",
+          "header_mail_value": "info@somedomain.com",
+          "store_location": "Store Location",
+          "store_location_link": "",
+          "track_your_order": "Track Your Order",
+          "track_your_order_link": ""
+        }
+      },
+      "header-model-14": {
+        "type": "header-model-14",
+        "settings": {
+          "display_search": true,
+          "display_wishlist": true,
+          "border_between_bars": "#e4e4e4",
+          "logo_text": "#000",
+          "logo_hover_text": "#000",
+          "search_bg": "#fff",
+          "search_icon": "#000",
+          "search_icon_hover": "#35b8f4",
+          "search_text": "#000",
+          "search_link": "#000",
+          "search_link_hover": "#000",
+          "menubar_bg": "#fff",
+          "menubar_links": "#000",
+          "menubar_links_hover": "#000",
+          "menu_active": "#35b8f4",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#000",
+          "menubar_dropdown_caption_hover": "#35b8f4",
+          "menubar_dropdown_links": "#000",
+          "menubar_dropdown_links_hover": "#35b8f4"
+        }
+      },
+      "top-bar-type-14": {
+        "type": "top-bar-type-14",
+        "settings": {
+          "display_top_bar": true,
+          "top_border_between_bars": "#e4e4e4",
+          "top_bar_menu": "main-menu",
+          "top_bar_bg": "#faecef",
+          "top_bar_links": "#000",
+          "top_bar_link_hover": "#35b8f4",
+          "currency_icon": "#000000",
+          "currency_icon_hover": "#35b8f4",
+          "currency_bg": "#fff",
+          "currency_link": "#000",
+          "display_minicart": true,
+          "minicart_icon": "#000",
+          "minicart_icon_hover": "#35b8f4",
+          "minicart_count": "#ffffff",
+          "minicart_count_bg": "#000",
+          "minicart_count_hover_bg": "#000",
+          "minicart_count_hover_text": "#000",
+          "minicart_bg": "#fff",
+          "minicart_text": "#000",
+          "minicart_link": "#000",
+          "minicart_link_hover": "#35b8f4",
+          "minicart_btn_bg": "#000",
+          "minicart_btn_hover_bg": "#000",
+          "minicart_btn_text": "#000",
+          "minicart_btn_hover_text": "#000",
+          "minicart_total": "#000"
+        }
+      },
+      "header-model-15": {
+        "type": "header-model-15",
+        "settings": {
+          "header_phone_value": "(00) 000 111 222",
+          "header_mail_value": "info@somedomain.com",
+          "store_location": "Store Location",
+          "store_location_link": "",
+          "track_your_order": "Track Your Order",
+          "track_your_order_link": "",
+          "login_txt_clr": "#fff",
+          "login_hovertxt_clr": "#fff",
+          "border_between_bars": "#e4e4e4",
+          "currency_icon": "#fff",
+          "currency_icon_hover": "#35b8f4",
+          "currency_bg": "#fff",
+          "currency_link": "#000",
+          "top_bar_text": "#000",
+          "top_bar_links": "#000",
+          "top_bar_link_hover": "#35b8f4",
+          "logo_bg_img": "",
+          "logo_bar_bg": "#923232",
+          "logo_text": "#a64747",
+          "logo_hover_text": "#000",
+          "dropdown_icon": "#000",
+          "dropdown_icon_hover": "#35b8f4",
+          "dropdown_bg": "#fff",
+          "dropdown_link": "#000",
+          "dropdown_hover_link": "#35b8f4",
+          "search_icon": "#000",
+          "search_icon_hover": "#35b8f4",
+          "search_bg": "#fff",
+          "search_text": "#000",
+          "Btn_text": "#000",
+          "search_btn_hover": "#000",
+          "search_btn_bg": "#000",
+          "search_btn_bghover": "#000",
+          "minicart_count": "#000",
+          "minicart_icon_hover": "#35b8f4",
+          "minicart_bg": "#fff",
+          "minicart_text": "#000",
+          "minicart_link": "#000",
+          "minicart_link_hover": "#35b8f4",
+          "minicart_btn_bg": "#000",
+          "minicart_btn_hover_bg": "#000",
+          "minicart_btn_text": "#000",
+          "minicart_btn_hover_text": "#000",
+          "minicart_total": "#000",
+          "menubar_bg": "#fff",
+          "menubar_links": "#000",
+          "menubar_links_hover": "#000",
+          "menu_active": "#35b8f4",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#000",
+          "menubar_dropdown_caption_hover": "#35b8f4",
+          "menubar_dropdown_links": "#000",
+          "menubar_dropdown_links_hover": "#35b8f4"
+        }
+      },
+      "navigation-etc": {
+        "type": "navigation-etc",
+        "settings": {
+          "display_megamenu": true,
+          "display_minicart": true,
+          "display_wishlist": true,
+          "display_search": true
+        }
+      },
+      "top-bar-type-16": {
+        "type": "top-bar-type-16",
+        "settings": {
+          "display_minicart": true,
+          "minicart_icon": "#b97171",
+          "minicart_icon_hover": "#69a2bd",
+          "minicart_bg": "#fff",
+          "minicart_text": "#bb3d3d",
+          "minicart_link": "#f26d6d",
+          "minicart_link_hover": "#35b8f4",
+          "minicart_btn_bg": "#000",
+          "minicart_btn_hover_bg": "#000",
+          "minicart_btn_text": "#000",
+          "minicart_btn_hover_text": "#000",
+          "minicart_total": "#000",
+          "display_top_bar": true,
+          "header_phone_label": "fas fa-location-arrow",
+          "header_phone_value": "(00) 000 111 222",
+          "header_mail_label": "",
+          "header_mail_value": "info@somedomain.com",
+          "top_bar_bg": "#e4e4e4",
+          "top_bar_text": "#000",
+          "top_bar_links": "#000",
+          "top_bar_link_hover": "#35b8f4",
+          "display_wishlist": true
+        }
+      },
+      "header-model-16": {
+        "type": "header-model-16",
+        "settings": {
+          "display_search": true,
+          "bg_img": "",
+          "logo_bar_bg": "#dc9696",
+          "logo_text": "#000",
+          "logo_hover_text": "#000",
+          "border_between_bars": "#e4e4e4",
+          "currency_icon": "#78aceb",
+          "currency_icon_hover": "#35b8f4",
+          "currency_bg": "#fff",
+          "currency_link": "#000",
+          "search_bg": "#fff",
+          "search_icon": "#000000",
+          "search_icon_hover": "#35b8f4",
+          "search_btn_bg": "#35b8f4",
+          "search_btn_text": "#ffffff",
+          "search_btn_text_hvr": "#ffffff",
+          "search_bg_hover": "#3ba5d6",
+          "search_text": "#000",
+          "menubar_bg": "#ffffff",
+          "menubar_border_top": "#ebebeb",
+          "menubar_boxshadow_clr": "#fcc6e6",
+          "menubar_links": "#000",
+          "menubar_links_hover": "#000",
+          "menu_active": "#35b8f4",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#000",
+          "menubar_dropdown_caption_hover": "#35b8f4",
+          "menubar_dropdown_links": "#000",
+          "menubar_dropdown_links_hover": "#35b8f4",
+          "menu_1_clr": "#f27b81",
+          "menu_2_clr": "#f7c44e",
+          "menu_3_clr": "#aec158",
+          "menu_4_clr": "#fce480",
+          "menu_5_clr": "#4cbcd4",
+          "menu_6_clr": "#fcc6e6",
+          "menu_7_clr": "#f27b81",
+          "menu_8_clr": "#35b8f4",
+          "menu_9_clr": "#35b8f4",
+          "menu_10_clr": "#35b8f4",
+          "menu_img_icon": ""
+        }
+      },
+      "social-links-menu": {
+        "type": "social-links-menu",
+        "settings": {
+          "social_icon_border_clr": "#34b3d3",
+          "social_icon_clr": "#35b8f4",
+          "social_hovericon_clr": "#ffffff",
+          "social_1_iconclr": "#34b3d3",
+          "social_2_iconclr": "#35538f",
+          "social_3_iconclr": "#35b8f4",
+          "social_4_iconclr": "#d53e2b",
+          "social_5_iconclr": "#35b8f4",
+          "social_6_iconclr": "#314359",
+          "social_7_iconclr": "#35b8f4",
+          "social_8_iconclr": "#35b8f4",
+          "social_9_iconclr": "#35b8f4"
+        }
+      },
+      "top-bar-type-10": {
+        "type": "top-bar-type-10",
+        "settings": {
+          "show_topbar_overlay": true,
+          "overlay_bg_clr": "#fff",
+          "display_top_adv_bar": true,
+          "display_top_adv_bar_mobile": false,
+          "display_top_bar": true,
+          "notification_bar_bg": "#cbba9c",
+          "notification_bar_bg_img": "",
+          "stripe_icon": "#000000",
+          "stripe_icon_color": "#ffffff",
+          "stripe_icon_hover": "#ffe491",
+          "stripe_icon_hover_color": "#000000",
+          "notification_discount": "50% OFF",
+          "notification_discount_clr": "#fff",
+          "notification_discount_txt": "Discount",
+          "notification_discount_text_clr": "#fff",
+          "notification_text": "Long Weekend Sale Up to 50% OFF",
+          "notification_text_clr": "#fff",
+          "notification_promo_txt": "Enter Prmotion Code",
+          "notification_promo_txt_clr": "#000",
+          "notification_promo_code": "Sale2017",
+          "notification_promo_code_clr": "#000",
+          "notification_linktxt": "Shop Now",
+          "top_bar_btn_bg": "#ffffff",
+          "top_bar_btn_txt": "#cbba9c",
+          "top_bar_btn_hoverbg": "#cbba9c",
+          "top_bar_btn_hovertxt": "#fff",
+          "header_notification_link": "\/collections\/all",
+          "top_bar_bg": "#fff",
+          "top_bar_text": "#000",
+          "top_bar_links": "#000",
+          "top_bar_link_hover": "#35b8f4",
+          "header_phone_value": "(00) 000 111 222",
+          "display_phone_mob": true,
+          "header_mail_value": "info@somedomain.com",
+          "display_mail_mob": true,
+          "store_location": "Store Location",
+          "store_location_link": "",
+          "track_your_order": "Track Your Order",
+          "track_your_order_link": "",
+          "currency_icon": "#000000",
+          "currency_icon_hover": "#35b8f4",
+          "currency_bg": "#fff",
+          "currency_link": "#000"
+        }
+      },
+      "top-bar-type-2": {
+        "type": "top-bar-type-2",
+        "settings": {
+          "display_top_adv_bar": true,
+          "notification_bar_bg": "#67c5df",
+          "after_image": "shopify:\/\/shop_images\/nav-pattern2.png",
+          "notification_text": "FREE SHIPPING on purchases over <span class=\"custom_money\" data-custom-currency-usd=\"49.00\">$49<\/span> <i class=\"fas fa-shipping-fast\"><\/i>",
+          "notification_text_clr": "#ffffff",
+          "notification_linktxt": "Shop Now",
+          "notification_linktxt_color": "#ffffff",
+          "notification_hover_linktxt_color": "#ffffff",
+          "header_notification_link": "\/collections\/all",
+          "dropdown_bg": "#ffffff",
+          "dropdown_link": "#000000",
+          "dropdown_hover_link": "#67c5df"
+        }
+      },
+      "order-form": {
+        "type": "order-form",
+        "settings": {
+          "collection": "accessories"
+        }
+      },
+      "GDPR-modal": {
+        "type": "GDPR-modal",
+        "settings": {
+          "display_gdpr": false,
+          "show_gdp": "left",
+          "bg_color": "#141414",
+          "text_color": "#ffffff",
+          "privacy_policy_color": "#5c5b5b",
+          "content": "The cookie settings on this website are set to 'allow all cookies' to give you the very best experience. Please click Accept Cookies to continue to use the site.",
+          "privacy_policy_text": "privacy policy",
+          "privacy_policy_link": "https:\/\/policies.google.com\/",
+          "accept_cookies_text": "accept"
+        }
+      },
+      "someone-purchased": {
+        "type": "someone-purchased",
+        "blocks": {
+          "1555932188446": {
+            "type": "image",
+            "settings": {
+              "product": "flower-wooden-rattle-baby-toy",
+              "from_ago": "from Blackburn, UK",
+              "time_ago": "20 minutes ago"
+            }
+          },
+          "1555932203743": {
+            "type": "image",
+            "settings": {
+              "product": "high-waist-baby-cartoon-pants",
+              "from_ago": "from New York, US",
+              "time_ago": "12 minutes ago"
+            }
+          },
+          "1601236911597": {
+            "type": "image",
+            "settings": {
+              "product": "baby-knee-high-socks-with-bow",
+              "from_ago": "from Budapest, HU",
+              "time_ago": "2 hours ago"
+            }
+          }
+        },
+        "block_order": [
+          "1555932188446",
+          "1555932203743",
+          "1601236911597"
+        ],
+        "settings": {
+          "display_someone-purchased": false,
+          "display_someone-purchased_mb": false,
+          "show_someone-purchased": "left",
+          "someone_speed": "10000",
+          "text": "Someone recently bought a product."
+        }
+      },
+      "custom-text-type-1": {
+        "type": "custom-text-type-1",
+        "blocks": {
+          "1556948850308": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-truck",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#67c5df",
+              "title": "FREE SHIPPING",
+              "title_color": "#5c5b5b",
+              "sub_title": "",
+              "sub_title_color": "#5c5b5b",
+              "desc": "Worldwide free shipping.",
+              "desc_color": "#aaaaaa",
+              "link": ""
+            }
+          },
+          "1556948876844": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-undo",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#67c5df",
+              "title": "MONEY BACK GUARANTEE",
+              "title_color": "#5c5b5b",
+              "sub_title": "",
+              "sub_title_color": "#5c5b5b",
+              "desc": "14 days money back guarantee.",
+              "desc_color": "#aaaaaa",
+              "link": ""
+            }
+          },
+          "83051b02-e9e1-4b1d-a23d-472b12de3089": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-credit-card fa-2x",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#67c5df",
+              "title": "SECURE PAYMENT",
+              "title_color": "#5c5b5b",
+              "sub_title": "",
+              "sub_title_color": "#000000",
+              "desc": "Encrypted site and guaranteed security.",
+              "desc_color": "#9e9e9e",
+              "link": ""
+            }
+          },
+          "a4e15808-bf91-4ab0-9bde-dbb22db02896": {
+            "type": "text",
+            "settings": {
+              "class": "fas fa-thumbs-up",
+              "class_color": "#ffffff",
+              "icon_bg_color": "#67c5df",
+              "title": "SATISFACTION GUARANTEE",
+              "title_color": "#5c5b5b",
+              "sub_title": "",
+              "sub_title_color": "#000000",
+              "desc": "99% satisfaction of our clients.",
+              "desc_color": "#9e9e9e",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1556948850308",
+          "1556948876844",
+          "83051b02-e9e1-4b1d-a23d-472b12de3089",
+          "a4e15808-bf91-4ab0-9bde-dbb22db02896"
+        ],
+        "settings": {
+          "bg_color": "#ffffff"
+        }
+      },
+      "article": {
+        "type": "article",
+        "settings": {
+          "show_blog_4_author": false,
+          "show_blog_4_date": true,
+          "show_blog_4_tag": false,
+          "show_comments": true,
+          "blog_design_4_title": "#000000",
+          "blog_design_4_titlehover": "#11d6e1",
+          "blog_design_4_datecolor": "#ffffff",
+          "blog_design_4_authorcolor": "#000000",
+          "blog_design_commentcolor": "#000000",
+          "blog_design_4_tag": "#000000",
+          "blog_design_4_taghover": "#11d6e1"
+        }
+      },
+      "top-bar-type-11": {
+        "type": "top-bar-type-11",
+        "settings": {
+          "show_topbar_overlay": true,
+          "overlay_bg_clr": "#ffffff",
+          "display_top_adv_bar": true,
+          "display_top_adv_bar_mobile": true,
+          "display_top_bar": true,
+          "notification_bar_bg": "#ae5858",
+          "notification_bar_bg_img": "",
+          "stripe_icon": "#fff",
+          "stripe_icon_color": "#000",
+          "stripe_icon_hover": "#ffe491",
+          "stripe_icon_hover_color": "#fff",
+          "notification_discount": "50% OFF",
+          "notification_discount_clr": "#fff",
+          "notification_discount_txt": "Discount",
+          "notification_discount_text_clr": "#fff",
+          "notification_text": "Long Weekend Sale Up to 50% OFF",
+          "notification_text_clr": "#fff",
+          "notification_promo_txt": "Enter Prmotion Code",
+          "notification_promo_txt_clr": "#ffffff",
+          "notification_promo_code": "Sale2017",
+          "notification_promo_code_clr": "#ffffff",
+          "notification_linktxt": "Shop Now",
+          "top_bar_btn_bg": "#fff",
+          "top_bar_btn_txt": "#ae5858",
+          "top_bar_btn_hoverbg": "#e5758d",
+          "top_bar_btn_hovertxt": "#fff",
+          "header_notification_link": "\/collections\/all",
+          "top_bar_bg": "#e4e4e4",
+          "top_bar_text": "#db0022",
+          "top_bar_links": "#db0022",
+          "top_bar_link_hover": "#e5758d",
+          "header_phone_value": "(00) 000 111 222",
+          "display_phone_mob": false,
+          "header_mail_value": "info@somedomain.com",
+          "display_mail_mob": false,
+          "store_location": "Store Location",
+          "store_location_link": "",
+          "track_your_order": "Track Your Order",
+          "track_your_order_link": "",
+          "currency_icon": "#e5758d",
+          "currency_icon_hover": "#35b8f4",
+          "currency_bg": "#fff",
+          "currency_link": "#000"
+        }
+      },
+      "1557819782188": {
+        "type": "brands",
+        "disabled": true,
+        "blocks": {
+          "1557819782188-0": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-1": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-2": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-3": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-4": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-5": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-6": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1557819782188-7": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1565010518893": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1565010548950": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1565588782790": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          },
+          "1565588949624": {
+            "type": "Image",
+            "settings": {
+              "client_heading": ""
+            }
+          }
+        },
+        "block_order": [
+          "1557819782188-0",
+          "1557819782188-1",
+          "1557819782188-2",
+          "1557819782188-3",
+          "1557819782188-4",
+          "1557819782188-5",
+          "1557819782188-6",
+          "1557819782188-7",
+          "1565010518893",
+          "1565010548950",
+          "1565588782790",
+          "1565588949624"
+        ],
+        "settings": {
+          "title": "",
+          "border_clr": "#eb94bd"
+        }
+      },
+      "about": {
+        "type": "about",
+        "blocks": {
+          "1560420058408": {
+            "type": "text",
+            "settings": {
+              "team_title": "Helen Reyes",
+              "team_titlecolor": "#000000",
+              "team_subtitle": "Child Psychologist",
+              "team_subtitlecolor": "#000000",
+              "social_1_icon": "fab fa-twitter",
+              "social_1_link": "",
+              "social_2_icon": "fab fa-facebook",
+              "social_2_link": "",
+              "social_3_icon": "fab fa-google-plus",
+              "social_3_link": "",
+              "social_4_icon": "fab fa-linkedin",
+              "social_4_link": ""
+            }
+          },
+          "1560420062179": {
+            "type": "text",
+            "settings": {
+              "team_title": "Julius Goodman",
+              "team_titlecolor": "#000000",
+              "team_subtitle": "Behavioural Psychologist",
+              "team_subtitlecolor": "#000000",
+              "social_1_icon": "fab fa-twitter",
+              "social_1_link": "",
+              "social_2_icon": "fab fa-facebook",
+              "social_2_link": "",
+              "social_3_icon": "fab fa-google-plus",
+              "social_3_link": "",
+              "social_4_icon": "fab fa-linkedin",
+              "social_4_link": ""
+            }
+          },
+          "1560420064592": {
+            "type": "text",
+            "settings": {
+              "team_title": "Oliver Wheeler",
+              "team_titlecolor": "#000000",
+              "team_subtitle": "Pediatrician",
+              "team_subtitlecolor": "#000000",
+              "social_1_icon": "fab fa-twitter",
+              "social_1_link": "",
+              "social_2_icon": "fab fa-facebook",
+              "social_2_link": "",
+              "social_3_icon": "fab fa-google-plus",
+              "social_3_link": "",
+              "social_4_icon": "fab fa-linkedin",
+              "social_4_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1560420058408",
+          "1560420062179",
+          "1560420064592"
+        ],
+        "settings": {
+          "show_3_section": true,
+          "section_3_bgcolor": "rgba(0,0,0,0)",
+          "img_bordercolor": "rgba(0,0,0,0)",
+          "imgblock_1_img": "shopify:\/\/shop_images\/collections-babies850x600.jpg",
+          "imgblock_1_imgheading": "",
+          "imgblock_2_img": "shopify:\/\/shop_images\/collection-forgirls768x501.jpg",
+          "imgblock_2_imgheading": "",
+          "imgblock_3_img": "shopify:\/\/shop_images\/collections-toys-banner768x501.jpg",
+          "imgblock_3_imgheading": "",
+          "imgblock_desc": "Welcome to Baby Banda Shop, a lovingly curated collection of beautiful products for you and your little one, inspired by nature, modern prints and all things cute, colourful and fun! \n\nOur mission is to bring you adorable, on-trend babywear and accessories at the most affordable prices.\n\nIn order to fulfil this mission we hand select beautiful products from suppliers and artisans in Europe, Asia and United States who will ship your items to you directly bringing you the best deals on the latest trends. We are dedicated to delivering fantastic product and service, and are frequently adding new and exciting items to our store so be sure to check out our new arrivals!\n<br><br>\nWith so many gorgeous things to choose from, we hope you enjoy browsing our range of clothing, accessories, nursery decor, toys, baby carriage and much more!",
+          "imgblock_desccolor": "#666666",
+          "btn_2_text": "Shop Now",
+          "link_2": "shopify:\/\/collections\/all",
+          "show_2_section": true,
+          "section_2_mainheading": "Ordering without stress",
+          "section_2_subheading": "",
+          "section_2_introtxt": "<p>Baby Panda gives you an easy simple ordering process to not worry about your goods and delivery. Once you placed your order, we&#x27;ll make sure you get the desired products as soon as possible and intact. In case that you are not satisfied with delivered product, we give your 14 days money back guarantee and refund.<\/p>",
+          "section_2_icon_clsone": "fas fa-shopping-cart",
+          "section_2_icon_titleone": "Choose your products",
+          "section_2_icon_detailone": "<p>Put the products in to the cart you want to buy for your baby and go to the checkout process. Don&#x27;t forget we offer FREE SHIPPING over 49$.<\/p>",
+          "section_2_icon_clstwo": "fas fa-credit-card",
+          "section_2_icon_titletwo": "Pay securely",
+          "section_2_icon_detailtwo": "<p>Choose one of the popular payment options, such as credit card, Apple Pay, Google Pay or PayPal. Your credit card details always secured and confidental.<\/p>",
+          "section_2_icon_clsthree": "fas fa-shipping-fast",
+          "section_2_icon_titlethree": "Track your shipment",
+          "section_2_icon_detailthree": "<p>Once your order has been processed and shipped you will get a tracking code and you can follow the route of your products until it&#x27;s delivered.<\/p>",
+          "right_image": "shopify:\/\/shop_images\/mom-baby-fun480x570.jpg",
+          "aboutvedafive_2_sectionbg": "#fc6171",
+          "aboutvedafive_2_txtcolor": "#ffffff",
+          "before_clr": "#4a4a4b",
+          "aboutvedafive_2_iconcolor": "#ffffff",
+          "show_4_section": true,
+          "imgsection_1_section": true,
+          "imgsection_1_img": "shopify:\/\/shop_images\/blue-babyclothes770x450.jpg",
+          "imgsection_1_imgheading": "",
+          "imgsection_1_desc": "All of the products in our store is quality selected and approved. As a mother you always want to give the best for your babies and kids, as we want the same to our customers. We spend a lot of time choosing the best baby products for you and your beloved baby, thus saving a lot of time for moms to get those many things done what a baby requires.",
+          "author_1_name": "Always the best quality baby products",
+          "imgsection_1_bg": "#67c5df",
+          "imgsection_1_box": "rgba(0,0,0,0)",
+          "imgsection_desccolor": "#ffffff",
+          "imgsectionauthorcolor": "#17313e",
+          "imgsection_2_section": true,
+          "imgsection_2_img": "shopify:\/\/shop_images\/pregnant-withclothes770x450.jpg",
+          "imgsection_2_imgheading": "",
+          "imgsection_2_desc": "There’s nothing quite like finding out you're expecting your first child when you're actively trying to conceive. Although the news is obviously welcomed, it can be normal to feel a mix of excitement, anxiety, and even a tinge of fear. Especially once you make it past the initial shock and start thinking about all the looming to-do list leading up to baby’s arrival. There's just so much to do — and so much to buy. You can find here everything you need in one place.",
+          "author_2_name": "Motherhood is a great honor and privilege",
+          "test_section": false,
+          "test_bgcolor": "#abcd52",
+          "test_title": "Testimonial",
+          "testtitle_color": "#ffffff",
+          "testmonial_1_section": false,
+          "test_1_desc": "\" Lucky to be an entrepreneur working with great giant named Chutti. Store both in person and online and I honestly can't recommend them enough. You will love the quality on the whole\"",
+          "test_1_imgheading": "",
+          "test_1_author": "Kathy Gibson",
+          "test_1_designation": "Entrepreneur",
+          "testmonial_2_section": false,
+          "test_2_desc": "\"I love to be part of Chutti team. The quality of their fabrics is impeccable. All Kids products are high-quality, and they always have amazing, unique pieces that help my garments to stand out\"",
+          "test_2_imgheading": "",
+          "test_2_author": "Ted Benson",
+          "test_2_designation": "IT Manager",
+          "testmonial_3_section": true,
+          "test_3_desc": "\"Completely love our team and honor their hard work toward giving life to customers dream. The fit is great and so are the prices. Hope you will have great style and shopping experience. \"",
+          "test_3_imgheading": "",
+          "test_3_author": "Helen Reyes",
+          "test_3_designation": "Team leader",
+          "test_bordercolor": "#ffffff",
+          "test_hoverbgcolor": "rgba(0,0,0,0)",
+          "test_color": "#ffffff",
+          "show_block_five": false,
+          "team_maintitle": "MEET OUR FREE CONSULTATION",
+          "team_maintitlecolor": "#000000",
+          "halfteam_maintitle": "",
+          "team_semaintitlecolor": "#000000",
+          "team_desc": "",
+          "team_desccolor": "#000000",
+          "team_socialiconcolor": "#ffffff",
+          "team_socialiconbgcolor": "#11d6e1",
+          "socialiconhovercolor": "#000000",
+          "socialiconhovebgrcolor": "#fc6171",
+          "team_overlaybgcolor": "#000000"
+        }
+      },
+      "1558066628478": {
+        "type": "slideshow",
+        "blocks": {
+          "1558067124579": {
+            "type": "style_1",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/baby-boy-blue-cover_062e2437-862b-4cc5-8092-5fc78acda598.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/baby-boy-blue-cover-mobile.jpg",
+              "mobile_bg_clr": "#beebff",
+              "subheading": "Baby Boy",
+              "subheading_color": "#3a718d",
+              "subheading_size": "60",
+              "title": "Outfits for your",
+              "heading_color": "#17313e",
+              "heading_size": "56",
+              "title_2": "with up to 50% discounts",
+              "title_2_clr": "#17313e",
+              "sub_vertical_size": "20",
+              "offer_text": "",
+              "offer_text_color": "#17313e",
+              "offer_text_size": "12",
+              "offer_text_amt": "",
+              "button": "Shop Now",
+              "link": "shopify:\/\/collections\/sets-boys",
+              "btn_bg_color": "#67c5df",
+              "btn_txt_color": "#ffffff",
+              "btn_hoverbg_color": "#eb94bd",
+              "btn_hovertxt_color": "#ffffff"
+            }
+          },
+          "87289b57-6d5b-4d5b-b7fa-a0bcf274454f": {
+            "type": "style_2",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/spring-girls-left2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/spring-girls-square-left2.jpg",
+              "mobile_bg_clr": "#ffeef0",
+              "subheading": "Baby Girl",
+              "subheading_color": "#ffffff",
+              "subheading_size": "80",
+              "title": "Outfits for your",
+              "heading_color": "#894571",
+              "heading_size": "65",
+              "title_2": "with up to 50% OFF",
+              "title_2_clr": "#894571",
+              "sub_vertical_size": "20",
+              "offer_text": "",
+              "offer_text_color": "#000000",
+              "offer_text_size": "12",
+              "offer_text_amt": "",
+              "button": "Shop Now",
+              "link": "shopify:\/\/collections\/baby-girl-clothes",
+              "btn_bg_color": "#eb94bd",
+              "btn_txt_color": "#ffffff",
+              "btn_hoverbg_color": "#67c5df",
+              "btn_hovertxt_color": "#ffffff"
+            }
+          },
+          "1558075573427": {
+            "type": "style_2",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/baby-run-shopping.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/baby-run-shopping-square.jpg",
+              "mobile_bg_clr": "#beebff",
+              "subheading": "up to 50% OFF",
+              "subheading_color": "#ffffff",
+              "subheading_size": "80",
+              "title": "Spring Clearout Sale",
+              "heading_color": "#17313e",
+              "heading_size": "65",
+              "title_2": "Don't miss it!",
+              "title_2_clr": "#17313e",
+              "sub_vertical_size": "20",
+              "offer_text": "",
+              "offer_text_color": "#17313e",
+              "offer_text_size": "12",
+              "offer_text_amt": "",
+              "button": "Shop now",
+              "link": "shopify:\/\/collections\/discounted-products",
+              "btn_bg_color": "#67c5df",
+              "btn_txt_color": "#ffffff",
+              "btn_hoverbg_color": "#eb94bd",
+              "btn_hovertxt_color": "#ffffff"
+            }
+          },
+          "1566283018949": {
+            "type": "style_2",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/sleepingbaby-inhat-pink-cover.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/sleepingbaby-inhat-pink-cover-mobile_b480022e-58fd-44b8-b377-931931b2c8bb.jpg",
+              "mobile_bg_clr": "#f7edf4",
+              "subheading": "Newborn",
+              "subheading_color": "#894571",
+              "subheading_size": "60",
+              "title": "Special Collection for your",
+              "heading_color": "#17313e",
+              "heading_size": "56",
+              "title_2": "sale up to 50% discount",
+              "title_2_clr": "#17313e",
+              "sub_vertical_size": "20",
+              "offer_text": "",
+              "offer_text_color": "#17313e",
+              "offer_text_size": "12",
+              "offer_text_amt": "",
+              "button": "Shop Now",
+              "link": "shopify:\/\/collections\/newborn-photography",
+              "btn_bg_color": "#eb94bd",
+              "btn_txt_color": "#ffffff",
+              "btn_hoverbg_color": "#67c5df",
+              "btn_hovertxt_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1558067124579",
+          "87289b57-6d5b-4d5b-b7fa-a0bcf274454f",
+          "1558075573427",
+          "1566283018949"
+        ],
+        "settings": {
+          "slideshow_speed": "10000",
+          "slideshow_transition": "false",
+          "slideshow_play": "true",
+          "navigation_color": "#ffffff"
+        }
+      },
+      "contact": {
+        "type": "contact",
+        "settings": {
+          "enable_gmap": false,
+          "contact_iframe_code": "<iframe width=\"960\" height=\"578\" style=\"border:0;overflow:hidden;\" src=\"https:\/\/maps.google.co.in\/?ie=UTF8&t=m&ll=-37.823006,144.977388&spn=0.02034,0.042915&z=14&output=embed\"><\/iframe>",
+          "enable_contact_section": true,
+          "contact_bg_img_use": false,
+          "contact_bg_color": "rgba(0,0,0,0)",
+          "icontactheading_color": "#17313e",
+          "contacticon_bg_color": "#11d6e1",
+          "contacticon_color": "#ffffff",
+          "contacticon_hoverbg_color": "#fc6171",
+          "contacticonhover_color": "#ffffff",
+          "contactborder_color": "#000000",
+          "contact_phone": true,
+          "contact_module_contact_phonetitle": "Phone number",
+          "contact_icon_1": "fas fa-phone",
+          "contact_phone1": "+17605127715 (US)",
+          "contact_phone2": "09:00-15:00 (Pacific Time)",
+          "contact_module_email": true,
+          "contact_module_contact_title": "Baby Panda Mexico",
+          "contact_icon_2": "fas fa-globe-americas",
+          "contact_module_email_1": "Palenque Mza. 20, Lt. 1",
+          "contact_module_email2": "77780 Q.R., Mexico",
+          "enable_contact_address": true,
+          "contact_icon_3": "fa fa-map-marker",
+          "contact_module_address": true,
+          "contact_module_address_title": "Company Address",
+          "contact_module_address1": "IWISE LTD,\n63\/66 Hatton Garden,",
+          "contact_module_address2": "Fifth Floor Suite 23,\nLondon  EC1N 8LE, UK",
+          "contact_form_title": "Send Us a Message"
+        }
+      },
+      "1560333122632": {
+        "type": "grid-banner-type-5",
+        "blocks": {
+          "1560333122632-0": {
+            "type": "collection",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/featured-babygirls_dad84a76-9a16-4782-953f-0f585bc6327d.png",
+              "Img_border": "#ffffff",
+              "title": "Baby Girls",
+              "title_color": "#ffffff",
+              "title_hover_color": "#17313e",
+              "link": "shopify:\/\/collections\/baby-girls",
+              "desc": "Dresses, tops, tutus...",
+              "desc_color": "#ffffff",
+              "overlay": false,
+              "overlay_bgcolor": "#000000"
+            }
+          },
+          "1560333122632-1": {
+            "type": "collection",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/featured-babyboys_349298dc-50d1-4cbd-b63c-2d4fa2536b8f.png",
+              "Img_border": "#ffffff",
+              "title": "Baby Boys",
+              "title_color": "#ffffff",
+              "title_hover_color": "#17313e",
+              "link": "shopify:\/\/collections\/baby-boys",
+              "desc": "Hats, jackets, shirts...",
+              "desc_color": "#ffffff",
+              "overlay": false,
+              "overlay_bgcolor": "#17313e"
+            }
+          },
+          "1601339613213": {
+            "type": "collection",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/featured-shoes.png",
+              "Img_border": "#ffffff",
+              "title": "Shoes",
+              "title_color": "#ffffff",
+              "title_hover_color": "#ffffff",
+              "link": "shopify:\/\/collections\/baby-shoes",
+              "desc": "Boots, slippers, sneakers...",
+              "desc_color": "#ffffff",
+              "overlay": false,
+              "overlay_bgcolor": "#ffffff"
+            }
+          },
+          "f19a1c32-083a-4999-8cca-6aba6d702ed4": {
+            "type": "collection",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/featured-socks.png",
+              "Img_border": "#ffffff",
+              "title": "Socks",
+              "title_color": "#ffffff",
+              "title_hover_color": "#ffffff",
+              "link": "shopify:\/\/collections\/baby-socks-tights",
+              "desc": "and tights for babies...",
+              "desc_color": "#ffffff",
+              "overlay": false,
+              "overlay_bgcolor": "#ffffff"
+            }
+          },
+          "1560333135023": {
+            "type": "collection",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/featured-hats.png",
+              "Img_border": "#ffffff",
+              "title": "Hats",
+              "title_color": "#ffffff",
+              "title_hover_color": "#ffffff",
+              "link": "shopify:\/\/collections\/baby-hats-and-scarves",
+              "desc": "Scarves, caps, beanies...",
+              "desc_color": "#ffffff",
+              "overlay": false,
+              "overlay_bgcolor": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1560333122632-0",
+          "1560333122632-1",
+          "1601339613213",
+          "f19a1c32-083a-4999-8cca-6aba6d702ed4",
+          "1560333135023"
+        ],
+        "settings": {
+          "show_bg_image": false,
+          "bg_color": "#ffeef0"
+        }
+      },
+      "1560335104858": {
+        "type": "grid-banner-type-2",
+        "settings": {
+          "bg_color": "#ffffff",
+          "image_1": "shopify:\/\/shop_images\/baby-with-toys-568x926.jpg",
+          "special_title": "Collection",
+          "special_title_clr": "#f5b328",
+          "title_1": "Baby Toys",
+          "title_1_clr": "#ffffff",
+          "button_1": "Shop Now",
+          "button_1_txt_clr": "#ffffff",
+          "button_1_bg_clr": "#f5b328",
+          "button_1_bg_hover_clr": "#4d5965",
+          "button_1_text_hover_clr": "#f1e7ed",
+          "overlay_1": true,
+          "overlay_bgcolor_1": "#f5b328",
+          "link_1": "shopify:\/\/collections\/toys",
+          "image_2": "shopify:\/\/shop_images\/pregnant-withclothes767x619.jpg",
+          "special_title_1": "Everything for",
+          "special_title_1_clr": "#250921",
+          "title_2": "Newborns",
+          "title_2_clr": "#ffffff",
+          "button_2": "Shop Now",
+          "button_2_txt_clr": "#ffffff",
+          "button_2_bg_clr": "#5c5b5b",
+          "button_2_bg_hover_clr": "#ffffff",
+          "button_2_text_hover_clr": "#5c5b5b",
+          "content_clr": "#3d4a58",
+          "shape_clr": "#3d4a58",
+          "overlay_2": true,
+          "overlay_bgcolor_2": "#e6a5c3",
+          "link_2": "shopify:\/\/collections\/newborn-babies-collection",
+          "image_3": "shopify:\/\/shop_images\/pinbaby-1200x493.jpg",
+          "special_title_2": "Collection",
+          "special_title_2_clr": "#ffffff",
+          "title_3": "for Baby Girls",
+          "title_3_clr": "#894571",
+          "text_3": "",
+          "text_3_clr": "#ffffff",
+          "button_3": "Shop Now",
+          "button_3_txt_clr": "#eb94bd",
+          "button_3_bg_clr": "#ffffff",
+          "button_3_bg_hover_clr": "#ffffff",
+          "button_3_text_hover_clr": "#eb94bd",
+          "overlay_3": true,
+          "overlay_bgcolor_3": "#eb94bd",
+          "link_3": "shopify:\/\/collections\/baby-girls",
+          "image_4": "shopify:\/\/shop_images\/babyboy-inblackstripes-1200x493.jpg",
+          "special_title_3": "Baby Boy",
+          "special_title_3_clr": "#5c5b5b",
+          "title_4": "Romper Collection",
+          "title_4_clr": "#92729a",
+          "text_4": "up to 50% off",
+          "text_4_clr": "#5c5b5b",
+          "button_4": "Shop Now",
+          "button_4_txt_clr": "#ffffff",
+          "button_4_bg_clr": "#383838",
+          "button_4_bg_hover_clr": "#ffffff",
+          "button_4_text_hover_clr": "#5c5b5b",
+          "overlay_4": true,
+          "overlay_bgcolor_4": "#f3ebff",
+          "link_4": "shopify:\/\/collections\/rompers-boys",
+          "image_5": "shopify:\/\/shop_images\/nursery-568x460.jpg",
+          "special_title_4": "Collection",
+          "special_title_4_clr": "#5c5b5b",
+          "title_5": "Nursery",
+          "title_5_clr": "#b1b84b",
+          "text_5": "",
+          "text_5_clr": "#5c5b5b",
+          "button_5": "Shop Now",
+          "button_5_txt_clr": "#ffffff",
+          "button_5_bg_clr": "#b1b84b",
+          "button_5_bg_hover_clr": "#ffffff",
+          "button_5_text_hover_clr": "#5c5b5b",
+          "overlay_5": true,
+          "overlay_bgcolor_5": "#f1f4c0",
+          "link_5": "shopify:\/\/collections\/nursery"
+        }
+      },
+      "1560336072420": {
+        "type": "wide-banner-type-8",
+        "settings": {
+          "pattern_image": "shopify:\/\/shop_images\/nav-pattern1_1920X_e8ef37bb-b278-41d6-90a8-ebac0c0f598c.png",
+          "background_color": "#b1b84b",
+          "title_1": "The Biggest Kids Fashion Store",
+          "title_bg": "rgba(0,0,0,0)",
+          "title_border": "rgba(0,0,0,0)",
+          "title_color": "#ffffff",
+          "text_1": "Shopping for your kids’ clothe? The best places for good quality and  affordable    children's clothes.",
+          "text_color": "#ffffff",
+          "titleshadow_1": "",
+          "shadowtext_color": "#5c5b5b",
+          "button_1": "Shop Now",
+          "link_1": "shopify:\/\/collections\/all"
+        }
+      },
+      "1560339098702": {
+        "type": "home-product-grid-type-3",
+        "disabled": true,
+        "settings": {
+          "sec_bg_clr": "#5c5b5b",
+          "alignment": "right",
+          "title": "Clothing Boys & Girls",
+          "title_clr": "#894571",
+          "title_bgclr": "#67c5df",
+          "title_1_clr": "#ffffff",
+          "border_clr": "#e1e1e1",
+          "before_border_clr": "#e1e885",
+          "sub_title": "3 - 12 years",
+          "sub_title_clr": "#001b31",
+          "text": "",
+          "text_clr": "#000000",
+          "overlay_use": false,
+          "overlay_bgcolor": "rgba(0,0,0,0)",
+          "button": "Shop Now",
+          "btn_bg_clr": "#67c5df",
+          "btn_bg_hover": "#eb94bd",
+          "bg_color": "#eee9b6",
+          "sld_btn_bg_clr": "#ffffff",
+          "link": "shopify:\/\/collections",
+          "collection": "",
+          "truncate": true,
+          "product_bgcolor": "#f4f4f4",
+          "background_color": "#5c5b5b",
+          "heading": "Top Rated Items",
+          "heading_color": "#5c5b5b",
+          "items": "3"
+        }
+      },
+      "1560341876039": {
+        "type": "blog-post-type-1",
+        "disabled": true,
+        "settings": {
+          "bg_color": "#fffaf7",
+          "blog_bg": "#fffaf7",
+          "main_title": "What Customers Say",
+          "main_title_clr": "#11d6e1",
+          "pick_featured_blog": "news",
+          "title_blog_clr": "#000000",
+          "title_hover_clr": "#11d6e1",
+          "overlay_bgcolor": "#000000",
+          "show_featured_date": true,
+          "date_bg_color": "#fc6171",
+          "date_color": "#ffffff",
+          "blog_date_clr": "#000000",
+          "blog_author_enable": false,
+          "blog_author_text": "#000000",
+          "blog_comment": false,
+          "blog_comment_text": "#000000",
+          "blog_description": true,
+          "blog_desc_clr": "#000000",
+          "btn": "Shop Now",
+          "btn_bg_clr": "#11d6e1",
+          "btn_bg_hover": "#fc6171"
+        }
+      },
+      "1560342568072": {
+        "type": "testimonial-type-11",
+        "blocks": {
+          "1560342568072-0": {
+            "type": "text",
+            "settings": {
+              "text_desc": "All around good product. Non slip, well made, and just the right size for any curious and independent two year old (90 cm and up I reckon) trying to reach average adult height surfaces. Great service; helpful and friendly advice.",
+              "des_color": "#ffffff",
+              "author_name": "Jessica",
+              "author_color": "#ffffff",
+              "author_designation": "Mother of 1 year old baby",
+              "author_designationcolor": "#ffffff"
+            }
+          },
+          "1560342568072-1": {
+            "type": "text",
+            "settings": {
+              "text_desc": "It's a beautiful t-shirt and was quickly sent and well packaged.\n\nWe were very happy to give it as a gift as it's such lovely cotton and the print looks great on it too. Thanks so much for your wonderful customer service and quick shipping.",
+              "des_color": "#ffffff",
+              "author_name": "Liza",
+              "author_color": "#ffffff",
+              "author_designation": "Mother of 9 months old baby",
+              "author_designationcolor": "#ffffff"
+            }
+          },
+          "1560342568072-2": {
+            "type": "text",
+            "settings": {
+              "text_desc": "I just wanted you to know that we absolutely loved the dress.  When we received the dress, I was shocked at how beautiful it was.  It had such amazing beading and lace and the design was so amazing.  On the day my daughter wore it she looked like an angel.",
+              "des_color": "#ffffff",
+              "author_name": "Angelin",
+              "author_color": "#ffffff",
+              "author_designation": "Mother of 2 years old baby",
+              "author_designationcolor": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1560342568072-0",
+          "1560342568072-1",
+          "1560342568072-2"
+        ],
+        "settings": {
+          "pattern_image": "shopify:\/\/shop_images\/nav-pattern_1920X_cb5500b7-3ba8-44b2-a98d-cd8f7a967046.png",
+          "background_color": "#eb94bd",
+          "image": "shopify:\/\/shop_images\/testmonial-1.png",
+          "image_2": "shopify:\/\/shop_images\/testmonial-2.png",
+          "heading_image_need": true,
+          "imgborder_color": "#5c5b5b",
+          "quote_color": "#ffffff",
+          "title": "What Customers Say",
+          "title_color": "#ffffff",
+          "dots_color": "#ffffff",
+          "dots_hvr_color": "#ffffff"
+        }
+      },
+      "1560343025913": {
+        "type": "newsletter",
+        "settings": {
+          "show_overlay_bg": false,
+          "news_bg_clr": "#67c5df",
+          "title": "Subscribe to Newsletter",
+          "news_desc": "Sign up for newsletter",
+          "title_color": "#ffffff",
+          "news_border_clr": "rgba(0,0,0,0)",
+          "news_boxshadow_clr": "#ffffff",
+          "input_bg_color": "#ffffff",
+          "border_color": "rgba(0,0,0,0)",
+          "input_txt_color": "#17313e",
+          "text_color": "#ffffff",
+          "button": "Go",
+          "btn_txt_color": "#ffffff",
+          "btn_txt_hvr_color": "#ffffff",
+          "btn_bg_color": "#17313e",
+          "btn_bg_hvr_color": "#eb94bd"
+        }
+      },
+      "gallery": {
+        "type": "gallery",
+        "blocks": {
+          "1560422115437": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Denim Tshirt",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422120014": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Mid week Fashion",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422122056": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Elegant Collection",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422124606": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Limited Edition",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422126532": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Seasonal style",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422128355": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Party Shop",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422130460": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Baby Love",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1560422132344": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Festive Mode",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1566892445033": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "International Fashion",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1566892462404": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Trendy Boy Fashion",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1566892477894": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Cool style",
+              "category": "",
+              "gallery_link": ""
+            }
+          },
+          "1566892496527": {
+            "type": "Image",
+            "settings": {
+              "image": "",
+              "title": "Collection Name",
+              "gallery_title": "Festive Fusion",
+              "category": "",
+              "gallery_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1560422115437",
+          "1560422120014",
+          "1560422122056",
+          "1560422124606",
+          "1560422126532",
+          "1560422128355",
+          "1560422130460",
+          "1560422132344",
+          "1566892445033",
+          "1566892462404",
+          "1566892477894",
+          "1566892496527"
+        ],
+        "settings": {
+          "portfolio_title": "Our Fashion Gallery",
+          "portfolio_title_clr": "#000",
+          "portfolio_text": "<p>Few lines of short description<\/p>",
+          "portfolio_text_clr": "#000",
+          "use_overlay": true,
+          "img_overlay": "#000000",
+          "img_overlay_title": "#ffffff",
+          "img_overlay_catgry": "#000",
+          "use_overlay_icons": true,
+          "img_overlay_icon": "#ffffff",
+          "img_overlay_icon_txt": "#ffffff",
+          "img_overlay_icon_bg": "#11d6e1",
+          "img_overlay_icon_hover_txt": "#ffffff",
+          "texthover_bg_color": "#11d6e1",
+          "texthover_txt_color": "#ffffff"
+        }
+      },
+      "1562910000664": {
+        "type": "home-product-grid-type-4",
+        "settings": {
+          "show_bg_image": false,
+          "bg_color": "#ffffff",
+          "title": "New arrivals",
+          "title_clr": "#67c5df",
+          "heading_image_need": true,
+          "heading_image": "shopify:\/\/shop_images\/heading-line-1.png",
+          "small_title": "",
+          "text_clr": "#5c5b5b",
+          "collection": "new-arrivals",
+          "grid": "4",
+          "rows": "3"
+        }
+      },
+      "1562911271417": {
+        "type": "home-product-grid-type-4",
+        "settings": {
+          "show_bg_image": false,
+          "bg_color": "#ffffff",
+          "title": "Trending Now",
+          "title_clr": "#67c5df",
+          "heading_image_need": false,
+          "small_title": "",
+          "text_clr": "#5c5b5b",
+          "collection": "trending-now",
+          "grid": "4",
+          "rows": "2"
+        }
+      },
+      "1565011688648": {
+        "type": "home-product-grid-type-5",
+        "settings": {
+          "show_bg_image": false,
+          "bg_color": "#ffffff",
+          "title": "On Sale",
+          "title_clr": "#67c5df",
+          "heading_image_need": true,
+          "heading_image": "shopify:\/\/shop_images\/heading-line-1.png",
+          "small_title": "",
+          "text_clr": "#5c5b5b",
+          "collection": "discounted-products",
+          "grid": "4",
+          "rows": "2"
+        }
+      },
+      "lookbook": {
+        "type": "lookbook",
+        "settings": {
+          "page_title": "Lookbook Page",
+          "display_product_detail_share": true,
+          "share_text": "Share",
+          "button": "",
+          "link": ""
+        }
+      },
+      "brands-page": {
+        "type": "brands-page",
+        "settings": {
+          "display_brand": true
+        }
+      },
+      "header-model-11": {
+        "type": "header-model-11",
+        "settings": {
+          "display_search": true,
+          "display_all_category": true,
+          "all_categories": "main-menu",
+          "categories_bg": "#fff",
+          "categories_text": "#000",
+          "display_minicart": true,
+          "display_wishlist": true,
+          "logo_bar_bg": "#000",
+          "logo_text": "#000",
+          "logo_hover_text": "#000",
+          "search_bg": "#fff",
+          "search_btn_bg": "#35b8f4",
+          "search_btn_text": "#35b8f4",
+          "search_btn_text_hvr": "#35b8f4",
+          "search_bg_hover": "#35b8f4",
+          "search_text": "#000",
+          "count_bg": "#fad400",
+          "minicart_icon": "#000",
+          "count_hover_bg": "#000",
+          "minicart_icon_hover": "#fff",
+          "minicart_bg": "#fff",
+          "minicart_text": "#000",
+          "minicart_link": "#000",
+          "minicart_link_hover": "#35b8f4",
+          "minicart_btn_bg": "#000",
+          "minicart_btn_hover_bg": "#000",
+          "minicart_btn_text": "#000",
+          "minicart_btn_hover_text": "#000",
+          "minicart_total": "#000",
+          "menubar_bg": "#fff",
+          "menubar_links": "#000",
+          "menubar_links_hover": "#000",
+          "menu_active": "#35b8f4",
+          "menubar_dropdown_bg": "#fff",
+          "menubar_dropdown_caption": "#000",
+          "menubar_dropdown_caption_hover": "#35b8f4",
+          "menubar_dropdown_links": "#000",
+          "menubar_dropdown_links_hover": "#35b8f4"
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+        }
+      },
+      "1601342633361": {
+        "type": "app-instagram",
+        "disabled": true,
+        "settings": {
+          "background_color": "#000000",
+          "title": "New arrivals",
+          "title_color": "#000000",
+          "small_title": "",
+          "small_title_color": "#000000",
+          "button": "View all"
+        }
+      },
+      "1601342748916": {
+        "type": "custom-content",
+        "blocks": {
+          "1601342748916-0": {
+            "type": "text",
+            "settings": {
+              "heading_text": "Always the best quality baby products",
+              "heading_color": "#67c5df",
+              "heading_style": "h3",
+              "paragraph_text": "<p>All products in our store are quality controlled and approved.  As a mother you always want to give the best for your babies and kids, as we want the same to our customers. We spend a lot of time to fill our collection with the best baby products for you and your beloved baby, thus saving a lot of time for moms to get those many things done what a baby requires.<\/p>",
+              "paragraph_color": "#5c5b5b",
+              "paragraph_size": "1",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "8523d07a-4776-4a48-ae8c-d5d207b88f2d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/blue-babyclothes770x450_2ae4e18e-4c97-4e19-adf6-4d74d220d12f.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1601342748916-0",
+          "8523d07a-4776-4a48-ae8c-d5d207b88f2d"
+        ],
+        "settings": {
+          "heading_text": "",
+          "heading_color": "#17313e",
+          "background_color": "",
+          "top_margin": true,
+          "bottom_margin": true
+        }
+      },
+      "16031972582fa189cf": {
+        "type": "loox-carousel-reviews",
+        "disabled": true,
+        "settings": {
+          "max_width": 1920,
+          "arrows_color": "rgba(0,0,0,0)",
+          "dots_color": "#67c5df",
+          "button_color": "#ffffff",
+          "show_more": true,
+          "only_photos": true,
+          "use_widget_font": false,
+          "product_handle": ""
+        }
+      },
+      "16203508572fd34307": {
+        "type": "app-instagram",
+        "settings": {
+          "background_color": "#ffffff",
+          "title": "Our Latest Instagram Feeds <i class=\"fab fa-instagram\"><\/i>",
+          "title_color": "#67c5df",
+          "small_title": "",
+          "small_title_color": "#000000",
+          "button": "View all"
+        }
+      }
+    },
+    "content_for_index": [
+      "1558066628478",
+      "1560333122632",
+      "1562910000664",
+      "1560342568072",
+      "1562911271417",
+      "1560335104858",
+      "1565011688648",
+      "1560336072420",
+      "1560343025913",
+      "16203508572fd34307",
+      "1560339098702",
+      "1560341876039",
+      "1557819782188",
+      "1601342633361",
+      "1601342748916",
+      "16031972582fa189cf"
+    ]
+  }
+}

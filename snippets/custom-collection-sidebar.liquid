@@ -1,0 +1,103 @@
+
+<div class="grid__item {% if settings.collection_sidebar_use == "full_width" %} full_width  {% else %} wide--one-quarter post-large--one-quarter {% endif %} {% if settings.collection_sidebar_use == "left_sidebar" %} left-sidebar{% endif %} {% if settings.collection_sidebar_use == "right_sidebar" %} right-sidebar {% endif %}">
+  <div class="collection_sidebar {% if settings.collection_sidebar_use == "full_width" %} hide {% endif %}">
+    
+	<!-- Active Filters -->
+	{% if current_tags == blank %}
+    {% assign has_refined = false %}
+    {% else %}
+    {% assign has_refined = true %}
+    {% endif %}
+    <div class="widget active_filters {% if has_refined == true %}active{% endif %}">
+      <h4>Active Filters</h4>
+      <div class="widget-content">
+
+        <div class="active_filters_wrapper">
+          <strong>color</strong>
+          <div>
+            <span class="Polaris-Tag Polaris-Tag--removable">
+              <button type="button" aria-label="Remove Wholesale" class="Polaris-Tag__Button">
+                <span class="Polaris-Icon">
+                  <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true" class="Polaris-Icon__Svg">
+                    <path d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <span title="Wholesale" class="Polaris-Tag__TagText">pink</span>
+            </span>
+
+            <span class="Polaris-Tag Polaris-Tag--removable">
+              <button type="button" aria-label="Remove Wholesale" class="Polaris-Tag__Button">
+                <span class="Polaris-Icon">
+                  <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true" class="Polaris-Icon__Svg">
+                    <path d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <span title="Wholesale" class="Polaris-Tag__TagText">pink</span>
+            </span>
+
+            <span class="Polaris-Tag Polaris-Tag--removable">
+              <button type="button" aria-label="Remove Wholesale" class="Polaris-Tag__Button">
+                <span class="Polaris-Icon">
+                  <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true" class="Polaris-Icon__Svg">
+                    <path d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <span title="Wholesale" class="Polaris-Tag__TagText">pink</span>
+            </span>            
+          </div>
+        </div>
+        
+        <div class="active_filters_wrapper">
+          <strong>size</strong>
+          <div>
+            <span class="Polaris-Tag Polaris-Tag--removable">
+              <button type="button" aria-label="Remove Wholesale" class="Polaris-Tag__Button">
+                <span class="Polaris-Icon">
+                  <svg viewBox="0 0 20 20" focusable="false" aria-hidden="true" class="Polaris-Icon__Svg">
+                    <path d="M11.414 10l4.293-4.293a.999.999 0 1 0-1.414-1.414L10 8.586 5.707 4.293a.999.999 0 1 0-1.414 1.414L8.586 10l-4.293 4.293a.999.999 0 1 0 1.414 1.414L10 11.414l4.293 4.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z">
+                    </path>
+                  </svg>
+                </span>
+              </button>
+              <span title="Wholesale" class="Polaris-Tag__TagText">newborn</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="refined-widgets">
+      <a href="javascript:void(0)" class="clear-all" {% if has_refined == false %}style="display:none"{% endif %}>
+        {{ 'collections.general.clear_all'  | t }}
+      </a>
+    </div>
+    <!-- Active Filters END -->
+
+    {% unless settings.collection_sidebar_use == "full_width" %}
+    {% section 'sidebar-category' %}
+    {% endunless %}    
+
+    <div class="sidebar-block">
+      {% section 'sidebar-colors' %}
+      {% section 'sidebar-tag-filters' %}
+    </div>    
+    {% unless section.settings.collection_sidebar_use == "full_width" %}
+    {% section 'sidebar-bestsellers' %}  
+    {% section 'sidebar-banner' %}
+
+    <img class="scerts" alt="Shop Certificates" src="https://cdn.shopify.com/s/files/1/0492/7930/3835/files/shop-certificates-sidebar_161a8ff7-41fe-466e-8d29-60def530b395.png?v=1604570639">
+
+    {% endunless %}
+  </div>
+</div>
+
+
+
+

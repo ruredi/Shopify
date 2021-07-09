@@ -1,0 +1,238 @@
+{% if settings.preloader_enable %}<div class="se-pre-con"></div> {% endif %}
+<div id="PageContainer"></div>   
+<div class="quick-view"></div>   
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left {% if settings.header_style_1 == 'style_13' %} header-type-13 {% endif %}" id="cbp-spmenu-s1">
+  <div class="gf-menu-device-wrapper">
+    <div class="close-menu">x</div>
+    <div class="gf-menu-device-container"></div>
+  </div>             
+</nav>
+
+
+{% case settings.header_style_1 %}
+{% when 'style_1' %}  
+<div class="wrapper-container">	
+  <div class="header-type-1">  
+
+    {% section 'top-bar-type-1' %}  
+
+
+    <header class="site-header"> 
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          <div class="wrapper">
+            <div class="grid--full site-header__menubar"> 
+
+              {% include 'logo' %} 
+              <div class="grid__item menubar-section">
+                <div class="desktop-megamenu grid__item wide--four-sixths post-large--four-sixths large--four-sixths medium--one-half small-grid__item" >     
+                  {% section 'navigation' %}         
+                </div>
+                {% section 'header-model-1' %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+{% when 'style_2' %}
+  <div class="wrapper-container">	
+    <div class="header-type-2">     
+      {% section 'top-bar-type-2' %} 
+
+      {% include 'search-bar-type-2' %}
+
+      <header class="site-header">
+        
+        <div class="header-sticky">
+          <div id="header-landing" class="sticky-animate">
+            <div class="container">
+              <div class="grid--full site-header__menubar"> 
+
+                {% include 'logo' %}
+                <div class="menubar-section order-header">
+                  <div class="desktop-megamenu">     
+                    {% section 'navigation' %}         
+                  </div>
+                </div>
+
+                {% section 'header-model-2' %}
+              </div>
+          </div>
+        </div>
+        </div>
+      </header>  
+
+    </div>
+  </div>
+{% when 'style_3' %}
+<div class="wrapper-container">	
+  <div class="header-type-4">  
+    {% section 'top-bar-type-4' %}
+    <header class="site-header">
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          {% section 'header-model-4' %}
+          <div class="desktop-megamenu">     
+            {% section 'navigation' %}         
+          </div>  
+
+
+        </div>
+
+      </div>
+    </header>
+  </div>
+</div>
+
+{% when 'style_4' %}
+<div class="wrapper-container">	
+  <div class="header-type-5">      
+    <header class="site-header">
+      {% section 'top-bar-type-5' %}
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          {% section 'header-model-5' %}
+          <div class="desktop-megamenu">     
+            {% section 'navigation' %}         
+          </div>     
+        </div>
+      </div>
+    </header>
+  </div>
+
+</div>
+
+{% when 'style_5' %}
+<div class="wrapper-container">	
+  <div class="header-type-7">
+    {% include 'search-bar-type-3' %}
+    <header class="site-header">
+
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          {% section 'header-model-7' %}
+          <div class="desktop-megamenu">     
+            {% section 'navigation' %}         
+          </div>
+        </div>
+      </div>
+
+    </header>      
+  </div>
+</div>
+{% when 'style_6' %}
+<div class="wrapper-container">	
+  <div class="header-type-9">
+    <div class="header-sticky">
+      <div id="header-landing" class="sticky-animate">
+        {% section 'header-model-9' %}
+        <div class="desktop-megamenu"> 
+          {% section 'navigation' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% when 'style_7' %}
+<div class="wrapper-container">	
+  <div class="header-type-11">     
+    <header class="site-header">
+      {% section 'top-bar-type-11' %}
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          {% section 'header-model-11' %}
+          <div class="desktop-megamenu">     
+            {% section 'navigation' %}         
+          </div>
+        </div>
+      </div>
+
+    </header>      
+  </div>
+</div>
+
+
+{% when 'style_8' %}
+<div class="wrapper-container">	
+  <div class="header-type-14">  
+    {% section 'top-bar-type-14' %}  
+    {% include 'search-bar-type-3' %}
+    <header class="site-header">
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          <div class="wrapper">
+            <div class="grid--full site-header__menubar"> 
+              {% include 'logo' %}
+              <div class="menubar-section order-header">
+                <div class="desktop-megamenu">     
+                  {% section 'navigation' %}         
+                </div>  
+              </div> 
+              {% section 'header-model-14' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+{% when 'style_9' %}
+<div class="wrapper-container">	
+  <div class="header-type-15"> 
+    {% include 'search-bar-type-3' %}
+    <header class="site-header">
+
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          {% section 'header-model-15' %}
+          <div class="desktop-megamenu">     
+            {% section 'navigation-etc' %}         
+          </div>     
+        </div>
+      </div>
+    </header>
+  </div>
+
+</div>
+{% when 'style_10' %}
+<div class="wrapper-container">	
+  <div class="header-type-16"> 
+    {% section 'top-bar-type-16' %} 
+    <header class="site-header">
+      <div class="header-sticky">
+        <div id="header-landing" class="sticky-animate">
+          <div class="grid--full site-header__menubar"> 
+            <div class="container">
+              {% section 'header-model-16' %}
+            </div>
+          </div>
+          <div class="grid__item desktop-megamenu menubar-section">     
+            <div class="container">
+              <div class="grid__item wide--three-quarters post-large--three-quarters large--three-quarters medium--one-half small-grid__item">
+                {% section 'navigation' %}  
+
+              </div>                
+              <div class="grid__item wide--one-quarter post-large--one-quarter large--one-whole medium--one-whole small-grid__item">
+                <div class="header_icon">
+                  {% section 'social-links-menu' %}   
+                </div>
+              </div>                   
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+  </div>
+</div>  
+{% endcase %}
+
+
+

@@ -1,0 +1,172 @@
+
+{% if section.settings.display_top_adv_bar %}   
+<div class="top_bar top-bar-type-5 notification_bar header-top"  style="background-color:{{ section.settings.notification_bar_bg }};">    
+  <div class="top-text-container ">        
+    <div class="container">
+      {% if section.settings.notification_text != blank  %}
+      <ul class="top_bar_left">      
+        <li class="notification_text"><span style="color:{{section.settings.notification_text_clr}};">{{ section.settings.notification_text }}</span>
+          {% if section.settings.notification_linktxt != blank %}  <a class="link" href="{{section.settings.header_notification_link }}">{{ section.settings.notification_linktxt }}</a>  {% endif %}    
+        </li>
+      </ul>
+      {% endif %}    
+      
+      {% if shop.customer_accounts_enabled %}
+  <ul class="menu_bar_right">
+ 
+    <li class="header_language">{% include 'gtranslate' %}</li>
+      {% if settings.display_currency %} 
+      <li class="header_currency">
+        <ul class="tbl-list">
+          <li class="currency dropdown-parent uppercase currency-block">
+            {% include 'currencies-switcher' %}
+          </li>
+        </ul>
+      </li>  
+      {% endif %}
+
+
+      <li class="slidedown_section">
+        <a title="{{ 'layout.customer.account' | t }}" id="Togglemodal" ><i class="fas fa-user"></i> <span> {{ 'layout.customer.account' | t }}</span></a> 
+        <div id="slidedown-modal">
+          <div class="header-panel-top">
+            <ul>
+             
+             
+              <li>
+                    <div class="customer_account">                          
+                          <ul>
+                            {% if shop.customer_accounts_enabled %}
+                            {% if customer %}
+                            <li>
+                              <a href="/account" title="{{ 'layout.customer.account' | t }}"><i class="fas fa-user" aria-hidden="true"></i> {{ 'layout.customer.account' | t }}</a>
+                            </li>
+                            <li class="logout-link">
+                              <a href="/account/logout" title="{{ 'layout.customer.log_out' | t }}" data-value="value 1"><i class="fas fa-sign-out-alt"></i> {{ 'layout.customer.log_out' | t }}</a>
+                            </li>
+                            {% else %}
+                            <li>
+                              <a href="/account/login" title="{{ 'layout.customer.log_in' | t }}"> <i class="fas fa-sign-in-alt icons" aria-hidden="true"></i> {{ 'layout.customer.log_in' | t }}</a>
+                            </li>
+                            <li>
+                              <a href="/account/register" title="{{ 'layout.customer.create_account' | t }}">  <i class="fas fa-user" aria-hidden="true"></i> {{ 'layout.customer.create_account' | t }}</a>
+                            </li>          
+                            {% endif %}  
+                            {% endif %} 
+                          </ul>
+                        </div>     
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </li>
+  </ul>   
+  {% endif %}
+      
+
+    </div>
+  </div>
+  
+  
+ <style>
+ /* Dropdown block */
+  
+  .header-type-2 #slidedown-modal {background: {{ section.settings.dropdown_bg }};}
+  .header-type-2 #slidedown-modal ul li a {color:#434343} 
+  .header-type-2 #slidedown-modal ul li a:hover {color:{{section.settings.dropdown_hover_link}};} 
+ 
+  .notification_bar li a { color:{{section.settings.notification_linktxt_color }};}    
+  .notification_bar li a:hover { color:{{section.settings.notification_hover_linktxt_color }};}   
+   
+   .top_bar.top-bar-type-5:after{ content:"";position:absolute;bottom:-10px;background-image:url('{{ section.settings.after_image | img_url: 'master' }}');background-repeat:repeat;left:0;width:100%;height:11px;}
+  </style>
+  
+</div>   
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Notification Bar",
+    "settings": [
+{
+"type":"checkbox",
+"id": "display_top_adv_bar",
+"label": "Top Notification Bar"	
+},
+{
+"type": "color",
+"id": "notification_bar_bg",
+"label": "Background",
+"default": "#000"
+},
+{
+"type": "image_picker",
+"id": "after_image",
+"label": "Image",
+"info": "Size: 24x11"
+},
+
+
+{
+"type": "text",
+"id": "notification_text",
+"label": "Notification text",
+"default": "Free Shiping Over $150"
+},  
+{
+"type": "color",
+"id": "notification_text_clr",
+"label": "Notify Text",
+"default": "#fff"
+},
+{
+"type": "text",
+"id": "notification_linktxt",
+"label": "Notification Link Text",
+"default": "Shop Now"
+}, 
+{
+"type": "color",
+"id": "notification_linktxt_color",
+"label": "Link Text",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "notification_hover_linktxt_color",
+"label": "Hover Link Text",
+"default": "#fff"
+},
+{
+"type": "text",
+"id": "header_notification_link",
+"label": "Link",
+"default": "/collections/all"
+},{
+"type": "header",
+"content": "Dropdown Block"
+},
+
+{
+"type": "color",
+"id": "dropdown_bg",
+"label": "Background",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "dropdown_link",
+"label": "Links",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "dropdown_hover_link",
+"label": "Link hover",
+"default": "#35b8f4"
+}
+
+]
+  }
+{% endschema %}

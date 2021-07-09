@@ -1,0 +1,274 @@
+<div data-section-id="{{ section.id }}"  data-section-type="testimonial-type-11" class="testimonial-type-11" style="{% if section.settings.image_1 %}background-image:url('{{ section.settings.image_1 | img_url: '1920X' }}');background-attachment:fixed;background-repeat:no-repeat;background-position:center center; {% else %}background-color:{{section.settings.background_color}};{% endif%}">
+  <div class="grid-uniform">
+    <div class="pattern pattern-{{ section.id }}-animate" style="{% if section.settings.image != blank %} background-image:url('{{ section.settings.image | img_url: 'master' }}');background-repeat:no-repeat; position:absolute;width:250px;height:300px;z-index:1;left:5.5%;{% endif %}"></div>
+    <div class="container">
+    
+        {% if section.settings.title != blank %}
+             <div class="section-header section-header--small">
+        <div class="border-title">
+        <h2 style="color:{{section.settings.title_color }}">{{ section.settings.title }}</h2>  
+               </div>
+        </div>
+        {% endif %}
+      
+		    
+      <div class="invisible-very-small"></div>
+      <div id="test-car-11" class="owl-carousel owl-theme test-car-11 {{section.id}}-loop">
+        {% if section.blocks.size > 0 %}  
+        {% for block in section.blocks %}
+        <div class="grid__item"> 
+          <div class="testimonial-block " >           
+            <blockquote>
+              {% if block.settings.text_desc != blank %}
+              <q style="color:{{block.settings.des_color }}">{{ block.settings.text_desc }}</q>
+              {% endif %} 
+            </blockquote>
+            <div class="test-detail">            
+              {% if block.settings.author_name != blank %}
+              <h4 style="color:{{block.settings.author_color }}">{{ block.settings.author_name }}</h4>
+              {% endif %}
+
+              {% if block.settings.author_designation != blank %}
+              <span style="color:{{block.settings.author_designationcolor }}">{{ block.settings.author_designation }}</span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endfor %}         
+        {% endif %}  
+      </div>
+    </div>
+    <div class="pattern2 pattern2-{{ section.id }}-animate" style="{% if section.settings.image_2 != blank %} background-image:url('{{ section.settings.image_2 | img_url: 'master' }}');background-repeat:no-repeat;position:absolute;width:250px;height:300px;z-index:1;.5%;right:5.5%;{% endif %}"></div>
+    
+  </div>
+</div>
+
+
+<style>
+
+  .testimonial-type-11{background:{{section.settings.bg_color }};}
+
+  .testimonial-type-11 .owl-theme .owl-controls .owl-page span{background:{{section.settings.border_color }};}
+
+  .testimonial-type-11 .authorimg::before{    border-bottom: 40px solid {{section.settings.imgborder_color }};}
+
+  .testimonial-type-11 .authorimg{border:3px solid {{section.settings.imgborder_color }};}
+
+  .testimonial-type-11 blockquote q::before , .testimonial-type-11 blockquote q::after{color:{{section.settings.quote_color }};}
+
+ .testimonial-type-11 .owl-theme .owl-dots .owl-dot span{background: {{ section.settings.dots_color | color_modify: "alpha",0.5 }};}
+  
+  .testimonial-type-11 .owl-theme .owl-dots .owl-dot.active span{background:{{section.settings.dots_hvr_color }};}
+ 
+    {% if section.settings.heading_image_need %} .testimonial-type-11  .border-title:after {  content:"";background-image:url({{ section.settings.heading_image | img_url: 'master' }});display:block;background-repeat:no-repeat;width:90px;height:10px; margin: 0 auto 10px;} {% endif %}
+
+  .testimonial-type-11:before { {% if section.settings.pattern_image != blank %} background-image:url({{ section.settings.pattern_image | img_url: '1920X' }});content:""; {%endif %} }
+
+
+ 
+</style>
+
+ <script type="text/javascript">
+  $(window).mousemove(function(e) {
+    var change;
+    var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
+    var  xpos=xpos*2;ypos=ypos*2;
+    $('.pattern-{{ section.id }}-animate').css('top',((0+(ypos/50))+"px"));
+    $('.pattern-{{ section.id }}-animate').css('left',(( 0+(xpos/80))+"px"));
+                   
+  });
+
+ $(window).mousemove(function(e) {
+    var change;
+    var ypos=e.clientX;var xpos=e.clientY;var right= change*20;
+    var  xpos=xpos*2;ypos=ypos*2;
+    $('.pattern2-{{ section.id }}-animate').css('bottom',((0+(xpos/50))+"px"));
+    $('.pattern2-{{ section.id }}-animate').css('right',(( 0+(ypos/80))+"px"));
+                   
+  });
+      </script>
+
+
+
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var testcar11 = $(".test-car-11.{{section.id}}-loop");
+                      testcar11.owlCarousel({
+                      loop:false,
+                      items: 1,
+                      margin:10,
+                      autoPlay: false,
+                      nav:false,     
+                      dots: true,
+                      smartSpeed : 1000,
+                      navSpeed : 1000,
+                      responsive:{
+                      0:{
+                      items: 1
+                      },
+                      600:{
+                      items: 1
+                      },
+                      720:{
+                      items: 1
+                      }
+                      }
+                      });   
+  });    
+</script>
+
+
+
+
+
+{% schema %}
+{
+"name": "Testimonial",
+"settings": [
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 1920x1280"
+},
+{
+"type": "image_picker",
+"id": "pattern_image",
+"label": "before Image",
+"info": "Size: 24x11"
+},
+{
+"type": "color",
+"id": "background_color",
+"label":"Bckground color",
+"default": "#000"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image",
+"info": "Size: 250x292"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": " Image-2",
+"info": "Size: 254x277"
+},
+{
+      "type": "checkbox",
+      "id": "heading_image_need",
+      "label": "Show Heading Image ?"
+      
+    },	
+{
+      "type": "image_picker",
+      "id": "heading_image",
+      "label": "Image",
+	  "info": "Size: 85x8"
+      
+    },	
+{
+"type": "color",
+"id": "imgborder_color",
+"label": "Img Border Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "quote_color",
+"label": "Quote Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},	
+{
+"type": "color",
+"id": "title_color",
+"label": "Title COlor",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "dots_color",
+"label": "dots Color",
+"default":"#000"
+},
+{
+"type": "color",
+"id": "dots_hvr_color",
+"label": "dots hover Color",
+"default":"#000"
+}
+],
+"blocks": [
+{
+"type": "text",
+"name": "content",
+"settings": [
+
+{
+"type": "textarea",
+"id": "text_desc",
+"label": "Description",
+"default":"Description"
+},
+{
+"type": "color",
+"id": "des_color",
+"label": "Description Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "author_name",
+"label": "author name",
+"default":"Name"
+},
+{
+"type": "color",
+"id": "author_color",
+"label": "Author Color",
+"default":"#000"
+},
+{
+"type": "text",
+"id": "author_designation",
+"label": "author designation",
+"default":"Designation"
+},
+{
+"type": "color",
+"id": "author_designationcolor",
+"label": "Designation color",
+"default":"#000"
+}
+]
+}
+],
+
+"presets": [
+{
+"name": "Testimonial",
+"category": "Text",
+"blocks": [
+{
+"type": "text"
+},
+{
+"type": "text"
+},
+{
+"type": "text"
+}
+
+]
+}
+]
+}
+{% endschema %}

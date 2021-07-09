@@ -1,0 +1,176 @@
+<div data-section-id="{{ section.id }}"  data-section-type="client section" class="client-section">
+ {% if section.blocks.size > 0 %}    
+  <div class="grid-uniform section-seven">
+    <div class="pattern pattern-{{ section.id }}-animate" style="{% if section.settings.image != blank %} background-image:url('{{ section.settings.image | img_url: 'master' }}');background-repeat:no-repeat; position:absolute;width:110px;height:110px;z-index:1;left:15%;top:17%;{% endif %}"></div>
+    <div class="container">
+      <div class="grid__item">
+        {% if section.settings.title != blank %}
+        <h2>{{ section.settings.title }}</h2>
+        {% endif %}
+        <div id="client-car" class="owl-carousel owl-theme client-section">
+          {% for block in section.blocks %}
+          {% if block.settings.client_img != blank %}
+          <div class="item">
+            <a href="{{ block.settings.client_link }}"> <img src="{{ block.settings.client_img | img_url: "150x200"  }}" alt="{{ block.settings.client_heading }}" /></a>
+          </div>
+          {% else %}          
+          <div class="item"><a href="#">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</a></div>
+           {% endif %}           
+          {% endfor %}
+          
+        </div>
+        <div class="nav-brands"></div>
+      </div>
+    </div>
+ <div class="pattern1 pattern1-{{ section.id }}-animate" style="{% if section.settings.image_1 != blank %} background-image:url('{{ section.settings.image_1 | img_url: 'master' }}');background-repeat:no-repeat;position:absolute;width:200px;height:200px;z-index:1;right:10%;bottom:25%;{% endif %}"></div>
+  </div>
+  
+  {% endif %} 
+</div>
+
+<style>
+  .client-section .owl-stage-outer{ border:1px dashed; border-color:{{section.settings.border_clr}};}
+  
+</style>
+
+
+
+
+
+{% schema %}
+{
+"name": "Client Logo",
+"class": "index-section",
+"settings": [
+	{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "border_clr",
+"label": "bordercolor",
+"default":"#000"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image",
+"info": "Size: 97x96"
+},
+{
+"type": "image_picker",
+"id": "image_1",
+"label": " Image-1",
+"info": "Size: 184x184"
+}
+
+
+],
+"blocks": [
+{
+"type": "Image",
+"name":"client img",
+"settings": [
+
+{
+"type": "image_picker",
+"id": "client_img",
+"label": "Image",
+"info": "Size: 140x110"
+},
+{
+"type": "text",
+"id": "client_heading",
+"label": "text"
+},
+{
+"type": "url",
+"id": "client_link",
+"label": "Link URL"
+}
+]
+}
+],
+
+"presets": [
+{
+  "name": "Client Logo",
+"category": "Image",
+      "blocks": [
+        {
+          "type": "Image"
+        },
+        {
+          "type": "Image"
+        },
+		{
+          "type": "Image"
+        },
+		{
+          "type": "Image"
+        },
+        {
+          "type": "Image"
+        },
+		{
+          "type": "Image"
+        },{
+          "type": "Image"
+        },
+        {
+          "type": "Image"
+        },
+		{
+          "type": "Image"
+        }
+ 		
+      ]
+}
+]
+}
+{% endschema %}
+
+
+
+
+<script type="text/javascript">
+ $(document).ready(function(){
+     var brand_logos = $("#client-car");
+      brand_logos.owlCarousel({       
+        loop:true, 
+       
+        autoplay: true,
+	   autoplayTimeout: 3000,
+          navContainer: ".nav-brands",
+          navText: ['<a class="prev btn"><i class="fas fa-arrow-left"></i></a>','<a class="next btn"><i class="fas fa-arrow-right"></i></a>'],
+          responsive:{
+            0:{
+              items: 1,
+              dots: false, 
+              nav:true
+            },
+            320:{
+              items: 2,
+              dots: false, 
+              nav:true
+            },
+            480:{
+              items: 3,
+              dots: false, 
+              nav:true
+            },
+            768:{
+              items: 4,           
+              dots: true 
+            },
+
+            1000:{
+              items: 5,
+              dots: true 
+            }
+          }
+  			});
+        });
+</script>

@@ -1,0 +1,212 @@
+<div data-section-id="{{ section.id }}" data-section-type="grid-banner-type-5" class="grid-banner-type-5" style="{% if section.settings.show_bg_image %}background-image:url('{{ section.settings.bg_image | img_url: '1920X' }}');background-attachment:fixed;background-repeat:no-repeat;background-position:center center; {% else %}background-color:{{section.settings.bg_color}};{% endif%}">  
+<div class="line" style="{% if section.settings.image != blank %} background-image:url('{{ section.settings.line_image | img_url: 'master' }}');background-repeat:no-repeat; position:absolute;width:30px;height:200px;z-index:1;left:60px;top:0px;{% endif %}"></div>
+  <div class="gifimage" style="{% if section.settings.image != blank %} background-image:url('{{ section.settings.image | img_url: 'master' }}');background-repeat:no-repeat; position:absolute;width:150px;height:220px;z-index:1;left:0;{% endif %}"></div>
+   
+  <div class="container">
+  <div class="grid-uniform collectionItems">  
+    {% if section.blocks.size > 0 %}      
+    {% for block in section.blocks %}
+    {% case section.blocks.size %}
+    {% when 1 %}
+    {%- assign block_width = 'one-whole text-center' -%}
+    {% when 2 %}
+    {%- assign block_width = 'wide--one-half post-large--one-half large--one-half medium--one-third small--one-half' -%}
+    {% when 3 %}
+    {%- assign block_width = 'wide--one-third post-large--one-third large--one-third medium--one-third small--one-half' -%}
+    {% when 4 %}
+    {%- assign block_width = 'wide--one-quarter post-large--one-quarter large--one-quarter medium--one-third small--one-half' -%}
+      {% when 5 %}
+    {%- assign block_width = 'wide--one-fifth post-large--one-fifth large--one-fifth medium--one-third small--one-half' -%}
+     {% else %}
+    {%- assign block_width = 'wide--one-quarter post-large--one-quarter large--one-quarter medium--one-third small--one-half' -%}
+    {% endcase %}
+    <div class="grid__item {{ block_width }}">
+      <div class="bg-effect-{{block.id }}">
+        <div class="ovrly17">
+          {% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{% endif%}
+          {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url: '1920X' }}" alt="{{ block.settings.title }}" />
+          {% if block.settings.overlay %}  <div class="ovrly" style="background:{{ block.settings.overlay_bgcolor | color_modify: 'alpha', 0.7 }};"></div> {% endif %}
+          {% else %}
+           <img src="//via.placeholder.com/222x292">
+          {% endif%}   
+          <div class="ovrly"> </div>                  
+          {% if block.settings.link != blank %}  </a>
+          {% endif%}
+          <div class="featured-content">              
+          {% if block.settings.title != blank %}     
+          <h4>{% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{% endif%}{{ block.settings.title }}{% if block.settings.link != blank %}</a>{% endif%}</h4>
+          {% endif %} 
+          {% if block.settings.desc != blank %}
+          <p style="color:{{ block.settings.desc_color }};">{{ block.settings.desc }}</p>
+          {% endif %}
+        </div>  
+        </div>
+         
+      </div>
+     
+    </div>
+      
+    {% endfor %}
+    {% endif %}
+  </div>
+  {% if section.blocks.size > 0 %}      
+  {% for block in section.blocks %}
+  <style>
+    .grid-banner-type-5 .bg-effect-{{block.id }} h4 a,.grid-banner-type-5 .bg-effect-{{block.id }} h4  { color:{{ block.settings.title_color }}; }
+    .grid-banner-type-5 .bg-effect-{{block.id }} h4 a:hover  { color:{{ block.settings.title_hover_color }}; }
+   /* {% if block.settings.overlay %} .grid-banner-type-5 .collectionItems .bg-effect-{{block.id }} .ovrly17:before { border-top: 1px solid {{ block.settings.overlay_bgcolor }};  border-bottom: 1px solid {{ block.settings.overlay_bgcolor }}; } {% endif %}
+    {% if block.settings.overlay %} .grid-banner-type-5 .collectionItems .bg-effect-{{block.id }} .ovrly17:after { border-left: 1px solid {{ block.settings.overlay_bgcolor }}; border-right: 1px solid {{ block.settings.overlay_bgcolor }}; } {% endif %}*/
+    .grid-banner-type-5 .collectionItems .bg-effect-{{block.id }} .ovrly17:after{ border-color:{{ block.settings.Img_border }};}
+    </style>
+  {% endfor %}
+  {% endif %}
+  </div>
+<div class="gifimage2" style="{% if section.settings.image_2 != blank %} background-image:url('{{ section.settings.image_2 | img_url: 'master' }}');background-repeat:no-repeat;position:absolute;width:150px;height:460px;z-index:-1;right:30px;bottom:auto;top:0{% endif %}"></div>
+</div>
+
+
+<script type="text/javascript">
+  
+$(window).mousemove(function(e) {
+    var change;
+    var xpos=e.clientX;var ypos=e.clientY;var left= change*20;
+    var  xpos=xpos*2;ypos=ypos*2;
+    $('.gifimage').css('top',((0+(ypos/50))+"px"));
+    $('.gifimage').css('left',(( 0+(xpos/100))+"px"));
+                   
+  });
+
+      </script>
+
+
+{% schema %}
+{
+"name": "Featured collections",
+"class": "index-section",
+"settings": [
+{
+"type": "checkbox",
+"id": "show_bg_image",
+"label": "Show background image"
+},
+{
+"type": "image_picker",
+"id": "bg_image",
+"label": "Image",
+"info": "Size: 1920x1937"
+},
+{
+"type": "image_picker",
+"id": "line_image",
+"label": "Line Image",
+"info": "Size: 2x173"
+},
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image",
+"info": "Size: 133x144"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": " Image-2",
+"info": "Size: 144x459"
+},
+
+
+{
+"type": "color",
+"id": "bg_color",
+"label":"Bckground color",
+"default": "#f5f5f5"
+}
+],
+"blocks": [
+{
+"type": "collection",
+"name": "collection",
+"settings": [ 
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image",
+"info": "Size: 300x395"
+},
+{
+"type": "color",
+"id": "Img_border",
+"label":"Image Border",
+"default": "#fff"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Collection Name"	
+},
+{
+"type": "color",
+"id": "title_color",
+"label": "Heading color",
+"default":"#000"	
+}, 	
+{
+"type": "color",
+"id": "title_hover_color",
+"label": "Heading hover color",
+"default":"#000"	
+}, 	
+{
+"type": "url",
+"id": "link",
+"label": "Link"          
+},
+{
+"type": "textarea",
+"id": "desc",
+"label": "Description"
+},
+{
+"type": "color",
+"id": "desc_color",
+"label": "Description Color",
+"default":"#000"
+},
+{
+"type": "checkbox",
+"id": "overlay",
+"label": "Overlay"
+},
+
+{
+"type": "color",
+"id": "overlay_bgcolor",
+"label": "Overlay",
+"default":"#000"	
+}
+
+]
+}
+],
+"presets": [
+{
+"name": "Featured collections",
+"category": "collection",
+"blocks": [
+{
+"type": "collection"
+},
+{
+"type": "collection"
+},
+{
+"type": "collection"
+}
+
+]
+}
+]
+}
+{% endschema %}

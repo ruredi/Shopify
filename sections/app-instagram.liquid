@@ -1,0 +1,78 @@
+<div data-section-id="{{ section.id }}"  data-section-type="app-instagram" class="app-instagram" style="{% if section.settings.image_1 %}background-image:url('{{ section.settings.image_1 | img_url: '1920X' }}');background-attachment:fixed;background-repeat:no-repeat;background-position:center center; {% else %}background-color:{{section.settings.background_color}};{% endif%} padding:30px;">
+  <div class="border-title">
+    {% if section.settings.title != blank %}
+    <h2 class="section-header__title" style="color:{{ section.settings.title_color }};">    
+      {{ section.settings.title }}
+    </h2>
+    {% endif %}      
+    {% if section.settings.small_title != blank %}
+    <div class="short-desc"> 
+      <p style="color:{{ section.settings.small_title_color }};">{{ section.settings.small_title }}</p>
+    </div>
+    {% endif %}   
+  </div>  
+  <div id="insta-feed"></div>
+</div>
+{% schema %}{
+"name": "App Instagram", 
+"settings": [
+{
+"type": "header",
+"content": "[Install this app](https:\/\/apps.shopify.com\/instafeed)"
+},
+  {
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 1920x1280"
+},
+{
+"type": "color",
+"id": "background_color",
+"label":"Bckground color",
+"default": "#000"
+},
+  {
+  "type": "text",
+  "id": "title",
+  "label": "Heading",
+  "default": "New arrivals"
+  },	
+  {
+  "type": "color",
+  "id": "title_color",
+  "label": "Heading Color",
+  "default": "#000"
+  },	
+  {
+  "type": "text",
+  "id": "small_title",
+  "label": "Small Heading"
+  },
+  {
+  "type": "color",
+  "id": "small_title_color",
+  "label": "Small Heading Color",
+  "default": "#000"
+  },
+  {
+  "type": "text",
+  "id": "button",
+  "label": "Button",
+  "default": "View all"
+  },	
+  {
+  "type": "url",
+  "id": "link",
+  "label": "Link URL"
+  }
+],
+"presets": [
+{
+"name": "App Instagram",
+"category": "text"
+}
+]
+}
+{% endschema %}
+

@@ -1,0 +1,111 @@
+{% if settings.display_currency %}
+{{ "//cdn.shopify.com/s/javascripts/currencies.js" | script_tag }}
+{{ "jquery.currencies.min.js" | asset_url | script_tag }}
+{{ 'custom-currency.js' | asset_url | script_tag }}
+
+<script>
+  // Pick your format here:  
+  // Can be 'money_format' or 'money_with_currency_format'
+  Currency.format = 'money_format';
+  var shopCurrency = '{{ shop.currency }}';
+
+  /* Sometimes merchants change their shop currency, let's tell our JavaScript file */
+  Currency.moneyFormats[shopCurrency].money_with_currency_format = {{ shop.money_with_currency_format | strip_html | json }};
+  Currency.moneyFormats[shopCurrency].money_format = {{ shop.money_format | strip_html | json }};
+
+  var cookieCurrency = Currency.cookie.read();
+
+  // Fix for customer account pages
+  jQuery('span.money span.money').each(function() {
+    jQuery(this).parent('span.money').removeClass('money');
+  });
+
+  // Add precalculated shop currency to data attribute
+  jQuery('span.money').each(function() {
+    jQuery(this).attr('data-currency-{{ shop.currency }}', jQuery(this).html());
+  });
+
+    // Select all your currencies buttons.
+    var currencySwitcher = jQuery('#currencies');
+
+    // When the page loads.
+    if (cookieCurrency == null || cookieCurrency == shopCurrency) {
+      Currency.currentCurrency = shopCurrency;
+    } else {
+      Currency.currentCurrency = cookieCurrency;
+      currencySwitcher.val(cookieCurrency);
+      Currency.convertAll(shopCurrency, cookieCurrency);
+    }
+    //currencySwitcher.selectize();
+    jQuery('.selectize-input input').attr('disabled','disabled');
+
+    // When customer clicks on a currency switcher.
+    currencySwitcher.change(function() {
+      var newCurrency =  jQuery(this).val();
+      Currency.cookie.write(newCurrency);
+      Currency.convertAll(Currency.currentCurrency, newCurrency);
+
+      //show modal
+      jQuery("#currencies-modal span").text(newCurrency);
+      if (jQuery("#cart-currency").length >0) {
+        jQuery("#cart-currency").text(newCurrency);
+      }
+      jQuery("#currencies-modal").fadeIn(500).delay(3000).fadeOut(500);
+
+
+      //Custom Code
+      custom_formatting(newCurrency);
+      //Custom Code END
+
+    });
+
+    // For product options.
+    var original_selectCallback = window.selectCallback;
+    var selectCallback = function(variant, selector) {
+      original_selectCallback(variant, selector);
+      Currency.convertAll(shopCurrency, jQuery('#currencies').val());
+    };
+
+
+	//custom code
+    window.addEventListener('load', function() {
+      var current_language = jQuery('a.switcher-popup span').text();
+      var current_currency = jQuery('#currencies').val();
+      var langCurrs = {
+        Magyar  : 'HUF',
+        English : 'USD',
+        Español : 'EUR',
+        Svenska : 'SEK'
+      };
+      if(langCurrs[current_language]) {
+        if(langCurrs[current_language] != current_currency) {
+          jQuery('#currencies').val(langCurrs[current_language]);
+          jQuery('#currencies').trigger('change');
+        }
+      }
+    }, false);
+
+    function custom_formatting(newCurrency) {
+      jQuery('span.custom_money[data-custom-currency-usd]').each(function(i, obj) {
+        //console.log('custom_money', jQuery(this));
+        var data_value = jQuery(this).attr('data-custom-currency-usd');
+        //console.log('data_value', data_value);
+        var converted_val = Currency.convert(data_value, shopCurrency, newCurrency);
+        //console.log('converted_val', converted_val);
+        var rounded_val = Math.round(converted_val);
+        //console.log('rounded_val', rounded_val);
+        var val_concat = rounded_val + '00';
+        //console.log('val_concat', val_concat);
+        var formatted_money = CustomCurrency.formatMoney(
+          val_concat,
+          Currency.moneyFormats[newCurrency].money_format
+        );
+        //console.log('formatted_money', formatted_money);
+        jQuery(this)[0].innerHTML = formatted_money;
+      });
+    }
+    custom_formatting(cookieCurrency);
+    //custom code END
+
+</script>
+{% endif %}

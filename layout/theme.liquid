@@ -1,0 +1,118 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta name="uri-translation" content="on" />
+  {% include 'SEO-Master' %}{% include 'structuredDataV2' %}
+
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+  {% if settings.favicon_enable %}
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
+  {% endif %}
+  <!-- Title and description ================================================== -->
+  <title>
+    {{ page_title }}{% if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+  {% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+  <!-- Social meta ================================================== -->
+  {% include 'social-meta-tags' %}
+  <!-- Helpers ================================================== -->
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_primary }}">
+  {% include 'frame_header_styles' %}  
+  {% include 'frame_header_fonts' %}  
+  {% include 'frame_header_scripts' %}  
+  <!-- Header hook for plugins ================================================== -->
+  {{ content_for_header }}  
+  <script type="text/javascript">
+    delete History
+  </script>
+
+  {{ shop.metafields.loox["global_html_head"] }}
+  {%- assign full_url = canonical_url | split: '://www.' | last | split: '://' | last -%}
+  <link rel="alternate" hreflang="en" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="hu" href="https://hu.{{ full_url }}">
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+      Weglot.initialize({
+          api_key: 'wg_a2c87ebd6291b68c81443facbb19005b5'
+      });
+  </script>
+  <meta name="wot-verification" content="11ed66209ac78d397f6c"/>
+  <meta name="facebook-domain-verification" content="ll7f5xhhn1lap9gxd0j1q1drxjko1w" />
+{% include 'fa_translate_core' %} 
+ </head>
+<body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} {% unless tempate contains 'index' %} others {% endunless %}">
+  {% include 'frame_headers' %}  
+  {% include 'breadcrumb' %}  
+<main class="{% if template contains 'index' or template contains "about" %}main-home-content {% else %} main-content  {% endif %}">  
+
+
+  {% unless template contains "index" or template contains "about" %}
+  <div class="dt-sc-hr-invisible-large"></div>
+  {% endunless %}
+
+
+  <div class="wrapper">
+     
+      <div class="grid-uniform">
+               
+        <div class="grid__item">   
+          {% unless template contains 'index' or template contains 'about'  %}
+          <div class="container"> 
+            {% endunless %}
+          {{ content_for_layout }}	
+             {% unless template contains 'index' or template contains 'about'  %}
+          </div>
+          {% endunless %}
+        </div>  
+       
+      </div>
+      
+      
+    </div>
+    {% unless template contains "index"  %}
+    <div class="dt-sc-hr-invisible-large"></div>
+    {% endunless %}
+  </main>
+  {% include 'frame_footers' %}
+  {% include 'frame_footer_scripts' %}  
+  {% include 'qmodal' %}
+  {% include 'modal-box' %}
+  {% include 'currencies' %}
+  {% include 'newsletter' %}     
+  {% include 'modal-compare' %}
+  {% unless template contains 'product' %}
+  {% section 'someone-purchased' %}
+  {% endunless %}
+  {% section 'GDPR-modal' %}
+  <!-- -->
+{{'tiny-img-link-preloader.js' | asset_url | script_tag }}
+
+	{{ shop.metafields.loox["global_html_body"] }}
+
+
+{{ 'ndnapps-sociallogin.css' | asset_url | stylesheet_tag }}
+{% if shop.customer_accounts_enabled %}{% unless customer  %}{{ 'ndnapps-sociallogin-script.js' | asset_url | script_tag }}{% endunless %}{% endif %}
+<input type="hidden" class="isoraw-cart-price" value="{{ cart.total_price }}">
+            <input type="hidden" class="isoraw-product-price" value="{{ product.price }}">
+               <input type="hidden" class="isoraw-customer-id" value="{{ customer.id }}"><!--Isoraw Styles Start-->
+        <script src="https://apps.thescorpiolab.com/isoraw/public/shopify_assets/coins.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://apps.thescorpiolab.com/isoraw/public/shopify_assets/coins.css">
+        <link rel="stylesheet" href="https://apps.thescorpiolab.com/isoraw/public/shopify_assets/influencer.css">
+        <!--Isoraw Styles End--><!--Isoraw-Website-Widget Styles Start-->
+        <script src="https://apps.thescorpiolab.com/isoraw/public/shopify_assets/isoraw-website-widget.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://apps.thescorpiolab.com/isoraw/public/css/isoraw-website-widget.css">
+        <!--Isoraw-Website-Widget Styles End--> {% include 'smile-initializer' %}
+
+  <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=mylittlebaby-shop.myshopify.com" defer></script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+
+<div class="wrapper">
+  <div class="home-slideshow">
+    <div class="variable-width" data-slick='{dots: true, slidesToScroll: 1,autoplay:false,fade: {{ section.settings.slideshow_transition }},autoplaySpeed:{{ section.settings.slideshow_speed }}'>
+      {% for block in section.blocks %}
+      {% if block.type == 'style_1' %}
+      <div class="slick-list slider_style_1 slider-{{ block.id }}-list"> 
+        {% include 'slider-data' %}
+        <style> 
+          .slider_style_1 .slide-offer-text span {color:{{block.settings.subheading_color}}!important;}
+          /* .slider_style_1 .btn:hover {color:{{block.settings.btn_hovertxt_color}}!important;background:{{block.settings.btn_hoverbg_color}}!important;}*/
+
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+
+            .slider_style_1 .slider-content {background:{{ block.settings.mobile_bg_clr | color_modify: 'alpha', 0.7 }};}
+          }
+        </style>
+      </div>
+      {% endif %}
+      {% if block.type == 'style_2' %}
+      <div class="slick-list slider_style_2 slider-{{ block.id }}-list">                
+        {% include 'slider-data' %}
+        <style> 
+          .slider_style_2 .slide-offer-text span {color:{{block.settings.subheading_color}}!important;}
+          @media screen and (min-width: 320px) and (max-width: 767px) {
+
+            .slider_style_2 .slider-content {background:{{ block.settings.mobile_bg_clr | color_modify: 'alpha', 0.7}};}
+          }
+        </style>
+      </div>
+      {% endif %}
+      {% if block.type == 'style_3' %}
+      <div class="slick-list slider_style_3 slider-{{ block.id }}-list">                
+        {% include 'slider-data' %}
+        <style> 
+
+          .slider_style_3 .slide-offer-text span {color:{{block.settings.title_2_clr}}!important;}
+          
+           {% if block.settings.show_overlay_bg != blank %} 
+          .slider_style_3 .slider-content {background:{{ block.settings.content_bg_clr | color_modify: 'alpha', 0.7 }};}
+           {% endif %}
+          
+          
+           @media screen and (min-width: 320px) and (max-width: 767px) {
+          
+           }
+          
+          
+        </style>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+
+<script>  
+  $(document).on('ready', function() {
+    $('.variable-width').slick({
+      dots: true,
+      slidesToScroll: 1,
+      autoplay:{{ section.settings.slideshow_play }},
+      fade: {{ section.settings.slideshow_transition }},
+      autoplaySpeed:{{ section.settings.slideshow_speed }},
+      afterChange: function(slick, currentSlide){
+      console.log(currentSlide);
+    }
+                               });   
+  })
+</script>
+
+
+
+
+<style>
+
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {}
+
+
+  {% for block in section.blocks %}
+
+  .slider-{{ block.id }}-list .btn {  background:{{ block.settings.btn_bg_color  }};color:{{ block.settings.btn_txt_color }}; }
+
+
+
+  .slider-{{ block.id }}-list .btn:hover { background:{{ block.settings.btn_hoverbg_color  }};color:{{ block.settings.btn_hovertxt_color }}; }
+  {% endfor %}
+</style>
+
+
+
+{% schema %}
+{
+"name": "Slideshow",
+"class": "index-section index-section--flush",
+"max_blocks": 10,
+"settings": [
+{
+"type": "select",
+"id": "slideshow_speed",
+"label": "Change slides every",
+"options": [
+{ "value": "1000", "label": "1 seconds" },
+{ "value": "2000", "label": "2 seconds" },
+{ "value": "3000", "label": "3 seconds" },
+{ "value": "4000", "label": "4 seconds" },
+{ "value": "5000", "label": "5 seconds" },
+{ "value": "6000", "label": "6 seconds" },
+{ "value": "7000", "label": "7 seconds" },
+{ "value": "8000", "label": "8 seconds" },
+{ "value": "9000", "label": "9 seconds" },
+{ "value": "10000", "label": "10 seconds" }
+],
+"default": "5000"
+},
+{
+"type": "select",
+"id": "slideshow_transition",
+"label": "Slideshow transition effect",
+"options": [
+{
+"value": "false",
+"label": "Slide"
+},
+{
+"value": "true",
+"label": "Fade"
+}
+],
+"default": "true"
+},
+{
+"type": "select",
+"id": "slideshow_play",
+"label": "Slideshow auto play",
+"options": [
+{
+"value": "true",
+"label": "True"
+},
+{
+"value": "false",
+"label": "False"
+}
+],
+"default": "true"
+},
+{
+"type": "color",
+"id": "navigation_color",
+"label": "Navigation color",
+"default": "#fff",
+"info": "Default Value: #fff"
+},
+{
+"type": "paragraph",
+"content": "IMPORTANT: For best results, Upload image : 1920px x 940px recommended. Try to keep your slideshow images the same size,Style 1:Text Align Left,Style 2:Text Align Right,Style 3:Text Align Center"
+}
+],
+"blocks": [
+{
+"type": "style_1",
+"name": "style_1",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "mobile_image",
+"label": "Mobile Image",
+"info": "767x750 recommended"
+},
+{
+"type": "color",
+"id": "mobile_bg_clr",
+"label": "Mobile Bg Color",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "subheading",
+"label": "Subheading"
+},
+
+{
+"type": "color",
+"id": "subheading_color",
+"label": "SubHeading Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "subheading_size",
+"label": "SubHeading Font Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "heading_color",
+"label": "Heading Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "heading_size",
+"label": "Heading Font Size",
+"default": "40",
+"info": "Default Value: 40"
+},
+{
+"type": "text",
+"id": "title_2",
+"label": "Desc"
+},
+{
+"type": "color",
+"id": "title_2_clr",
+"label": "Desc Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "sub_vertical_size",
+"label": "Subheading Text Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "offer_text",
+"label": "Offer Text"
+},
+{
+"type": "color",
+"id": "offer_text_color",
+"label": "Offer Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "offer_text_size",
+"label": "Offer Text Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "offer_text_amt",
+"label": "Offer Text Amount"
+},
+{
+"type": "text",
+"id": "button",
+"label": "Slide Button"
+},
+{
+"type": "url",
+"id": "link",
+"label": "Slide link"
+},
+{
+"type": "color",
+"id": "btn_bg_color",
+"label": "Button Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_txt_color",
+"label": "Button Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_hoverbg_color",
+"label": "Button Hover Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_hovertxt_color",
+"label": "Button Hover Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+}
+]
+},
+{
+"type": "style_2",
+"name": "style_2",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "mobile_image",
+"label": "Mobile Image",
+"info": "767x750 recommended"
+},
+{
+"type": "color",
+"id": "mobile_bg_clr",
+"label": "Mobile Bg Color",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "subheading",
+"label": "Subheading"
+},
+{
+"type": "color",
+"id": "subheading_color",
+"label": "SubHeading Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "subheading_size",
+"label": "SubHeading Font Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "heading_color",
+"label": "Heading Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "heading_size",
+"label": "Heading Font Size",
+"default": "40",
+"info": "Default Value: 40"
+},
+{
+"type": "text",
+"id": "title_2",
+"label": "Desc"
+},
+{
+"type": "color",
+"id": "title_2_clr",
+"label": "Desc Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "sub_vertical_size",
+"label": "Subheading Text Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "offer_text",
+"label": "Offer Text"
+},
+{
+"type": "color",
+"id": "offer_text_color",
+"label": "Offer Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "offer_text_size",
+"label": "Offer Text Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "offer_text_amt",
+"label": "Offer Text Amount"
+},
+{
+"type": "text",
+"id": "button",
+"label": "Slide Button"
+},
+{
+"type": "url",
+"id": "link",
+"label": "Slide link"
+},
+{
+"type": "color",
+"id": "btn_bg_color",
+"label": "Button Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_txt_color",
+"label": "Button Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_hoverbg_color",
+"label": "Button Hover Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_hovertxt_color",
+"label": "Button Hover Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+}
+]
+},
+{
+"type": "style_3",
+"name": "style_3",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+},
+{
+"type": "image_picker",
+"id": "mobile_image",
+"label": "Mobile Image",
+"info": "767x750 recommended"
+},
+{
+"type": "checkbox",
+"id": "show_overlay_bg",
+"label": "show Overlay Bg and Border"
+},
+
+{
+"type": "color",
+"id": "content_bg_clr",
+"label": "Content Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "subheading",
+"label": "Subheading"
+},
+{
+"type": "color",
+"id": "subheading_color",
+"label": "SubHeading Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "subheading_size",
+"label": "SubHeading Font Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading"
+},
+{
+"type": "color",
+"id": "heading_color",
+"label": "Heading Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "heading_size",
+"label": "Heading Font Size",
+"default": "40",
+"info": "Default Value: 40"
+},
+{
+"type": "text",
+"id": "title_2",
+"label": "Desc"
+},
+{
+"type": "color",
+"id": "title_2_clr",
+"label": "Desc Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "sub_vertical_size",
+"label": "Subheading Text Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "offer_text",
+"label": "Offer Text"
+},
+{
+"type": "color",
+"id": "offer_text_color",
+"label": "Offer Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "text",
+"id": "offer_text_size",
+"label": "Offer Text Size",
+"default": "12",
+"info": "Default Value: 12"
+},
+{
+"type": "text",
+"id": "offer_text_amt",
+"label": "Offer Text Amount"
+},
+{
+"type": "text",
+"id": "button",
+"label": "Slide Button"
+},
+{
+"type": "url",
+"id": "link",
+"label": "Slide link"
+},
+{
+"type": "color",
+"id": "btn_bg_color",
+"label": "Button Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_txt_color",
+"label": "Button Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_hoverbg_color",
+"label": "Button Hover Bg Color",
+"default": "#000",
+"info": "Default Value: #000"
+},
+{
+"type": "color",
+"id": "btn_hovertxt_color",
+"label": "Button Hover Text Color",
+"default": "#000",
+"info": "Default Value: #000"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Slider"
+}
+]
+}
+{% endschema %}
+
+
+<style>
+  .home-slideshow  .slick-arrow:before{ color: {{ section.settings.navigation_color }}; }  
+</style>
+
+{% javascript %}
+function process_slick_event(evt) {
+var _slick = $( "#" +evt.target.id + " .home-slideshow .variable-width");
+if( _slick.length )
+{
+switch ( evt.originalEvent.type ) {
+case "shopify:section:load" : 
+console.log('Load ' + _slick.attr("id"));
+_slick.slick (
+{
+dots: true,
+slidesToScroll: 1,
+
+autoplay: _slick.data('slick').autoplay,
+autoplaySpeed: _slick.data('slick').autoplaySpeed
+}
+);
+break; 
+case "shopify:section:unload" :
+console.log('Unload ' + _slick.attr("id"));
+_slick.slick('unslick');
+break;
+
+} 
+}
+}
+
+$(document)
+.on( 'shopify:section:load', process_slick_event )
+.on( 'shopify:section:unload', process_slick_event )
+;
+
+{% endjavascript %}

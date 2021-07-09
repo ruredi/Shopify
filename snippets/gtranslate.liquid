@@ -1,0 +1,45 @@
+<!-- GTranslate: https://gtranslate.io/ -->
+<a href="#" class="switcher-popup glink nturl notranslate" onclick="openGTPopup(this)"><img src="//gtranslate.io/shopify/assets/flags/24/en-us.png" height="24" width="24" alt="en" /> <span>English</span><span style="color:#666;font-size:8px;font-weight:bold;">&#9660;</span></a>
+<div id="gt_fade" class="gt_black_overlay"></div>
+<div id="gt_lightbox" class="gt_white_content notranslate">
+<div style="position:relative;height:14px;"><span onclick="closeGTPopup()" style="position:absolute;right:2px;top:2px;font-weight:bold;font-size:12px;cursor:pointer;color:#444;font-family:cursive;">X</span></div>
+<div class="gt_languages">
+<a href="https://babypanda.shop" onclick="changeGTLanguage('en|en', this);return false;" title="English" class="glink nturl selected"><img data-gt-lazy-src="//gtranslate.io/shopify/assets/flags/24/en-us.png" height="24" width="24" alt="en" /> <span>English</span></a><a href="https://hu.babypanda.shop" onclick="changeGTLanguage('en|hu', this);return false;" title="Magyar" class="glink nturl"><img data-gt-lazy-src="//gtranslate.io/shopify/assets/flags/24/hu.png" height="24" width="24" alt="hu" /> <span>Magyar</span></a></div>
+</div>
+<style>
+a.glink img {filter:grayscale(100%);-webkit-filter:grayscale(100%);}
+.gt_black_overlay {display:none;position:fixed;top:0%;left:0%;width:100%;height:100%;background-color:black;z-index:2017;-moz-opacity:0.8;opacity:.80;filter:alpha(opacity=80);}
+.gt_white_content {display:none;position:fixed;top:50%;left:50%;width:341px;height:95px;margin:-47.5px 0 0 -170.5px;padding:6px 16px;border-radius:5px;background-color:white;color:black;z-index:19881205;overflow:auto;text-align:left;}
+.gt_white_content a {display:block;padding:5px 0;border-bottom:1px solid #e7e7e7;white-space:nowrap;}
+.gt_white_content a:last-of-type {border-bottom:none;}
+.gt_white_content a.selected {background-color:#ffc;}
+.gt_white_content .gt_languages {column-count:1;column-gap:10px;}
+.gt_white_content::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,0.3);border-radius:5px;background-color:#F5F5F5;}
+.gt_white_content::-webkit-scrollbar {width:5px;}
+.gt_white_content::-webkit-scrollbar-thumb {border-radius:5px;-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);background-color:#888;}
+</style>
+
+<script>
+function GTranslateGetCurrentLang() {if(typeof document.getElementsByTagName('html')[0] != 'undefined')return document.getElementsByTagName('html')[0].getAttribute('lang');return null;}
+function gt_loadScript(url,callback){var script=document.createElement("script");script.type="text/javascript";if(script.readyState){script.onreadystatechange=function(){if(script.readyState=="loaded"||script.readyState=="complete"){script.onreadystatechange=null;callback()}}}else{script.onload=function(){callback()}}script.src=url;document.getElementsByTagName("head")[0].appendChild(script)}
+var gtSwitcherJS = function($){$(document).ready(function() {var allowed_languages = ["en","hu"];var accept_language = navigator.language.toLowerCase() || navigator.userLanguage.toLowerCase();switch(accept_language) {case 'zh-cn': var preferred_language = 'zh-CN'; break;case 'zh': var preferred_language = 'zh-CN'; break;case 'zh-tw': var preferred_language = 'zh-TW'; break;case 'zh-hk': var preferred_language = 'zh-TW'; break;case 'he': var preferred_language = 'iw'; break;default: var preferred_language = accept_language.substr(0, 2); break;}if(preferred_language != 'en' && typeof navigator.userAgent != 'undefined' && /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) == false && GTranslateGetCurrentLang() != preferred_language && document.cookie.match('gt_auto_switch') == null && allowed_languages.indexOf(preferred_language) >= 0){window.gt_autoswitch_interval = setInterval(function(){if(typeof window.gtranslate_installed == 'undefined')return;clearInterval(window.gt_autoswitch_interval);doGTranslate('en|'+preferred_language);document.cookie = 'gt_auto_switch=1; expires=Thu, 05 Dec 2030 08:08:08 UTC; path=/; domain=.'+location.host.replace(/^www\./, '');},500);}});
+window.openGTPopup = function(a) {$('.gt_white_content a img').each(function() {if(!$(this)[0].hasAttribute('src'))$(this).attr('src', $(this).attr('data-gt-lazy-src'))});if(a === undefined){document.getElementById('gt_lightbox').style.display='block';document.getElementById('gt_fade').style.display='block';}else{$(a).parent().find('#gt_lightbox').css('display', 'block');$(a).parent().find('#gt_fade').css('display', 'block');}}
+window.closeGTPopup = function() {$('.gt_white_content').css('display', 'none');$('.gt_black_overlay').css('display', 'none');}
+window.changeGTLanguage = function(pair, a) {doGTranslate(pair);$('a.switcher-popup').html($(a).html()+'<span style="color:#666;font-size:8px;font-weight:bold;">&#9660;</span>');closeGTPopup();}
+$('.gt_black_overlay').click(function(e) {if($('.gt_white_content').is(':visible')) {closeGTPopup()}});
+if(typeof GTranslateGetCurrentLang == "function")if(GTranslateGetCurrentLang() != null)$(document).ready(function() {var lang_html = $(".gt_languages a[onclick*='|"+GTranslateGetCurrentLang()+"']").html();if(typeof lang_html != "undefined")$('a.switcher-popup').html(lang_html.replace("data-gt-lazy-", "")+'<span style="color:#666;font-size:8px;font-weight:bold;">&#9660;</span>');});
+};
+gt_loadScript("//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", function(){jQuery_gtranslate = jQuery.noConflict(true);gtSwitcherJS(jQuery_gtranslate);});
+</script>
+
+
+<script>
+var gt_request_uri = (typeof __st != 'undefined') ? '/'+__st.pageurl.split('/').slice(1).join('/') : location.pathname+location.search;
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];if(typeof _gaq!='undefined'){_gaq.push(['_trackEvent', 'GTranslate', lang, location.hostname+location.pathname+location.search]);}else {if(typeof ga == 'function')ga('send', 'event', 'GTranslate', lang, location.hostname+location.pathname+location.search);}var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw' && plang != 'hmn' && plang != 'haw' && plang != 'ceb')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '[.]'), '')+(typeof gt_request_uri != 'undefined' ? gt_request_uri : location.pathname+location.search);}
+</script>
+<style>a.glink {text-decoration:none;}
+a.glink span {margin-right:5px;font-size:15px;vertical-align:middle;}
+a.glink img {vertical-align:middle;display:inline;border:0;padding:0;margin:0;opacity:0.8;}
+a.glink:hover img {opacity:1;}
+</style>
+<script>setTimeout(function() {if(typeof window.gtranslate_installed == "undefined" && typeof console != "undefined") console.log("To uninstall GTranslate properly please follow the instructions on https://docs.gtranslate.io/how-tos/how-to-remove-gtranslate-app-from-shopify")}, 4000);</script>

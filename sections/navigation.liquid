@@ -1,0 +1,432 @@
+<div class="nav-bar-mobile">
+  <nav class="nav-bar" role="navigation">
+    <div class="site-nav-dropdown_inner">
+      {% include 'site-nav' %}
+    </div>
+  </nav>
+</div>
+
+<style>
+  .menu-tool ul li .icon-label.icon_new{ color:{{section.settings.color_lb_new }};background:{{ section.settings.bg_lb_new}};}
+</style>
+
+{% schema %}
+  {
+    "name": "Navigation",
+	"max_blocks": 10,
+    "settings": [
+    {
+    "type": "checkbox",
+    "id": "display_megamenu",
+    "label": "Display Mega Menu?",
+    "default": true
+    },
+ {
+		"type" : "header",
+		"content" : "Label"
+	  },
+	  {
+		"type" : "checkbox",
+		"id" : "enable_sale",
+		"label" : "Display Label Sale",
+		"default" : true
+	  },
+	  {
+		"type" : "text",
+		"id" : "lb_sale",
+		"label" : "Label sale",
+		"default" : "Sale"
+	  },
+	  {
+		"type" : "textarea",
+		"id" : "sale_item",
+		"label" : "Label Sale Items"
+	  },
+	  {
+		"type" : "color",
+		"id" : "bg_lb_sale",
+		"label" : "Background color label sale",
+		"default" : "#ef6454"
+	  },
+	  {
+		"type" : "color",
+		"id" : "color_lb_sale",
+		"label" : "Text Color label sale",
+		"default" : "#fff"
+	  },
+	  {
+		"type" : "checkbox",
+		"id" : "enable_new",
+		"label" : "Display Label New",
+		"default" : true
+	  },
+	  {
+		"type" : "text",
+		"id" : "lb_new",
+		"label" : "Label New",
+		"default" : "New"
+	  },
+	  {
+		"type" : "textarea",
+		"id" : "new_item",
+		"label" : "Label New Items"
+	  },
+	  {
+		"type" : "color",
+		"id" : "bg_lb_new",
+		"label" : "Background color label New",
+		"default" : "#06bfe2"
+	  },
+	  {
+		"type" : "color",
+		"id" : "color_lb_new",
+		"label" : "Text Color label New",
+		"default" : "#fff"
+	  },
+	  {
+		"type" : "checkbox",
+		"id" : "enable_hot",
+		"label" : "Display Label Hot",
+		"default" : true
+	  },
+	  {
+		"type" : "text",
+		"id" : "lb_hot",
+		"label" : "Label Hot",
+		"default" : "Hot"
+	  },
+	  {
+		"type" : "textarea",
+		"id" : "hot_item",
+		"label" : "Label Hot Items"
+	  },
+	  {
+		"type" : "color",
+		"id" : "bg_lb_hot",
+		"label" : "Background color label Hot",
+		"default" : "#ffbb49"
+	  },
+	  {
+		"type" : "color",
+		"id" : "color_lb_hot",
+		"label" : "Text Color label Hot",
+		"default" : "#fff"
+	  }
+],
+"blocks": [
+	  {
+	  	"type": "style_1",
+      	"name": "Style 1",
+      	"settings": [
+		  {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 1",
+            "default": "Menu - Style 1"
+          },
+		  {
+            "type": "text",
+            "id": "megamenu_items_1",
+            "label": "Mega Menu Items for Style 1",
+            "default": "Catalog"
+            
+          },
+		  {
+            "type": "link_list",
+            "id": "main_linklist_1",
+            "label": "Collection"
+          },
+		  {
+            "type": "image_picker",
+            "id": "banner_first_style_1",
+            "label": "Upload a new image",
+            "info": "500px x 373px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_first_style_1",
+			"label": "Banner link"
+		  }
+		  
+		]
+      },
+	  {
+	  	"type": "style_2",
+      	"name": "Style 2",
+      	"settings": [
+		  {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 2",
+            "default": "Menu - Style 2"
+          },
+		  {
+            "type": "text",
+            "id": "megamenu_items_2",
+            "label": "Mega Menu Items for Style 2",
+            "default": "Catalog"
+          },
+		  {
+            "type": "link_list",
+            "id": "main_linklist_2",
+            "label": "Collection"
+          },
+		  
+		  {
+            "type": "image_picker",
+            "id": "banner_second_style_2",
+            "label": "Upload a new image",
+            "info": "245px x 222px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_second_style_2",
+			"label": "Link image 1"
+		  },
+		  {
+            "type": "image_picker",
+            "id": "banner_third_style_2",
+            "label": "Upload a new image",
+            "info": "245px x 222px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_third_style_2",
+			"label": "Link image 2"
+		  },
+		 {
+            "type": "image_picker",
+            "id": "banner_first_style_2",
+            "label": "Upload a new image",
+            "info": "250px x 452px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_first_style_2",
+			"label": "Link image 3"
+		  }
+		]
+      },
+	  {
+	  	"type": "style_3",
+      	"name": "Style 3",
+      	"settings": [
+		  {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 3",
+            "default": "Menu - Style 3"
+          },
+		  {
+            "type": "text",
+            "id": "megamenu_items_3",
+            "label": "Mega Menu Items for Style 3",
+            "default": "Catalog"
+          },
+		  {
+            "type": "link_list",
+            "id": "main_linklist_3",
+            "label": "Collection"
+          },
+		  
+		  {
+            "type": "text",
+            "id": "title_featured_product_3",
+            "label": "Title Product"
+          },
+		  {
+            "type": "product",
+            "id": "featured_product_3",
+            "label": "Product"
+          },
+         
+		  {
+            "type": "image_picker",
+            "id": "banner_first_style_3",
+            "label": "Upload a new image",
+            "info": "250px x 357px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_first_style_3",
+			"label": "Link image"
+		  }
+		]
+      },
+	  {
+	  	"type": "style_4",
+      	"name": "Style 4",
+      	"settings": [
+		  {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 4",
+            "default": "Menu - Style 4"
+          },
+		  {
+            "type": "text",
+            "id": "megamenu_items_4",
+            "label": "Mega Menu Items for Style 4",
+            "default": "Catalog"
+          },
+		  {
+            "type": "link_list",
+            "id": "main_linklist_4",
+            "label": "Collection"
+          }
+		]
+      },
+	{
+	  	"type": "style_5",
+      	"name": "Style 5",
+      	"settings": [
+		  {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 5",
+            "default": "Menu - Style 5"
+          },
+		  {
+            "type": "text",
+            "id": "megamenu_items_5",
+            "label": "Mega Menu Items for Style 5",
+            "default": "Catalog"
+          },
+		  {
+            "type": "link_list",
+            "id": "main_linklist_5",
+            "label": "Collection"
+          },
+		{
+            "type": "image_picker",
+            "id": "banner_first_style_5",
+            "label": "Upload a new image",
+            "info": "610px x 338px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_first_style_5",
+			"label": "Link image 1"
+		  },
+		 {
+            "type": "image_picker",
+            "id": "banner_second_style_5",
+            "label": "Upload a new image",
+            "info": "610px x 338px recommended"
+          },
+		  {
+			"type": "url",
+			"id": "link_banner_second_style_5",
+			"label": "Link image 2"
+		  }
+		]
+      },
+        {
+        "type": "style_6",
+        "name": "Style 6",
+        "settings": [
+        {
+        "type": "text",
+        "id": "title",
+        "label": "Menu - Style 6",
+        "default": "Menu - Style 6"
+        },
+        {
+        "type": "text",
+        "id": "megamenu_items_6",
+        "label": "Mega Menu Items for Style 6",
+        "default": "Catalog"
+
+        },		  
+        {
+        "type": "image_picker",
+        "id": "banner_first_style_6",
+        "label": "Upload a new image",
+        "info": "224px x 337px recommended"
+        },
+        {
+        "type": "url",
+        "id": "link_banner_first_style_6",
+        "label": "Banner link"
+        },
+          {
+            "type": "link_list",
+            "id": "main_linklist_6",
+            "label": "Collection"
+          }
+		  
+		  
+		]
+      },
+ {
+      "type": "style_7",
+        "name": "Style 7",
+        "settings": [
+      {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 7",
+            "default": "Menu - Style 7"
+          },
+      {
+            "type": "text",
+            "id": "megamenu_items_7",
+            "label": "Mega Menu Items for Style 7",
+            "default": "Catalog"
+          },
+      {
+            "type": "link_list",
+            "id": "main_linklist_7",
+            "label": "Collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "banner_first_style_7",
+            "label": "Upload a new image",
+            "info": "400px x 600px recommended"
+          },
+      {
+      "type": "url",
+      "id": "link_banner_first_style_7",
+      "label": "Link image 1"
+      },
+      
+      {
+            "type": "image_picker",
+            "id": "banner_second_style_7",
+            "label": "Upload a new image",
+            "info": "400px x 600px recommended"
+          },
+      {
+      "type": "url",
+      "id": "link_banner_second_style_7",
+      "label": "Link image 2"
+      }
+      
+     
+    ]
+      },
+{
+      "type": "style_8",
+        "name": "Style 8",
+        "settings": [
+       {
+            "type": "text",
+            "id": "title",
+            "label": "Menu - Style 8",
+            "default": "Menu - Style 8"
+          },
+     {
+            "type": "text",
+            "id": "megamenu_items_8",
+            "label": "Mega Menu Items for Style 8",
+            "default": "Vendor"
+          }
+       
+      
+     
+    ]
+      }
+	]
+  }
+{% endschema %}

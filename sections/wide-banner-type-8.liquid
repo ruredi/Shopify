@@ -1,0 +1,128 @@
+<div data-section-id="{{ section.id }}" data-section-type="wide-banner-type-8" class="wide-banner-type-8 custom-section" style="{% if section.settings.image_1 != blank %}background-image:url('{{ section.settings.image_1 | img_url: '1920X' }}');background-repeat:no-repeat;background-size:cover;background-position:center;{% else %}background-color:{{section.settings.background_color}}{% endif%}">  
+  <div class="grid-uniform">  
+    <div class="grid__item wide--seven-tenths post-large--seven-tenths large--seven-tenths medium-down--grid__item small--grid__item">
+    <div class="wide-banner-type-5-block">      
+      <div class="wide-banner-type-5-content wow fadeInDown">  
+        <div class="wide-banner-type-5-rounded">
+          <div class="title-boxed" style="background:{{ section.settings.title_bg }} ">
+            {% if section.settings.title_1 != blank %}
+            <h2 style="color:{{ section.settings.title_color }}">{{ section.settings.title_1 }}</h2>
+            {% endif %}
+            {% if section.settings.text_1 != blank %}
+            <p style="color:{{ section.settings.text_color }};margin:0;font-weight:normal;">{{ section.settings.text_1 }}</p>
+            {% endif %}
+          </div>
+          <div class="wide-content">
+            {% if section.settings.titleshadow_1 != blank %}
+            <h4 style="color:{{ section.settings.shadowtext_color }}">{{ section.settings.titleshadow_1 }}</h4>
+            {% endif %}           
+          </div>
+        </div> 
+      </div>
+    </div>
+    </div>    
+        <div class="grid__item wide--three-tenths post-large--three-tenths large--three-tenths medium-down--grid__item small--grid__item">
+           {% if section.settings.button_1 != blank %}
+            <a class="btn" href="{{ section.settings.link_1 }}">{{ section.settings.button_1 }}</a>    
+            {% endif %}     
+    </div>
+  </div>
+</div>
+<style>
+  .wide-banner-type-8.custom-section:before { {% if section.settings.pattern_image != blank %} background-image:url({{ section.settings.pattern_image | img_url: '1920X' }});content:""; {%endif %} }
+</style>
+
+
+
+
+{% schema %}
+{
+"name": "Content Banner",
+"class": "index-section",
+"settings": [
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 1768x630"
+},
+{
+"type": "image_picker",
+"id": "pattern_image",
+"label": "before Image",
+"info": "Size: 24x11"
+},
+{
+"type": "color",
+"id": "background_color",
+"label":"Bckground color",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_1",
+"label": "Heading"
+},
+
+{
+"type": "color",
+"id": "title_bg",
+"label":"Title Bg",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "title_border",
+"label":"Title Border",
+"default": "#fc3e78"
+},
+{
+"type": "color",
+"id": "title_color",
+"label":"Title color",
+"default": "#000"
+},
+{
+"type": "textarea",
+"id": "text_1",
+"label": "Description"
+},
+{
+"type": "color",
+"id": "text_color",
+"label":"Text color",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "titleshadow_1",
+"label": "Sub Heading"
+},
+{
+"type": "color",
+"id": "shadowtext_color",
+"label":"Text color",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button_1",
+"label": "Button text"
+},
+{
+"type": "url",
+"id": "link_1",
+"label": "Link URL"
+}
+],
+"presets": [
+{
+"name": "Content Banner",
+"category": "Image",
+"blocks": []
+}
+]
+}
+{% endschema %}
+
+

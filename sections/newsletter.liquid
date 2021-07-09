@@ -1,0 +1,187 @@
+<div data-section-id="{{ section.id }}"  data-section-type="newsletter-block news-block-4" class="newsletter-block news-block-4 " style="{% if section.settings.image_1 != blank %}background-image:url('{{ section.settings.image_1 | img_url: '1920X' }}');background-repeat:no-repeat;background-position:center;{% else %}background-color:{{section.settings.news_bg_clr}}{% endif%};">  
+  <div class="newsletter-block-type-4 ">
+    <div class="overlay"></div>
+    <div class="container">
+      
+      <div class="news-inner-block">
+      {% if section.settings.title != blank %}
+      <div class="border-title wow fadeInUp animated">       
+        <h2 class="newslet_title " style="color:{{ section.settings.title_color }};">
+          {{ section.settings.title }}
+        </h2>
+        {% endif %}       
+        {% if section.settings.news_desc != blank %}
+        <p  class="" style="color:{{section.settings.text_color}}"> {{ section.settings.news_desc }}</p>
+        {% endif %}
+
+      </div>
+      <div class="mc-embedded-subscribe-form wow fadeInUp animated">
+       
+        {% form 'customer' %}
+        {% if form.posted_successfully? %}
+        <p class="note form-success">{{ 'general.newsletter_form.mailing_list_success_message' | t }}</p>
+        {% else %}
+
+        <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="contact[email]" class="mail" aria-label="{{ 'general.newsletter_form.newsletter_email' | t }}" >
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <button type="submit" class="btn subscribe" name="subscribe" value="" >{{ section.settings.button }}</button>          
+
+        {% endif %}
+        {{ form.errors | default_errors }}
+        {% endform %}  
+       
+      </div>      
+</div>
+    </div>
+  </div>
+  <style>
+    .newsletter-block-type-4 form input[type="email"]::-webkit-input-placeholder {  color:{{ section.settings.input_txt_color }};}
+   .newsletter-block-type-4 form input[type="email"]:-moz-placeholder { color:{{ section.settings.input_txt_color }};}
+   .newsletter-block-type-4 form input[type="email"]::-moz-placeholder {  color:{{ section.settings.input_txt_color }};}
+   .newsletter-block-type-4 form input[type="email"]:-ms-input-placeholder {  color:{{ section.settings.input_txt_color }};}
+   .newsletter-block-type-4 form input[type="email"] { color:{{ section.settings.input_txt_color }}; }
+    .newsletter-block-type-4 form input[type="email"]{color:{{section.settings.input_txt_color}}; background-color:{{ section.settings.input_bg_color}}; }
+    .newsletter-block-type-4 form input[type="email"]:focus{background-color:{{ section.settings.input_bg_color }}; }
+    .newsletter-block-type-4 form input[type="email"]:focus placeholder{ display: none;}
+    {% if section.settings.show_overlay_bg != blank %}
+    .newsletter-block.news-block-4::before{background:{{section.settings.news_bg_clr}};}
+    {% endif %}
+    .newsletter-block-type-4 form input[type="email"]{ border-color:{{section.settings.border_color}};}
+
+    .newsletter-block-type-4 form .btn{color:{{section.settings.btn_txt_color}};}
+    .newsletter-block-type-4 form .btn:hover{color:{{section.settings.btn_txt_hvr_color}};} 
+	.newsletter-block-type-4 form .btn{background-color:{{section.settings.btn_bg_color}};}
+	.newsletter-block-type-4 form .btn:hover{background-color:{{section.settings.btn_bg_hvr_color}};} 
+   
+    .newsletter-block-type-4 .inline-list li a {border:1px solid {{section.settings.social_icon_borderclr}};}
+    .newsletter-block-type-4 .inline-list li a:hover{border:1px solid {{section.settings.social_icon_hoverbg_clr}};background:{{section.settings.social_icon_hoverbg_clr}};color:{{section.settings.social_icon_hover_clr}};}
+
+    .newsletter-block-type-4 .news-inner-block {border:1px solid {{section.settings.news_border_clr}};}
+    
+         .newsletter-block-type-4 .news-inner-block{box-shadow: {{ section.settings.news_boxshadow_clr | color_modify: 'alpha', 0.05 }} 0px 0px 15px 0px;}
+  </style>
+</div>
+
+
+{% schema %}
+{
+"name": "Newsletter",
+"class": "index-section",  
+"settings": [
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 1920x1200"
+},
+{
+"type": "checkbox",
+"id": "show_overlay_bg",
+"label":"Show Overlay bg Color"
+
+},
+{
+"type": "color",
+"id": "news_bg_clr",
+"label": "Bg Color",
+"default": "#fff"
+},
+{
+"type": "text",
+"id": "title",
+"label": "Heading",
+"default": "Newsletter"
+},
+{
+"type": "textarea",
+"id": "news_desc",
+"label": "Desc",
+"default": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi"
+},
+
+{
+"type": "color",
+"id": "title_color",
+"label": "Heading",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "news_border_clr",
+"label": "Border Color",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "news_boxshadow_clr",
+"label": "Boxshadow Color",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "input_bg_color",
+"label": "Input Bg color",
+"default": "#fff"
+},
+
+{
+"type": "color",
+"id": "border_color",
+"label": "border color",
+"default": "#000"
+},
+
+{
+"type": "color",
+"id": "input_txt_color",
+"label": "Input Text color",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "text_color",
+"label": "Description",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button",
+"label": "Button",
+"default": "Subscribe"
+},
+{
+"type": "color",
+"id": "btn_txt_color",
+"label": "Button Text color",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "btn_txt_hvr_color",
+"label": "Button Text hover color",
+"default": "#fff"
+},
+
+{
+"type": "color",
+"id": "btn_bg_color",
+"label": "Button Bg color",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "btn_bg_hvr_color",
+"label": "Button Bg hover color",
+"default": "#fff"
+}
+
+],  
+"presets": [
+{
+"name": "Newsletter",
+"category": "Form",
+"blocks": [ ]
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,279 @@
+
+<ul class="menu-icon">   
+  {% if shop.customer_accounts_enabled or section.settings.display_wishlist %}
+  <li class="menu_bar_right">
+    <div class="customer_account">                          
+      <ul>
+        {% if shop.customer_accounts_enabled %}
+        {% if customer %}
+        <li>
+          <a href="/account" title="{{ 'layout.customer.account' | t }}"><i class="fas fa-user"></i><span>{{ 'layout.customer.account' | t }}</span></a>
+        </li>
+        <li class="logout-link">
+          <a title="{{ 'layout.customer.log_out' }}" href="/account/logout" ><i class="fas fa-user-sign-out-alt"></i><span>{{ 'layout.customer.log_out' | t }}</span></a>
+        </li>
+        {% else %}
+        <li>
+          <a title="{{ 'layout.customer.log_in' | t }}" href="/account/login"><i class="fas fa-sign-in-alt"></i><span>{{ 'layout.customer.log_in' | t }}</span></a>
+        </li>
+        <li>
+          <a title="{{ 'layout.customer.create_account' | t }}" href="/account/register"><i class="fas fa-user"></i><span>{{ 'layout.customer.create_account' | t }}</span></a>
+        </li>          
+        {% endif %}  
+        {% endif %} 
+        {% if section.settings.display_wishlist %}   
+        <li>            
+          <a class="wishlist" href="/pages/wishlist" title="{{ 'products.wishlist.wishlist_name' | t }}"><i class="far fa-heart"></i><span>{{ 'products.wishlist.wishlist_name' | t }}</span></a>           
+        </li>
+        {% endif %} 
+      </ul>
+    </div>  
+  </li>
+  {% endif %}    
+  <li class="header-mobile">
+    <div class="menu-block visible-phone"><!-- start Navigation Mobile  -->
+      <div id="showLeftPush">
+        <i class="fa fa-bars" aria-hidden="true">  </i>
+      </div>
+    </div><!-- end Navigation Mobile  --> 
+  </li>
+  {% if section.settings.display_search %}                
+  <li class="header-search">
+    <a href="/search" class="site-header__link site-header__search js-drawer-open-top">
+      <span class="fa fa-search" aria-hidden="true"></span>
+    </a>
+  </li>
+  {% endif %} 
+</ul>
+
+
+<style> 
+  /* Top block */
+  .header-type-14 .top_bar { background: {{ section.settings.top_bar_bg }}; }
+  .header-type-14 .top_bar li, .header-type-14 .top_bar span { color:{{section.settings.top_bar_text}};}   
+  .header-type-14 .top_bar a { color:{{section.settings.top_bar_links }};}    
+  .header-type-14 .top_bar a:hover, .header-type-14 .top_bar a:hover span { color:{{section.settings.top_bar_link_hover }};}    
+
+  /* Logo block */
+  .header-type-14 .site-header__logo a { color:{{section.settings.logo_text }};}
+  .header-type-14 .site-header__logo a:hover { color:{{section.settings.logo_hover_text }};}    
+
+  /* Menu  block */
+  .header-type-14 .site-header,.mobile-nav-section ,.header-type-14 .sticky-animate{background: {{ section.settings.menubar_bg }};}
+  .header-type-14 .menu-tool ul li {color: {{ section.settings.menubar_text }};}
+  .header-type-14 .menu-tool ul li a,.mobile-nav-section .mobile-nav-trigger {color:{{section.settings.menubar_links}};}  
+  .header-type-14 .menu-tool ul li a:hover,.header-type-14 .menu-tool .site-nav > li > a.current:hover {color:{{section.settings.menubar_links_hover}};} 
+  .header-type-14 .menu-tool .site-nav >  li > a.current {color:{{section.settings.menu_active}};} 
+  .header-type-14 .site-nav-dropdown,#MobileNav,.mobile-nav__sublist { background: {{ section.settings.menubar_dropdown_bg }};}
+  .header-type-14 .site-nav-dropdown .inner > a {color: {{ section.settings.menubar_dropdown_caption }};}    
+  .header-type-14 .site-nav-dropdown .inner > a:hover {color: {{ section.settings.menubar_dropdown_caption_hover }};}    
+  .header-type-14 .site-nav-dropdown .inner .dropdown a,.header-type-14 .menu-tool .site-nav .site-nav-dropdown li a,.header-type-14 .site-nav .widget-featured-product .product-title,.header-type-14 .site-nav .widget-featured-product .widget-title h3,#MobileNav a,.mobile-nav__sublist a,.site-nav .widget-featured-nav .owl-prev a,.site-nav .widget-featured-nav .owl-next a  {color: {{ section.settings.menubar_dropdown_links }};}
+  .header-type-14 .site-nav-dropdown .inner .dropdown a:hover,.header-type-14 .menu-tool .site-nav .site-nav-dropdown li a:hover,.header-type-14 .site-nav-dropdown .inner .dropdown a.current,.header-type-14 .menu-tool .site-nav .site-nav-dropdown li a.current,.header-type-14 .site-nav .widget-featured-product .product-title:hover,#MobileNav a.current,.mobile-nav__sublist a.current,.site-nav .widget-featured-nav .owl-prev a:hover,.site-nav .widget-featured-nav .owl-next a:hover {color: {{ section.settings.menubar_dropdown_links_hover }};}    
+
+  /* Dropdown block */
+  .header-type-14 .menubar-section #Togglemodal i {color: {{ section.settings.dropdown_icon }};}
+  .header-type-14 .menubar-section #Togglemodal i:hover {color: {{ section.settings.dropdown_icon_hover }};}
+  .header-type-14 #slidedown-modal {background: {{ section.settings.dropdown_bg }};}
+  .header-type-14 #slidedown-modal ul li a {color:{{section.settings.dropdown_link}};} 
+  .header-type-14 #slidedown-modal ul li a:hover {color:{{section.settings.dropdown_hover_link}};} 
+
+
+  /* Search block */     
+  .header-type-14 .search-bar input[type="search"] {color:{{section.settings.search_text }};} 
+  .header-type-14 .header-search span  {color:{{section.settings.search_icon}};} 
+  .header-type-14 .header-search span:hover {color:{{section.settings.search_icon_hover }};} 
+  .header-type-14 .search-bar__form, .header-type-14 #SearchDrawer  {  }
+  .header-type-14 .search-bar__form button,.header-type-14 .search-bar__icon-button { color:{{section.settings.search_link }};}
+  .header-type-14 .search-bar__form button:hover,.header-type-14 .search-bar__icon-button:hover { color:{{section.settings.search_link_hover }};}
+
+  .header-type-14 .search-bar input[type="search"]::-webkit-input-placeholder  { /* Chrome/Opera/Safari */
+    color:{{ section.settings.search_text }};
+  }
+  .header-type-14 .search-bar input[type="search"]::-moz-placeholder { /* Firefox 19+ */
+    color:{{ section.settings.search_text }};
+  }
+  .header-type-14 .search-bar input[type="search"]:-ms-input-placeholder { /* IE 10+ */
+    color:{{ section.settings.search_text }};
+  }
+  .header-type-14 .search-bar input[type="search"]:-moz-placeholder { /* Firefox 18- */
+    color:{{ section.settings.search_text }};
+  }
+
+  .header-type-14 .menu-icon li a , .header-type-14 .header-mobile {color:{{section.settings.logo_text}};}
+  .header-type-14 .menu-icon li a:hover , .header-type-14 .header-mobile:hover{color:{{section.settings.logo_hover_text}};}
+  /* Header borders */
+
+
+  .header-type-14 .menu-icon li li , .header-type-14 .header-search{border-left:1px solid {{section.settings.border_between_bars}};}
+
+  .header-type-14 ul.site-nav>li {border-left:1px solid {{section.settings.border_between_bars}};}
+
+
+
+
+
+</style> 
+
+
+{% schema %}
+{
+"name": "Header",
+"settings": [
+
+
+{
+"type":"checkbox",
+"id": "display_search",
+"label": "Display search"	
+},
+
+
+{
+"type": "checkbox",
+"id": "display_wishlist",
+"label": "Display wishlist"
+},
+
+
+{
+"type": "header",
+"content": "Border Block"
+},
+{
+"type": "color",
+"id": "border_between_bars",
+"label": "Border lines",
+"default": "#e4e4e4"
+},
+
+{
+"type": "header",
+"content": "Logo Block"
+},
+
+{
+"type": "color",
+"id": "logo_text",
+"label": "Text",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "logo_hover_text",
+"label": "Hover text",
+"default": "#000"
+},
+
+
+
+{
+"type": "header",
+"content": "Search Block"
+},
+{
+"type": "color",
+"id": "search_bg",
+"label": "Background",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "search_icon",
+"label": "Icon",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "search_icon_hover",
+"label": "Icon hover",
+"default": "#35b8f4"
+},
+
+{
+"type": "color",
+"id": "search_text",
+"label": "Text",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "search_link",
+"label": "Link",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "search_link_hover",
+"label": "Link Hover",
+"default": "#000"
+},
+
+
+{
+"type": "header",
+"content": "Menu Block"
+},
+{
+"type": "color",
+"id": "menubar_bg",
+"label": "Background",
+"default": "#fff"
+},  
+{
+"type": "color",
+"id": "menubar_links",
+"label": "Links",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "menubar_links_hover",
+"label": "Hover links",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "menu_active",
+"label": "Active menu",
+"default": "#35b8f4"
+},
+{
+"type": "color",
+"id": "menubar_dropdown_bg",
+"label": "Dropdown menu background",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "menubar_dropdown_caption",
+"label": "Dropdown menu title",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "menubar_dropdown_caption_hover",
+"label": "Dropdown menu title hover",
+"default": "#35b8f4"
+},
+{
+"type": "color",
+"id": "menubar_dropdown_links",
+"label": "Dropdown menu links",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "menubar_dropdown_links_hover",
+"label": "Dropdown menu links hover",
+"default": "#35b8f4"
+}
+
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

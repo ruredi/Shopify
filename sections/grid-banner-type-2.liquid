@@ -1,0 +1,622 @@
+<div data-section-id="{{ section.id }}" data-section-type="grid-banner-type-2" class="grid-banner-type-2" style="background:{{ section.settings.bg_color}}";>   
+  <div class="grid-uniform featuredItems"> 
+    <div class="container-bg">
+    <div class="grid__item wide--one-quarter post-large--one-quarter large--one-quarter medium-down--grid__item small--grid__item full-width-grid-banner">    
+      <div class="grid__item full-width-grid-banner">
+
+        <div class="ovrly18">
+          {% if section.settings.link_1 != blank %}<a href="{{ section.settings.link_1 }}">{% endif%}
+          {% if section.settings.image_1 != blank %}
+
+          <img src="{{ section.settings.image_1 | img_url: '1920X' }}" alt="{{ section.settings.title_1 }}" />
+         {% if section.settings.overlay_1 %} <div class="ovrly" style="background:{{ section.settings.overlay_bgcolor_1 | color_modify: 'alpha', 0.5 }};"></div> {% endif %}
+          {% else %}
+          <img src="//via.placeholder.com/568x926">
+          
+          {% endif%}           
+          {% if section.settings.link_1 != blank %}  </a>
+          {% endif%}
+          <div class="featured-content">       
+            {% if section.settings.special_title != blank %}
+            <h6 style="color:{{ section.settings.special_title_clr }};">{{ section.settings.special_title }}</h6>
+            {% endif %}
+            {% if section.settings.title_1 != blank %}
+            <h2 style="color:{{ section.settings.title_1_clr }};">{{ section.settings.title_1}}</h2>    
+            {% endif %}  
+            {% if section.settings.button_1 != blank %}
+            <a class="btn one" href="{{ section.settings.link_1 }}" style="color:{{ section.settings.button_1_txt_clr }};border:none;background-color:{{ section.settings.button_1_bg_clr }};">{{ section.settings.button_1}}</a>    
+            {% endif %}         
+          </div>   
+        </div>
+
+      </div>
+    </div>
+    <div class="grid__item wide--three-quarters post-large--three-quarters large--three-quarters medium-down--grid__item small--grid__item grid_banner_right">      
+      <div class="grid__item grid_banner_bottom">   
+        <div class="grid__item wide--one-third post-large--one-third large--one-third grid_banner_left">    
+          <div class="ovrly18">
+            {% if section.settings.link_2 != blank %}<a href="{{ section.settings.link_2 }}">{% endif%}
+            
+            
+            {% if section.settings.image_2 != blank %}
+            <img src="{{ section.settings.image_2 | img_url: '1920X' }}" alt="{{ section.settings.title_2 }}" />
+            {% if section.settings.overlay_2 %}<div class="ovrly" style="background:{{ section.settings.overlay_bgcolor_2 | color_modify: 'alpha', 0.5 }};"></div>{% endif%} 
+            {% else %}
+            <img src="//via.placeholder.com/568x460">
+            {% endif%}           
+            {% if section.settings.link_2 != blank %}  </a>
+            {% endif%}
+            <div class="featured-content first">       
+             {% if section.settings.special_title_1 != blank %}
+            <h6 style="color:{{ section.settings.special_title_1_clr }};">{{ section.settings.special_title_1 }}</h6>
+            {% endif %}
+            {% if section.settings.title_2 != blank %}
+            <h2 style="color:{{ section.settings.title_2_clr }};">{{ section.settings.title_2}}</h2>    
+            {% endif %}  
+              {% if section.settings.button_2 != blank %}
+              <a class="btn two" href="{{ section.settings.link_2 }}" style="color:{{ section.settings.button_2_txt_clr }};border:none;background-color:{{ section.settings.button_2_bg_clr }};">{{ section.settings.button_2}}</a>    
+              {% endif %}         
+            </div> 
+          </div>
+        </div>
+        <div class="grid__item wide--two-thirds post-large--two-thirds large--two-thirds">
+          <div class="ovrly18">
+            {% if section.settings.link_3 != blank %}<a href="{{ section.settings.link_3 }}">{% endif%}
+            {% if section.settings.image_3 != blank %}
+            <img src="{{ section.settings.image_3 | img_url: '1920X' }}" alt="{{ section.settings.title_3 }}" />
+            {% if section.settings.overlay_3 %}<div style="background:{{ section.settings.overlay_bgcolor_3 | color_modify: 'alpha', 0.5 }};" class="ovrly"></div>{% endif %}
+            {% else %}
+              <img src="//via.placeholder.com/1200x493">
+            {% endif%}           
+            {% if section.settings.link_3 != blank %}  </a>
+            {% endif%}
+            <div class="featured-content">       
+               {% if section.settings.special_title_2 != blank %}
+            <h6 style="color:{{ section.settings.special_title_2_clr }};">{{ section.settings.special_title_2 }}</h6>
+            {% endif %}
+            {% if section.settings.title_3 != blank %}
+            <h2 style="color:{{ section.settings.title_3_clr }};">{{ section.settings.title_3}}</h2>    
+            {% endif %}  
+              {% if section.settings.text_3 != blank %}
+              <h5 style="color:{{ section.settings.text_3_clr }};">{{ section.settings.text_3}}</h6>    
+              {% endif %}  
+              {% if section.settings.button_3 != blank %}
+              <a class="btn three" href="{{ section.settings.link_3 }}" style="color:{{ section.settings.button_3_txt_clr }};border:none;background-color:{{ section.settings.button_3_bg_clr }};">{{ section.settings.button_3}}</a>    
+              {% endif %}               
+            </div>   
+          </div>
+        </div>
+      </div>
+      <div class="grid__item grid_banner_2_bottom">   
+
+        <div class="grid__item wide--two-thirds post-large--two-thirds large--two-thirds medium-down--two-thirds small--grid__item">        
+          <div class="ovrly18">
+            {% if section.settings.link_4 != blank %}<a href="{{ section.settings.link_4 }}">{% endif%}
+            {% if section.settings.image_4 != blank %}
+            <img src="{{ section.settings.image_4 | img_url: '1920X' }}" alt="{{ section.settings.title_4 }}" />
+           {% if section.settings.overlay_4 %} <div style="background:{{ section.settings.overlay_bgcolor_4 | color_modify: 'alpha', 0.5 }};" class="ovrly"></div>{% endif %}
+            {% else %}
+             <img src="//via.placeholder.com/1200x493">
+            {% endif%}           
+            {% if section.settings.link_4 != blank %}  </a>
+            {% endif%}
+            <div class="featured-content">              
+            {% if section.settings.special_title_3 != blank %}
+            <h6 style="color:{{ section.settings.special_title_3_clr }};">{{ section.settings.special_title_3 }}</h6>
+            {% endif %}
+            {% if section.settings.title_4 != blank %}
+            <h2 style="color:{{ section.settings.title_4_clr }};">{{ section.settings.title_4}}</h2>    
+            {% endif %}    
+              {% if section.settings.text_4 != blank %}
+              <h5 style="color:{{ section.settings.text_4_clr }};">{{ section.settings.text_4}}</h6>    
+              {% endif %}  
+              {% if section.settings.button_4 != blank %}
+              <a class="btn four" href="{{ section.settings.link_4 }}" style="color:{{ section.settings.button_4_txt_clr }};border:none;background-color:{{ section.settings.button_4_bg_clr }};">{{ section.settings.button_4}}</a>    
+              {% endif %}
+            </div>
+          </div>
+        </div> 
+        <div class="grid__item wide--one-third post-large--one-third large--one-third medium-down--one-third small--grid__item">        
+          <div class="ovrly18">
+            {% if section.settings.link_5 != blank %}<a href="{{ section.settings.link_5 }}">{% endif%}
+            {% if section.settings.image_5 != blank %}
+            <img src="{{ section.settings.image_5 | img_url: '1920X' }}" alt="{{ section.settings.title_5 }}" />
+            {% if section.settings.overlay_5 %} <div style="background:{{ section.settings.overlay_bgcolor_5 | color_modify: 'alpha', 0.5 }};"  class="ovrly"></div> {% endif %}
+            {% else %}
+            <img src="//via.placeholder.com/568x460">
+            {% endif%}           
+            {% if section.settings.link_5 != blank %}  </a>
+            {% endif%}
+            <div class="featured-content last_banner_img">   
+             {% if section.settings.special_title_4 != blank %} 
+ 			<h6 style="color:{{ section.settings.special_title_4_clr }};">{{ section.settings.special_title_4 }}</h6>
+            {% endif %}
+            {% if section.settings.title_5 != blank %}
+            <h2 style="color:{{ section.settings.title_5_clr }};">{{ section.settings.title_5}}</h2>    
+            {% endif %} 
+              {% if section.settings.text_5 != blank %}
+              <h5 style="color:{{ section.settings.text_5_clr }};">{{ section.settings.text_5}}</h6>    
+              {% endif %}  
+              {% if section.settings.button_5 != blank %}
+              <a class="btn five" href="{{ section.settings.link_5 }}" style="color:{{ section.settings.button_5_txt_clr }};border:none;background-color:{{ section.settings.button_5_bg_clr }};">{{ section.settings.button_5}}</a>    
+              {% endif %}         
+            </div>   
+          </div>
+     
+      </div>
+      <style>
+        .grid__item.full-width-grid-banner .ovrly18:after{ background:{{ section.settings.shape_clr }};}
+       @media screen and (min-width: 320px) and (max-width: 767px) { .grid-banner-type-2 .full-width-grid-banner .featured-content{ background:{{ section.settings.content_clr | color_modify: 'alpha', 0.8 }};}}
+        .grid-banner-type-2 .featured-content .btn.one:hover { background:{{ section.settings.button_1_bg_hover_clr }} !important;color:{{ section.settings.button_1_text_hover_clr }} !important; }
+        .grid-banner-type-2 .featured-content .btn.two:hover { background:{{ section.settings.button_2_bg_hover_clr }} !important; color:{{ section.settings.button_2_text_hover_clr }} !important;}
+        .grid-banner-type-2 .featured-content .btn.three:hover { background:{{ section.settings.button_3_bg_hover_clr }} !important;color:{{ section.settings.button_3_text_hover_clr }} !important; }
+        .grid-banner-type-2 .featured-content .btn.four:hover { background:{{ section.settings.button_4_bg_hover_clr }} !important;color:{{ section.settings.button_4_text_hover_clr }} !important; }
+        .grid-banner-type-2 .featured-content .btn.five:hover { background:{{ section.settings.button_5_bg_hover_clr }} !important;color:{{ section.settings.button_5_text_hover_clr }} !important; }
+      </style>
+
+    </div>
+  </div>    
+  </div>
+</div>
+</div>
+
+
+{% schema %}
+{
+"name": "Grid Banner",
+"class": "index-section",
+"settings": [
+{
+"type": "color",
+"id": "bg_color",
+"label":"Bckground color",
+"default": "#f5f5f5"
+},
+
+{
+"type": "image_picker",
+"id": "image_1",
+"label": "Image",
+"info": "Size: 568x926"
+},
+{
+"type": "text",
+"id": "special_title",
+"label": "special-text",
+"default": "special-text"
+},
+{
+"type": "color",
+"id": "special_title_clr",
+"label": "special-text",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_1",
+"label": "Heading",
+"default": "Heading"
+},
+{
+"type": "color",
+"id": "title_1_clr",
+"label": "Heading",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button_1",
+"label": "Button text",
+"default": "Shop Now"
+},
+{
+"type": "color",
+"id": "button_1_txt_clr",
+"label": "Button text",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "button_1_bg_clr",
+"label": "Button background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_1_bg_hover_clr",
+"label": "Button hover background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_1_text_hover_clr",
+"label": "Button hover text",
+"default": "#000"
+},
+{
+"type": "checkbox",
+"id": "overlay_1",
+"label": "Overlay"
+	
+},
+{
+"type": "color",
+"id": "overlay_bgcolor_1",
+"label": "Overlay",
+"default":"#000"	
+},
+{
+"type": "url",
+"id": "link_1",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_2",
+"label": "Image",
+"info": "Size: 767x619"
+},
+{
+"type": "text",
+"id": "special_title_1",
+"label": "special-text",
+"default": "special-text"
+},
+{
+"type": "color",
+"id": "special_title_1_clr",
+"label": "special-text",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_2",
+"label": "Heading",
+"default": "Heading"
+},
+{
+"type": "color",
+"id": "title_2_clr",
+"label": "Heading",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button_2",
+"label": "Button text",
+"default": "Shop Now"
+},
+{
+"type": "color",
+"id": "button_2_txt_clr",
+"label": "Button text",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "button_2_bg_clr",
+"label": "Button background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_2_bg_hover_clr",
+"label": "Button hover background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_2_text_hover_clr",
+"label": "Button hover text",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "content_clr",
+"label": "content color",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "shape_clr",
+"label": "Shape color",
+"default": "#000"
+},
+
+{
+"type": "checkbox",
+"id": "overlay_2",
+"label": "Overlay"
+	
+},
+{
+"type": "color",
+"id": "overlay_bgcolor_2",
+"label": "Overlay",
+"default":"#000"	
+},
+{
+"type": "url",
+"id": "link_2",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_3",
+"label": "Image",
+"info": "Size: 888x365"
+},
+{
+"type": "text",
+"id": "special_title_2",
+"label": "special-text",
+"default": "special-text"
+},
+{
+"type": "color",
+"id": "special_title_2_clr",
+"label": "special-text",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_3",
+"label": "Heading",
+"default": "Heading"
+},
+{
+"type": "color",
+"id": "title_3_clr",
+"label": "Heading",
+"default": "#000"
+},
+{
+"type": "textarea",
+"id": "text_3",
+"label": "Description",
+"default": "Description"
+},
+{
+"type": "color",
+"id": "text_3_clr",
+"label": "Description",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button_3",
+"label": "Button text",
+"default": "Shop Now"
+},
+{
+"type": "color",
+"id": "button_3_txt_clr",
+"label": "Button text",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "button_3_bg_clr",
+"label": "Button background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_3_bg_hover_clr",
+"label": "Button hover background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_3_text_hover_clr",
+"label": "Button hover text",
+"default": "#000"
+},
+{
+"type": "checkbox",
+"id": "overlay_3",
+"label": "Overlay"
+	
+},
+{
+"type": "color",
+"id": "overlay_bgcolor_3",
+"label": "Overlay",
+"default":"#000"	
+},
+{
+"type": "url",
+"id": "link_3",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_4",
+"label": "Image",
+"info": "Size: 888x365"
+},
+{
+"type": "text",
+"id": "special_title_3",
+"label": "special-text",
+"default": "special-text"
+},
+{
+"type": "color",
+"id": "special_title_3_clr",
+"label": "special-text",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_4",
+"label": "Heading",
+"default": "Heading"
+},
+{
+"type": "color",
+"id": "title_4_clr",
+"label": "Heading",
+"default": "#000"
+},
+{
+"type": "textarea",
+"id": "text_4",
+"label": "Description",
+"default": "Description"
+},
+{
+"type": "color",
+"id": "text_4_clr",
+"label": "Description",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button_4",
+"label": "Button text",
+"default": "Shop Now"
+},
+{
+"type": "color",
+"id": "button_4_txt_clr",
+"label": "Button text",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "button_4_bg_clr",
+"label": "Button background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_4_bg_hover_clr",
+"label": "Button hover background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_4_text_hover_clr",
+"label": "Button hover text",
+"default": "#000"
+},
+{
+"type": "checkbox",
+"id": "overlay_4",
+"label": "Overlay"
+	
+},
+{
+"type": "color",
+"id": "overlay_bgcolor_4",
+"label": "Overlay",
+"default":"#000"	
+},
+{
+"type": "url",
+"id": "link_4",
+"label": "Link URL"
+},
+{
+"type": "image_picker",
+"id": "image_5",
+"label": "Image",
+"info": "Size: 767x619"
+},
+{
+"type": "text",
+"id": "special_title_4",
+"label": "special-text",
+"default": "special-text"
+},
+{
+"type": "color",
+"id": "special_title_4_clr",
+"label": "special-text",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "title_5",
+"label": "Heading",
+"default": "Heading"
+},
+{
+"type": "color",
+"id": "title_5_clr",
+"label": "Heading",
+"default": "#000"
+},
+{
+"type": "textarea",
+"id": "text_5",
+"label": "Description",
+"default": "Description"
+},
+{
+"type": "color",
+"id": "text_5_clr",
+"label": "Description",
+"default": "#000"
+},
+{
+"type": "text",
+"id": "button_5",
+"label": "Button text",
+"default": "Shop Now"
+},
+{
+"type": "color",
+"id": "button_5_txt_clr",
+"label": "Button text",
+"default": "#fff"
+},
+{
+"type": "color",
+"id": "button_5_bg_clr",
+"label": "Button background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_5_bg_hover_clr",
+"label": "Button hover background",
+"default": "#000"
+},
+{
+"type": "color",
+"id": "button_5_text_hover_clr",
+"label": "Button hover text",
+"default": "#000"
+},
+{
+"type": "checkbox",
+"id": "overlay_5",
+"label": "Overlay"
+	
+},
+{
+"type": "color",
+"id": "overlay_bgcolor_5",
+"label": "Overlay",
+"default":"#000"	
+},
+{
+"type": "url",
+"id": "link_5",
+"label": "Link URL"
+}
+],
+"presets": [
+{
+"name": "Grid Banner",
+"category": "Image",
+"blocks": []
+}
+]
+}
+{% endschema %}
+
+
+
