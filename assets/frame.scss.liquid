@@ -1531,7 +1531,7 @@ input[type="search"].sb-search-input { -webkit-appearance: none; -webkit-border-
 .border-title { text-align:center;float:left;width:100%;margin-bottom:54px;@include at-query ($max, $laplarge) {margin-bottom:30px; } @include at-query ($max, $semilarge) {margin-bottom:20px; } }
 .border-title h5 {letter-spacing: 0.3em; margin-bottom: 20px;margin-bottom: 20px;font-weight:700;font-size:14px;}
 .border-title h3 {letter-spacing: 0.2em;font-weight:700;}
-.border-title h2 { z-index: 1;font-weight: normal; margin-bottom: 0; position: relative; line-height: 1.4;padding: 0 40px;@include at-query ($max, $medium) {padding: 0 20px; }display:inline-block;}
+.border-title h2, .instastory-title { z-index: 1;font-weight: normal; margin-bottom: 0; position: relative; line-height: 1.4;padding: 0 40px;@include at-query ($max, $medium) {padding: 0 20px; }display:inline-block;}
 .border-title.left {text-align:left}
 .border-title.left h2 {padding-left:0;}
 
@@ -4713,3 +4713,9 @@ li .products.product-hover-9 .product-button .add-to-wishlist .loading { top:0; 
 .loox-pn {@include at-query ($min, $laplarge) {zoom:1.25;}}
 .loox-float-toggler {zoom:0.9;top:65%!important;}
 .main-home-content .shopify-section.index-section .grid-banner-type-2, .main-home-content .index-section--custom-content {max-width:2370px;margin-left:auto;margin-right:auto;}
+#instagram-stories-box {clear:both;margin-bottom: 60px; position: relative;top: -20px;}
+.instastory-title {font-size: 40px !important;color:$colorPrimary;@include at-query ($max, $laplarge) { 
+	font-size:40px - 9px !important;
+	}
+}
+#instafeed {margin-bottom:100px !important;}

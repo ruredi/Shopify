@@ -1,3 +1,4 @@
+<div id="instagram-stories-box"></div>
 <div data-section-id="{{ section.id }}"  data-section-type="testimonial-type-11" class="testimonial-type-11" style="{% if section.settings.image_1 %}background-image:url('{{ section.settings.image_1 | img_url: '1920X' }}');background-attachment:fixed;background-repeat:no-repeat;background-position:center center; {% else %}background-color:{{section.settings.background_color}};{% endif%}">
   <div class="grid-uniform">
     <div class="pattern pattern-{{ section.id }}-animate" style="{% if section.settings.image != blank %} background-image:url('{{ section.settings.image | img_url: 'master' }}');background-repeat:no-repeat; position:absolute;width:250px;height:300px;z-index:1;left:5.5%;{% endif %}"></div>
