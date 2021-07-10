@@ -1629,7 +1629,8 @@
               "title": "Menu - Style 1",
               "megamenu_items_1": "Clothes",
               "main_linklist_1": "baby-clothes",
-              "banner_first_style_1": "shopify:\/\/shop_images\/ef3de787272d1bd9af2152a94dbc0c5c-540px.jpg"
+              "banner_first_style_1": "shopify:\/\/shop_images\/ef3de787272d1bd9af2152a94dbc0c5c-540px.jpg",
+              "link_banner_first_style_1": ""
             }
           },
           "c6cf5884-0eec-43e2-8e66-51a1d95967bb": {
@@ -1637,7 +1638,8 @@
             "settings": {
               "title": "Menu - Style 1",
               "megamenu_items_1": "Baby Accessories",
-              "main_linklist_1": "accessories"
+              "main_linklist_1": "accessories",
+              "link_banner_first_style_1": ""
             }
           },
           "1558346423322": {
@@ -1645,7 +1647,10 @@
             "settings": {
               "title": "Menu - Style 2",
               "megamenu_items_2": "Baby Accessories",
-              "main_linklist_2": "accessories"
+              "main_linklist_2": "accessories",
+              "link_banner_second_style_2": "",
+              "link_banner_third_style_2": "",
+              "link_banner_first_style_2": ""
             }
           },
           "1558346429966": {
@@ -1655,7 +1660,9 @@
               "megamenu_items_5": "Baby Accessories",
               "main_linklist_5": "",
               "banner_first_style_5": "shopify:\/\/shop_images\/accessories-menu-banner1.jpg",
-              "banner_second_style_5": "shopify:\/\/shop_images\/accessories-menu-banner.jpg"
+              "link_banner_first_style_5": "",
+              "banner_second_style_5": "shopify:\/\/shop_images\/accessories-menu-banner.jpg",
+              "link_banner_second_style_5": ""
             }
           }
         },
@@ -2415,73 +2422,85 @@
           "1557819782188-0": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-1": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-2": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-3": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-4": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-5": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-6": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1557819782188-7": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1565010518893": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1565010548950": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1565588782790": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           },
           "1565588949624": {
             "type": "Image",
             "settings": {
-              "client_heading": ""
+              "client_heading": "",
+              "client_link": ""
             }
           }
         },
@@ -3415,7 +3434,8 @@
           "title_color": "#000000",
           "small_title": "",
           "small_title_color": "#000000",
-          "button": "View all"
+          "button": "View all",
+          "link": ""
         }
       },
       "1601342748916": {
@@ -3472,13 +3492,15 @@
       },
       "16203508572fd34307": {
         "type": "app-instagram",
+        "disabled": true,
         "settings": {
           "background_color": "#ffffff",
           "title": "Our Latest Instagram Feeds <i class=\"fab fa-instagram\"><\/i>",
           "title_color": "#67c5df",
           "small_title": "",
           "small_title_color": "#000000",
-          "button": "View all"
+          "button": "View all",
+          "link": ""
         }
       }
     },
