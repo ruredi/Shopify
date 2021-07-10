@@ -1169,7 +1169,7 @@
         "description_html": "La prochaine fois que vous passerez votre commande ici ou dans d&#39;autres magasins alimentés par Shopify, vous recevrez un code par SMS pour acheter en toute sécurité avec Shop Pay.",
         "mobile_phone_icon_alt": "Téléphone mobile",
         "mobile_phone_number": "numéro de téléphone portable",
-        "terms_and_privacy_html": "En continuant, vous acceptez les conditions d&#39;utilisation de Shop Pay %{privacy_href} et %{terms_href} .",
+        "terms_and_privacy_html": "En continuant, vous acceptez les %{privacy_href} et %{terms_href} de Shop Pay.",
         "privacy_policy": "Politique de confidentialité",
         "terms_of_service": "Conditions d&#39;utilisation",
         "errors": {
@@ -1188,25 +1188,25 @@
         "changes_summary": {
           "added": {
             "one": "Ajoutée",
-            "other": "%{count} ajoutée"
+            "other": "%{count} ajouté"
           },
           "removed": "Supprimé",
           "subtracted": "%{count} supprimé"
         },
-        "additional_payment_requested": "Paiement de %{total_outstanding} est nécessaire",
-        "checkout_review_and_pay": "Votre commande %{order_name} a été mis à jour. Vérifiez ces modifications, puis payez pour confirmer votre commande.",
-        "order_updated_on": "Votre commande a été mise à jour le %{last_edited_at} .",
+        "additional_payment_requested": "Le paiement de %{total_outstanding} est requis",
+        "checkout_review_and_pay": "Votre commande %{order_name} a été mise à jour. Vérifiez ces modifications, puis payez pour confirmer votre commande.",
+        "order_updated_on": "Votre commande a été mise à jour le %{last_edited_at}.",
         "order_review_and_pay": "Votre commande a été mise à jour. Vérifiez et payez pour confirmer votre commande.",
         "pay_now": "Payez maintenant"
       },
       "change_currency": {
-        "currency_button_label": "%{currency} ( %{currency_symbol} )",
-        "credit_card_will_be_charged_html": "Votre carte de crédit sera débitée %{amount}",
+        "currency_button_label": "%{currency} (%{currency_symbol})",
+        "credit_card_will_be_charged_html": "Votre carte de crédit sera débitée de %{amount}",
         "payment_total_label": "Paiement total",
-        "conversion_rate": "1 %{from_currency_code} = %{rate}%{to_currency_code}",
-        "change_currency_link": "Changer pour %{currency_name}",
-        "card_provider_fx_charges_warning": "Votre fournisseur de carte peut facturer des frais sur %{currency_code} transactions.",
-        "currency_not_supported_by_shop": "La devise que vous avez sélectionnée n&#39;est plus disponible. Tous les prix sont maintenant en %{currency_code} ."
+        "conversion_rate": "1 %{from_currency_code} = %{rate} %{to_currency_code}",
+        "change_currency_link": "Changer en %{currency_name}",
+        "card_provider_fx_charges_warning": "Votre fournisseur de carte peut facturer des frais sur les transactions %{currency_code}.",
+        "currency_not_supported_by_shop": "La devise que vous avez sélectionnée n&#39;est plus disponible. Tous les prix sont maintenant en %{currency_code}."
       },
       "change_country": {
         "cart_updated_based_on_country": "Votre panier a été mis à jour en fonction de votre pays de livraison."
@@ -1219,21 +1219,21 @@
         "add_tip": "Ajouter un pourboire",
         "update_tip": "Conseil de mise à jour",
         "message": "Merci, nous apprécions",
-        "preset_label": "%{tip_percent} %",
+        "preset_label": "%{tip_percent}%",
         "no_tip_label": "Rien"
       },
       "open_graph_meta_tag": {
         "title_with_products": {
           "zero": "Acheter %{product_name}",
-          "one": "Acheter %{product_name} et %{count} autre article",
-          "other": "Acheter %{product_name} et %{count} autres éléments"
+          "one": "Achetez %{product_name} et %{count} autre article",
+          "other": "Achetez %{product_name} et %{count} autres articles"
         }
       },
       "subscriptions": {
         "recurring_total_intervals": {
           "day": {
             "one": "journée",
-            "other": "%{count} journées"
+            "other": "%{count} jours"
           },
           "week": {
             "one": "semaine",
@@ -1245,22 +1245,22 @@
           },
           "year": {
             "one": "an",
-            "other": "%{count} années"
+            "other": "%{count} ans"
           }
         },
-        "recurring_totals": "%{total_price} tous %{interval}",
-        "recurring_totals_with_initial_order_shipping_discount": "Premier paiement %{total_price_with_discount} , ensuite %{recurring_total}",
+        "recurring_totals": "%{total_price} tous les %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "Premier paiement %{total_price_with_discount}, puis %{recurring_total}",
         "recurring_totals_with_policies": {
           "first_cycles": {
             "one": "Premier paiement %{total_price}",
-            "other": "D&#39;abord %{count} Paiements %{total_price} chaque"
+            "other": "%{count} premiers paiements %{total_price} chacun"
           },
-          "following_cycles": ", ensuite %{total_price} tous %{interval}"
+          "following_cycles": ", puis %{total_price} tous les %{interval}"
         },
         "recurring_totals_with_initial_order_shipping_discount_with_policies": {
           "first_cycles": {
-            "one": ", ensuite %{count} paiement à %{total_price}",
-            "other": ", ensuite %{count} paiements à %{total_price} chaque"
+            "one": ", puis %{count} paiement à %{total_price}",
+            "other": ", puis %{count} paiements à %{total_price} chacun"
           }
         }
       },
