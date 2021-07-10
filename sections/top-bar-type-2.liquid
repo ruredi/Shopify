@@ -14,7 +14,11 @@
       {% if shop.customer_accounts_enabled %}
   <ul class="menu_bar_right">
  
-    <li class="header_language">{% include 'gtranslate' %}</li>
+    <li class="header_language">
+      {% include 'gtranslate' %}
+      <div class="transcy-switcher-manual transcy-mobile hidden"style="min-width:unset;min-height: unset; padding: 0 0;"></div>
+      <div class="transcy-switcher-manual transcy-desktop hidden" style="min-width:unset;"></div>
+    </li>
       {% if settings.display_currency %} 
       <li class="header_currency">
         <ul class="tbl-list">
