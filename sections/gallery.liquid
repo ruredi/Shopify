@@ -40,10 +40,10 @@
                   {% if section.settings.use_overlay_icons %}
 
                   <div class="links">   
-                    <a href="{% if block.settings.image != blank %}{{ block.settings.image | img_url: 'master' }}{% else %}//via.placeholder.com/420x420{% endif %}" data-fancybox="images" data-caption="{{block.settings.title}}"><i class="fa fa-search"></i></a>                
+                    <a href="{% if block.settings.image != blank %}{{ block.settings.image | img_url: 'master'| replace: "/es", ""| replace: "/fr", ""| replace: "/pt-br", "" }}{% else %}//via.placeholder.com/420x420{% endif %}" data-fancybox="images" data-caption="{{block.settings.title}}"><i class="fa fa-search"></i></a>                
 
 
-                    <a href="{{ block.settings.gallery_link }}" class="link"><i class="fa fa-link"></i></a>
+                    <a href="{{ block.settings.gallery_link| replace: "/es", ""| replace: "/fr", ""| replace: "/pt-br", "" }}" class="link"><i class="fa fa-link"></i></a>
                   </div>
                   {% endif %}
                   {% if block.settings.gallery_title != blank or block.settings.category != blank %}
