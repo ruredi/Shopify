@@ -23,7 +23,7 @@
     <div class="grid__item {{ block_width }}">
       <div class="bg-effect-{{block.id }}">
         <div class="ovrly17">
-          {% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{% endif%}
+          {% if block.settings.link != blank %}<a href="{{ block.settings.link | replace: "/es", ""| replace: "/fr", ""| replace: "/pt-br", "" }}">{% endif%}
           {% if block.settings.image != blank %}
           <img src="{{ block.settings.image | img_url: '1920X' }}" alt="{{ block.settings.title }}" />
           {% if block.settings.overlay %}  <div class="ovrly" style="background:{{ block.settings.overlay_bgcolor | color_modify: 'alpha', 0.7 }};"></div> {% endif %}
@@ -35,7 +35,7 @@
           {% endif%}
           <div class="featured-content">              
           {% if block.settings.title != blank %}     
-          <h4>{% if block.settings.link != blank %}<a href="{{ block.settings.link }}">{% endif%}{{ block.settings.title }}{% if block.settings.link != blank %}</a>{% endif%}</h4>
+          <h4>{% if block.settings.link != blank %}<a href="{{ block.settings.link | replace: "/es", ""| replace: "/fr", ""| replace: "/pt-br", ""  }}">{% endif%}{{ block.settings.title }}{% if block.settings.link != blank %}</a>{% endif%}</h4>
           {% endif %} 
           {% if block.settings.desc != blank %}
           <p style="color:{{ block.settings.desc_color }};">{{ block.settings.desc }}</p>

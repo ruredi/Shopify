@@ -44,7 +44,7 @@
 {% else %}
 <div class="swatch clearfix" data-option-index="{{ option_index }}">
   <div class="header">{{ swatch }} :</div>
-  <div class="swatch-section">
+  <div class="swatch-section transcy-click-currency ">
   {% assign values = '' %}
   {% for variant in product.variants %}
     {% assign value = variant.options[option_index] %}
