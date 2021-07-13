@@ -2,8 +2,8 @@
 <div class="menu-tool">  
   <ul class="site-nav">
     {% for link in linklists.main-menu.links %}
-    {% assign i = forloop.index | downcase %}
-    {% assign cat = link.title | handleize %}
+    {% assign i = forloop.index  | downcase %}
+    {% assign cat = link.title | replace: "<transcy>", "" | replace: "</transcy>", ""  | handleize %}
 
     {% if section.settings.display_megamenu %}
 
@@ -91,7 +91,7 @@
         {% assign hot_item = section.settings.hot_item | split:"," | strip | downcase | handle %}
         {% assign hot = link.title | downcase | handle  %}
     {% endif %}
-    <li class=" {% if is_megamenu %}dropdown  mega-menu {% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}">
+    <li class=" {% if is_megamenu %}dropdown  mega-menu {% else %}{% if linklists[link.handle] != empty %} dropdown{% endif %}{% endif %}"> 
       <a class="{%if linklists[link.handle] != empty %}menu__moblie {% endif %} {% if link.active %}current{% endif %} {% cycle 'color1', 'color2', 'color3','color4', 'color5', 'color6','color7', 'color8', 'color9','color10', %}" href="{{ link.url }}">      
          {% if sale_item contains sale %}
       <label class="icon-label icon_sale">
